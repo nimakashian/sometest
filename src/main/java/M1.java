@@ -1,22 +1,21 @@
+import performance.MyArrayDequeu;
+
 public class M1 {
     public static void main(String[] args) {
-        boolean ok=true;
-        int maxReconnectionTry=0;
-        while (ok) {
-            if (true) {
-                if (maxReconnectionTry++ < 10) {//TODO morteza get the maxReconnectionTry from config file
-                    try {
-                        Thread.sleep(1000);//TODO morteza: get sleep time from config file
-                    } catch (InterruptedException ie) {
-                        //TODO morteza: log the exception
-                    }
-                    System.out.println("turn:" + maxReconnectionTry);
-                    continue;
-                }
-                ok = false;
-                continue;
+        MyArrayDequeu<Integer> mySynchronizedArrayDequeu=new MyArrayDequeu<>();
+        for (int i=0; i<20 ; i++){
+            mySynchronizedArrayDequeu.addLast(i);
+        }
+        mySynchronizedArrayDequeu.removeFirst();
+        mySynchronizedArrayDequeu.removeFirst();
+        mySynchronizedArrayDequeu.removeFirst();
+        mySynchronizedArrayDequeu.removeFirst();
+        mySynchronizedArrayDequeu.removeFirst();
+        mySynchronizedArrayDequeu.removeFirst();
+        mySynchronizedArrayDequeu.removeFirst();
 
-            }
+        for (int i=0; i<30 ; i++){
+            mySynchronizedArrayDequeu.addLast(i);
         }
     }
 }
