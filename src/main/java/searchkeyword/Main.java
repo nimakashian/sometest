@@ -16,14 +16,15 @@ public class Main {
           /*  4*/    {"y","size"},
           /*5 */    {"4016@PROXY", "2113@PROXY", "2361@PROXY", "453@PROXY" , "2736@PROXY", "4079@PROXY", "305@PROXY" , "2721@PROXY", "1534@PROXY", "2283@PROXY", "2216@PROXY", "1327@PROXY", "4041@PROXY", "1507@PROXY", "3793@PROXY", "2098@PROXY", "129@PROXY" , "2437@PROXY", "3829@PROXY", "2522@PROXY", "3744@PROXY", "1441@PROXY", "4260@PROXY", "3865@PROXY", "1148@PROXY", "4027@PROXY", "1323@PROXY", "4265@PROXY"},
           /* 6 */    {"retryCount"},
-          /* 7 */    {"dirtyListSize",}
+          /* 7 */    {"dirtyListSize"},
+                /* 8 */ {"freeMemoryBytes"}
         };
         PrintWriter out = new PrintWriter("out.txt");
         boolean flag = true;
 
         int threshold = 1;
         String delimiter="=";
-        String[] keys =keysList[2];
+        String[] keys =keysList[8];
 
         for (int ii = 1; ii <= threshold; ii++) {
             boolean nameFlag = true;

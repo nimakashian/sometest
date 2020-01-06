@@ -1,0 +1,1319 @@
+
+Startup: Tue Dec 31 05:58:07 IRST 2019
+    Now: Tue Dec 31 10:00:01 IRST 2019
+
+Memory Info
+===========
+totalMemory=40912mb 0kb
+freeMemory=38868mb 761kb
+
+totalMemoryBytes=42899341312
+freeMemoryBytes=40756831512
+Threads
+=======
+java.lang.ThreadGroup[name=system,maxpri=10]
+  Thread[Reference Handler,10,system],running=true
+  Thread[Finalizer,8,system],running=true
+  Thread[Signal Dispatcher,9,system],running=true
+  Thread[RMI TCP Accept-0,5,system],running=true
+  Thread[RMI TCP Accept-0,5,system],running=true
+  Thread[RMI Reaper,5,system],running=true
+  Thread[GC Daemon,2,system],running=true
+  Thread[RMI TCP Accept-1099,5,system],running=true
+  Thread[RMI Scheduler(0),5,system],running=true
+  Thread[RMI RenewClean-[vmp1:36015],5,system],running=true
+  java.lang.ThreadGroup[name=main,maxpri=10]
+    Thread[Abandoned connection cleanup thread,5,main],running=true
+    Thread[Timer-0,5,main],running=true
+    Thread[com.google.common.base.internal.Finalizer,5,main],running=true
+    Thread[BoneCP-keep-alive-scheduler,5,main],running=true
+    Thread[BoneCP-pool-watch-thread,5,main],running=true
+    Thread[BoneCP-keep-alive-scheduler,5,main],running=true
+    Thread[BoneCP-pool-watch-thread,5,main],running=true
+    Thread[BoneCP-keep-alive-scheduler,5,main],running=true
+    Thread[BoneCP-pool-watch-thread,5,main],running=true
+    Thread[BoneCP-keep-alive-scheduler,5,main],running=true
+    Thread[BoneCP-pool-watch-thread,5,main],running=true
+    Thread[BoneCP-keep-alive-scheduler,5,main],running=true
+    Thread[BoneCP-pool-watch-thread,5,main],running=true
+    Thread[Accounting-sync,5,main],running=true
+    Thread[Thread-3,5,main],running=true
+    Thread[Timer-1,5,main],running=true
+    Thread[Timer-2,5,main],running=true
+    Thread[Timer-3,5,main],running=true
+    Thread[Timer-4,5,main],running=true
+    Thread[Timer-5,5,main],running=true
+    Thread[Timer-6,5,main],running=true
+    Thread[Timer-7,5,main],running=true
+    Thread[Timer-8,5,main],running=true
+    Thread[Timer-9,5,main],running=true
+    Thread[Timer-10,5,main],running=true
+    Thread[Timer-11,5,main],running=true
+    Thread[Timer-12,5,main],running=true
+    Thread[Timer-13,5,main],running=true
+    Thread[Timer-14,5,main],running=true
+    Thread[Timer-15,5,main],running=true
+    Thread[Timer-16,5,main],running=true
+    Thread[StatsD-pool-41-thread-1,5,main],running=true
+    Thread[StatsD-pool-42-thread-1,5,main],running=true
+    Thread[StatsD-pool-43-thread-1,5,main],running=true
+    Thread[StatsD-pool-44-thread-1,5,main],running=true
+    Thread[StatsD-pool-45-thread-1,5,main],running=true
+    Thread[Persistence-sync,5,main],running=true
+    Thread[StatsD-pool-2-thread-1,5,main],running=true
+    Thread[StatsD-pool-4-thread-1,5,main],running=true
+    Thread[StatsD-pool-10-thread-1,5,main],running=true
+    Thread[StatsD-pool-16-thread-1,5,main],running=true
+    Thread[StatsD-pool-22-thread-1,5,main],running=true
+    Thread[StatsD-pool-26-thread-1,5,main],running=true
+    Thread[StatsD-pool-9-thread-1,5,main],running=true
+    Thread[StatsD-pool-20-thread-1,5,main],running=true
+    Thread[StatsD-pool-28-thread-1,5,main],running=true
+    Thread[StatsD-pool-12-thread-1,5,main],running=true
+    Thread[StatsD-pool-24-thread-1,5,main],running=true
+    Thread[StatsD-pool-15-thread-1,5,main],running=true
+    Thread[StatsD-pool-32-thread-1,5,main],running=true
+    Thread[StatsD-pool-11-thread-1,5,main],running=true
+    Thread[StatsD-pool-30-thread-1,5,main],running=true
+    Thread[StatsD-pool-18-thread-1,5,main],running=true
+    Thread[StatsD-pool-21-thread-1,5,main],running=true
+    Thread[StatsD-pool-19-thread-1,5,main],running=true
+    Thread[StatsD-pool-36-thread-1,5,main],running=true
+    Thread[StatsD-pool-34-thread-1,5,main],running=true
+    Thread[StatsD-pool-8-thread-1,5,main],running=true
+    Thread[StatsD-pool-27-thread-1,5,main],running=true
+    Thread[StatsD-pool-17-thread-1,5,main],running=true
+    Thread[StatsD-pool-23-thread-1,5,main],running=true
+    Thread[StatsD-pool-14-thread-1,5,main],running=true
+    Thread[StatsD-pool-25-thread-1,5,main],running=true
+    Thread[StatsD-pool-29-thread-1,5,main],running=true
+    Thread[StatsD-pool-31-thread-1,5,main],running=true
+    Thread[StatsD-pool-33-thread-1,5,main],running=true
+    Thread[StatsD-pool-13-thread-1,5,main],running=true
+    Thread[StatsD-pool-35-thread-1,5,main],running=true
+    Thread[threadDeathWatcher-4-1,1,main],running=true
+    Thread[StatsD-pool-6-thread-1,5,main],running=true
+    Thread[qtp1202306289-141-selector-ServerConnectorManager@5fedd6f4/0,5,main],running=true
+    Thread[qtp1202306289-142-selector-ServerConnectorManager@5fedd6f4/1,5,main],running=true
+    Thread[qtp1202306289-143-selector-ServerConnectorManager@5fedd6f4/2,5,main],running=true
+    Thread[qtp1202306289-144-selector-ServerConnectorManager@5fedd6f4/3,5,main],running=true
+    Thread[qtp1202306289-145-acceptor-0@493b45bb-ServerConnector@47fca2ec{HTTP/1.1}{0.0.0.0:8000},5,main],running=true
+    Thread[qtp1202306289-146-acceptor-1@6550033c-ServerConnector@47fca2ec{HTTP/1.1}{0.0.0.0:8000},5,main],running=true
+    Thread[qtp1202306289-147,5,main],running=true
+    Thread[qtp1202306289-148,5,main],running=true
+    Thread[lettuce-nioEventLoop-5-1,5,main],running=true
+    Thread[lettuce-nioEventLoop-5-2,5,main],running=true
+    Thread[lettuce-nioEventLoop-8-1,5,main],running=true
+    Thread[lettuce-nioEventLoop-8-2,5,main],running=true
+    Thread[lettuce-eventExecutorLoop-6-1,5,main],running=true
+    Thread[lettuce-nioEventLoop-11-1,5,main],running=true
+    Thread[lettuce-nioEventLoop-11-2,5,main],running=true
+    Thread[lettuce-eventExecutorLoop-9-1,5,main],running=true
+    Thread[AsyncJob-RelayRouter,5,main],running=true
+    Thread[StatsD-pool-1-thread-1,5,main],running=true
+    Thread[ContainerBackgroundProcessor[StandardEngine[null]],5,main],running=true
+    Thread[http-0.0.0.0-8080-Processor1,5,main],running=true
+    Thread[http-0.0.0.0-8080-Processor2,5,main],running=true
+    Thread[http-0.0.0.0-8080-Processor3,5,main],running=true
+    Thread[http-0.0.0.0-8080-Processor4,5,main],running=true
+    Thread[http-0.0.0.0-8080-Monitor,5,main],running=true
+    Thread[DestroyJavaVM,5,main],running=true
+    Thread[StatsD-pool-39-thread-1,5,main],running=true
+    java.lang.ThreadGroup[name=Router,maxpri=10]
+      Thread[GwRouting,5,Router],running=true
+      Thread[MT-Router,5,Router],running=true
+      Thread[Event-Router,6,Router],running=true
+      Thread[Grim-Reaper,5,Router],running=true
+      Thread[Event-RouterOld,5,Router],running=true
+    java.lang.ThreadGroup[name=Transport,maxpri=10]
+      Thread[TcpipServer-49490,5,Transport],running=true
+      Thread[ch-6,5,Transport],running=true
+      Thread[ch-7,5,Transport],running=true
+      Thread[ch-8,5,Transport],running=true
+      Thread[ch-9,5,Transport],running=true
+      Thread[ch-10,5,Transport],running=true
+      Thread[ch-11,5,Transport],running=true
+      Thread[ch-12,5,Transport],running=true
+      Thread[ch-13,5,Transport],running=true
+      Thread[ch-14,5,Transport],running=true
+      Thread[ch-15,5,Transport],running=true
+      Thread[ch-16,5,Transport],running=true
+      Thread[ch-17,5,Transport],running=true
+      Thread[ch-18,5,Transport],running=true
+      Thread[ch-19,5,Transport],running=true
+      Thread[ch-20,5,Transport],running=true
+      Thread[ch-21,5,Transport],running=true
+      Thread[ch-22,5,Transport],running=true
+      Thread[ch-23,5,Transport],running=true
+      Thread[ch-24,5,Transport],running=true
+      Thread[ch-25,5,Transport],running=true
+      Thread[ch-26,5,Transport],running=true
+      Thread[ch-27,5,Transport],running=true
+      Thread[ch-28,5,Transport],running=true
+      Thread[StatsD-pool-79-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-91-thread-1,5,Transport],running=true
+      Thread[ch-29,5,Transport],running=true
+      Thread[ch-30,5,Transport],running=true
+      Thread[ch-31,5,Transport],running=true
+      Thread[ch-32,5,Transport],running=true
+      Thread[ch-33,5,Transport],running=true
+      Thread[StatsD-pool-143-thread-1,5,Transport],running=true
+      Thread[ch-34,5,Transport],running=true
+      Thread[ch-35,5,Transport],running=true
+      Thread[StatsD-pool-145-thread-1,5,Transport],running=true
+      Thread[ch-36,5,Transport],running=true
+      Thread[ch-37,5,Transport],running=true
+      Thread[ch-38,5,Transport],running=true
+      Thread[ch-39,5,Transport],running=true
+      Thread[StatsD-pool-157-thread-1,5,Transport],running=true
+      Thread[ch-40,5,Transport],running=true
+      Thread[ch-41,5,Transport],running=true
+      Thread[ch-42,5,Transport],running=true
+      Thread[ch-43,5,Transport],running=true
+      Thread[StatsD-pool-172-thread-1,5,Transport],running=true
+      Thread[ch-44,5,Transport],running=true
+      Thread[StatsD-pool-177-thread-1,5,Transport],running=true
+      Thread[ch-45,5,Transport],running=true
+      Thread[ch-47,5,Transport],running=true
+      Thread[ch-48,5,Transport],running=true
+      Thread[StatsD-pool-179-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-184-thread-1,5,Transport],running=true
+      Thread[ch-49,5,Transport],running=true
+      Thread[StatsD-pool-158-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-198-thread-1,5,Transport],running=true
+      Thread[ch-50,5,Transport],running=true
+      Thread[ch-51,5,Transport],running=true
+      Thread[ch-52,5,Transport],running=true
+      Thread[ch-53,5,Transport],running=true
+      Thread[ch-54,5,Transport],running=true
+      Thread[ch-55,5,Transport],running=true
+      Thread[ch-56,5,Transport],running=true
+      Thread[ch-57,5,Transport],running=true
+      Thread[ch-58,5,Transport],running=true
+      Thread[ch-59,5,Transport],running=true
+      Thread[ch-60,5,Transport],running=true
+      Thread[ch-61,5,Transport],running=true
+      Thread[StatsD-pool-228-thread-1,5,Transport],running=true
+      Thread[ch-62,5,Transport],running=true
+      Thread[ch-63,5,Transport],running=true
+      Thread[ch-64,5,Transport],running=true
+      Thread[ch-65,5,Transport],running=true
+      Thread[ch-66,5,Transport],running=true
+      Thread[ch-67,5,Transport],running=true
+      Thread[ch-68,5,Transport],running=true
+      Thread[StatsD-pool-247-thread-1,5,Transport],running=true
+      Thread[ch-69,5,Transport],running=true
+      Thread[ch-70,5,Transport],running=true
+      Thread[ch-71,5,Transport],running=true
+      Thread[ch-72,5,Transport],running=true
+      Thread[ch-73,5,Transport],running=true
+      Thread[ch-74,5,Transport],running=true
+      Thread[ch-75,5,Transport],running=true
+      Thread[ch-76,5,Transport],running=true
+      Thread[StatsD-pool-278-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-225-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-229-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-265-thread-1,5,Transport],running=true
+      Thread[ch-77,5,Transport],running=true
+      Thread[ch-78,5,Transport],running=true
+      Thread[StatsD-pool-284-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-78-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-214-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-156-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-222-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-250-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-150-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-221-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-74-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-233-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-174-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-153-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-88-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-240-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-206-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-272-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-244-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-77-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-261-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-263-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-164-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-253-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-129-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-279-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-169-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-159-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-144-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-189-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-92-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-237-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-208-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-241-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-256-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-268-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-1570-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-1612-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-1705-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-203-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-1723-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-2015-thread-1,5,Transport],running=true
+      Thread[StatsD-pool-2047-thread-1,5,Transport],running=true
+    java.lang.ThreadGroup[name=Operators,maxpri=10]
+      Thread[Provider-APTEL1,5,Operators],running=true
+      Thread[Provider-BTEL,5,Operators],running=true
+      Thread[Provider-BTEL-RX,5,Operators],running=true
+      Thread[Provider-IRCELL1,5,Operators],running=true
+      Thread[Provider-IRCELL2,5,Operators],running=true
+      Thread[Provider-IRCELL5,5,Operators],running=true
+      Thread[Provider-IRCELL6,5,Operators],running=true
+      Thread[Provider-IRCELL7,5,Operators],running=true
+      Thread[Provider-IRCELL8,5,Operators],running=true
+      Thread[Provider-LOOP,5,Operators],running=true
+      Thread[Provider-PARDIS-RX,5,Operators],running=true
+      Thread[Provider-RIGHTEL,5,Operators],running=true
+      Thread[Provider-SHATEL-MO,5,Operators],running=true
+      Thread[Provider-SHATEL1,5,Operators],running=true
+      Thread[LOOPBACK,5,Operators],running=true
+      Thread[SmppTrxRx-IRCELL7-1231055807,5,Operators],running=true
+      Thread[SmppTrxRx-IRCELL2-1231055807,5,Operators],running=true
+      Thread[SmppTx-RIGHTEL-1231055807,5,Operators],running=true
+      Thread[SmppRx-BTEL-RX-1231055807,5,Operators],running=true
+      Thread[SmppRx-RIGHTEL-1231055807,5,Operators],running=true
+      Thread[SmppTrxRx-IRCELL1-1231055807,5,Operators],running=true
+      Thread[SmppTrxRx-IRCELL8-1231055807,5,Operators],running=true
+      Thread[SmppTx-SHATEL-MO-1231055807,5,Operators],running=true
+      Thread[SmppTrxRx-IRCELL6-1231055807,5,Operators],running=true
+      Thread[SmppTrxRx-IRCELL5-1231055807,5,Operators],running=true
+      Thread[SmppTrxRx-SHATEL1-1231055807,5,Operators],running=true
+      Thread[SmppTx-BTEL-1231055807,5,Operators],running=true
+      Thread[SmppRx-SHATEL-MO-1231055807,5,Operators],running=true
+      Thread[Provider-PARDIS-RX,5,Operators],running=true
+      Thread[Provider-PARDIS-RX,5,Operators],running=true
+      Thread[Provider-PARDIS-RX,5,Operators],running=true
+      Thread[Provider-PARDIS-RX,5,Operators],running=true
+      Thread[Provider-PARDIS-RX,5,Operators],running=true
+      Thread[Provider-PARDIS-RX,5,Operators],running=true
+      Thread[Provider-PARDIS,5,Operators],running=true
+      Thread[Provider-PARDIS-RX,5,Operators],running=true
+  java.lang.ThreadGroup[name=RMI Runtime,maxpri=10]
+    Thread[MT-JDBC,5,RMI Runtime],running=true
+    Thread[StatsD-pool-309-thread-1,5,RMI Runtime],running=true
+    Thread[MT-JDBC,5,RMI Runtime],running=true
+    Thread[StatsD-pool-310-thread-1,5,RMI Runtime],running=true
+    Thread[RMI TCP Connection(1090)-127.0.0.1,5,RMI Runtime],running=true
+    Thread[RMI TCP Connection(1093)-10.10.150.10,5,RMI Runtime],running=true
+    Thread[RMI TCP Connection(1089)-10.10.150.10,5,RMI Runtime],running=true
+    Thread[RMI TCP Connection(1092)-10.10.150.10,5,RMI Runtime],running=true
+    Thread[RMI TCP Connection(1094)-10.10.150.10,5,RMI Runtime],running=true
+Routing Report
+==============
+MT router
+---------
+running=true
+y=5994
+size=5994
+blockedRouteSize=1
+blockedRoutes: 1567=0 
+
+Operator plugin info
+====================
+name=APTEL1
+adminOnline=true
+online=false
+pluginState=1
+lastOnline=Tue Dec 31 09:59:03 IRST 2019
+lastOffline=-
+mtSubmitCounter=0
+moSubmitCounter=0
+updateEventCounter=0
+deliveredCounter=0
+acceptedCounter=0
+undeliveredCounter=0
+rejectedCounter=0
+unknownCounter=0
+deletedCounter=0
+expiredCounter=0
+unhandledCounter=0
+messages.size()=0
+submitIndex=0
+submittedMessages.size()=0
+congestionSent=false
+throttling=true
+msgsPerSecond=400
+mtSubmitSpeed=0.0
+maxMtSubmitSpeed=0.0
+
+
+
+
+Operator plugin info
+====================
+name=BTEL
+adminOnline=true
+online=true
+pluginState=3
+lastOnline=Tue Dec 31 05:58:07 IRST 2019
+lastOffline=-
+mtSubmitCounter=5088244
+moSubmitCounter=0
+updateEventCounter=5088120
+deliveredCounter=0
+acceptedCounter=5086611
+undeliveredCounter=0
+rejectedCounter=535
+unknownCounter=0
+deletedCounter=0
+expiredCounter=0
+unhandledCounter=0
+messages.size()=212
+submitIndex=125
+submittedMessages.size()=124
+congestionSent=false
+throttling=true
+msgsPerSecond=1500
+mtSubmitSpeed=0.325
+maxMtSubmitSpeed=1.648
+retriedCounter=1509
+retriedCount={1=1509}
+retriedAcceptedCounter=1509
+retriedAcceptedCount={1=1509}
+meanRetryTime=5444
+retryTimes={8=40, 6=719, 5=270, 4=266, 3=195, 1=19}
+retryFailedCounter=0
+retryFailedCount={}
+meanRetryFailedTime=0
+retryFailedTimes={}
+
+pduToMessageMapSize=124
+commandHistorySize=124
+
+
+
+Operator plugin info
+====================
+name=BTEL-RX
+adminOnline=true
+online=true
+pluginState=3
+lastOnline=Tue Dec 31 05:58:07 IRST 2019
+lastOffline=-
+mtSubmitCounter=0
+moSubmitCounter=0
+updateEventCounter=4903665
+deliveredCounter=4872827
+acceptedCounter=0
+undeliveredCounter=8478
+rejectedCounter=127
+unknownCounter=0
+deletedCounter=0
+expiredCounter=22233
+unhandledCounter=0
+messages.size()=0
+submitIndex=0
+submittedMessages.size()=0
+congestionSent=false
+throttling=true
+msgsPerSecond=1100
+mtSubmitSpeed=0.0
+maxMtSubmitSpeed=0.0
+
+
+
+
+Operator plugin info
+====================
+name=IRCELL1
+adminOnline=true
+online=true
+pluginState=3
+lastOnline=Tue Dec 31 05:58:07 IRST 2019
+lastOffline=-
+mtSubmitCounter=258657
+moSubmitCounter=1987
+updateEventCounter=510168
+deliveredCounter=240139
+acceptedCounter=258657
+undeliveredCounter=2728
+rejectedCounter=1370
+unknownCounter=0
+deletedCounter=0
+expiredCounter=8644
+unhandledCounter=0
+messages.size()=0
+submitIndex=0
+submittedMessages.size()=0
+congestionSent=false
+throttling=true
+msgsPerSecond=200
+mtSubmitSpeed=0.20
+maxMtSubmitSpeed=0.156
+
+
+
+
+Operator plugin info
+====================
+name=IRCELL2
+adminOnline=true
+online=true
+pluginState=3
+lastOnline=Tue Dec 31 05:58:07 IRST 2019
+lastOffline=-
+mtSubmitCounter=258657
+moSubmitCounter=1955
+updateEventCounter=510199
+deliveredCounter=240156
+acceptedCounter=258657
+undeliveredCounter=2782
+rejectedCounter=1731
+unknownCounter=0
+deletedCounter=0
+expiredCounter=8604
+unhandledCounter=0
+messages.size()=0
+submitIndex=0
+submittedMessages.size()=0
+congestionSent=false
+throttling=true
+msgsPerSecond=200
+mtSubmitSpeed=0.19
+maxMtSubmitSpeed=0.156
+
+
+
+
+Operator plugin info
+====================
+name=IRCELL5
+adminOnline=true
+online=true
+pluginState=3
+lastOnline=Tue Dec 31 05:58:07 IRST 2019
+lastOffline=-
+mtSubmitCounter=258656
+moSubmitCounter=1918
+updateEventCounter=510236
+deliveredCounter=240145
+acceptedCounter=258656
+undeliveredCounter=2682
+rejectedCounter=1464
+unknownCounter=0
+deletedCounter=0
+expiredCounter=8753
+unhandledCounter=0
+messages.size()=0
+submitIndex=0
+submittedMessages.size()=0
+congestionSent=false
+throttling=true
+msgsPerSecond=200
+mtSubmitSpeed=0.20
+maxMtSubmitSpeed=0.156
+
+
+
+
+Operator plugin info
+====================
+name=IRCELL6
+adminOnline=true
+online=true
+pluginState=3
+lastOnline=Tue Dec 31 05:58:07 IRST 2019
+lastOffline=-
+mtSubmitCounter=258656
+moSubmitCounter=1861
+updateEventCounter=510293
+deliveredCounter=240147
+acceptedCounter=258656
+undeliveredCounter=2734
+rejectedCounter=1647
+unknownCounter=0
+deletedCounter=0
+expiredCounter=8756
+unhandledCounter=0
+messages.size()=0
+submitIndex=0
+submittedMessages.size()=0
+congestionSent=false
+throttling=true
+msgsPerSecond=200
+mtSubmitSpeed=0.19
+maxMtSubmitSpeed=0.156
+
+
+
+
+Operator plugin info
+====================
+name=IRCELL7
+adminOnline=true
+online=true
+pluginState=3
+lastOnline=Tue Dec 31 05:58:07 IRST 2019
+lastOffline=-
+mtSubmitCounter=258657
+moSubmitCounter=1930
+updateEventCounter=510226
+deliveredCounter=240169
+acceptedCounter=258657
+undeliveredCounter=2730
+rejectedCounter=1781
+unknownCounter=0
+deletedCounter=0
+expiredCounter=8670
+unhandledCounter=0
+messages.size()=0
+submitIndex=0
+submittedMessages.size()=0
+congestionSent=false
+throttling=true
+msgsPerSecond=200
+mtSubmitSpeed=0.18
+maxMtSubmitSpeed=0.156
+
+
+
+
+Operator plugin info
+====================
+name=IRCELL8
+adminOnline=true
+online=true
+pluginState=3
+lastOnline=Tue Dec 31 05:58:07 IRST 2019
+lastOffline=-
+mtSubmitCounter=258657
+moSubmitCounter=1895
+updateEventCounter=510260
+deliveredCounter=240141
+acceptedCounter=258657
+undeliveredCounter=2745
+rejectedCounter=1565
+unknownCounter=0
+deletedCounter=0
+expiredCounter=8717
+unhandledCounter=0
+messages.size()=0
+submitIndex=0
+submittedMessages.size()=0
+congestionSent=false
+throttling=true
+msgsPerSecond=200
+mtSubmitSpeed=0.20
+maxMtSubmitSpeed=0.157
+
+
+
+
+Operator plugin info
+====================
+name=KISH
+adminOnline=false
+online=false
+pluginState=1
+lastOnline=-
+lastOffline=-
+mtSubmitCounter=0
+moSubmitCounter=0
+updateEventCounter=0
+deliveredCounter=0
+acceptedCounter=0
+undeliveredCounter=0
+rejectedCounter=0
+unknownCounter=0
+deletedCounter=0
+expiredCounter=0
+unhandledCounter=0
+messages.size()=0
+submitIndex=0
+submittedMessages.size()=0
+congestionSent=false
+throttling=true
+msgsPerSecond=5
+mtSubmitSpeed=0.0
+maxMtSubmitSpeed=0.0
+
+
+
+Operator plugin info
+====================
+name=LOOP
+adminOnline=true
+online=true
+pluginState=3
+lastOnline=Tue Dec 31 05:58:07 IRST 2019
+lastOffline=-
+mtSubmitCounter=196
+moSubmitCounter=196
+updateEventCounter=392
+deliveredCounter=196
+acceptedCounter=196
+undeliveredCounter=0
+rejectedCounter=0
+unknownCounter=0
+deletedCounter=0
+expiredCounter=0
+unhandledCounter=0
+messages.size()=0
+submitIndex=0
+submittedMessages.size()=0
+congestionSent=false
+throttling=false
+msgsPerSecond=1001
+mtSubmitSpeed=0.0
+maxMtSubmitSpeed=0.5
+
+
+
+Operator plugin info
+====================
+name=PARDIS
+adminOnline=true
+online=false
+pluginState=1
+lastOnline=Tue Dec 31 09:59:46 IRST 2019
+lastOffline=Tue Dec 31 09:59:45 IRST 2019
+mtSubmitCounter=563302
+moSubmitCounter=0
+updateEventCounter=563335
+deliveredCounter=0
+acceptedCounter=563335
+undeliveredCounter=0
+rejectedCounter=1311
+unknownCounter=0
+deletedCounter=0
+expiredCounter=0
+unhandledCounter=0
+messages.size()=574
+submitIndex=0
+submittedMessages.size()=0
+congestionSent=false
+throttling=true
+msgsPerSecond=1100
+mtSubmitSpeed=0.111
+maxMtSubmitSpeed=1.954
+retriedCounter=0
+retriedCount={}
+retriedAcceptedCounter=0
+retriedAcceptedCount={}
+meanRetryTime=0
+retryTimes={}
+retryFailedCounter=0
+retryFailedCount={}
+meanRetryFailedTime=0
+retryFailedTimes={}
+
+pduToMessageMapSize=0
+commandHistorySize=2
+
+
+
+Operator plugin info
+====================
+name=PARDIS-RX
+adminOnline=true
+online=false
+pluginState=1
+lastOnline=Tue Dec 31 09:59:58 IRST 2019
+lastOffline=Tue Dec 31 09:59:58 IRST 2019
+mtSubmitCounter=0
+moSubmitCounter=23100
+updateEventCounter=361912
+deliveredCounter=339105
+acceptedCounter=0
+undeliveredCounter=21717
+rejectedCounter=2
+unknownCounter=0
+deletedCounter=0
+expiredCounter=1088
+unhandledCounter=0
+messages.size()=0
+submitIndex=0
+submittedMessages.size()=0
+congestionSent=false
+throttling=true
+msgsPerSecond=1100
+mtSubmitSpeed=0.0
+maxMtSubmitSpeed=0.0
+
+
+
+
+Operator plugin info
+====================
+name=RIGHTEL
+adminOnline=true
+online=true
+pluginState=3
+lastOnline=Tue Dec 31 05:58:07 IRST 2019
+lastOffline=-
+mtSubmitCounter=87486
+moSubmitCounter=1308
+updateEventCounter=172895
+deliveredCounter=79037
+acceptedCounter=87486
+undeliveredCounter=2082
+rejectedCounter=2
+unknownCounter=0
+deletedCounter=0
+expiredCounter=4290
+unhandledCounter=0
+messages.size()=0
+submitIndex=0
+submittedMessages.size()=0
+congestionSent=false
+throttling=true
+msgsPerSecond=400
+mtSubmitSpeed=0.13
+maxMtSubmitSpeed=0.397
+
+pduToMessageMapSize=0
+commandHistorySize=0
+
+
+
+
+Operator plugin info
+====================
+name=SHATEL-MO
+adminOnline=true
+online=true
+pluginState=3
+lastOnline=Tue Dec 31 05:58:07 IRST 2019
+lastOffline=-
+mtSubmitCounter=0
+moSubmitCounter=4
+updateEventCounter=0
+deliveredCounter=0
+acceptedCounter=0
+undeliveredCounter=0
+rejectedCounter=0
+unknownCounter=0
+deletedCounter=0
+expiredCounter=0
+unhandledCounter=0
+messages.size()=0
+submitIndex=0
+submittedMessages.size()=0
+congestionSent=false
+throttling=true
+msgsPerSecond=750
+mtSubmitSpeed=0.0
+maxMtSubmitSpeed=0.0
+
+pduToMessageMapSize=0
+commandHistorySize=0
+
+
+
+
+Operator plugin info
+====================
+name=SHATEL1
+adminOnline=true
+online=true
+pluginState=3
+lastOnline=Tue Dec 31 05:58:07 IRST 2019
+lastOffline=-
+mtSubmitCounter=419
+moSubmitCounter=0
+updateEventCounter=894
+deliveredCounter=412
+acceptedCounter=419
+undeliveredCounter=0
+rejectedCounter=0
+unknownCounter=0
+deletedCounter=0
+expiredCounter=63
+unhandledCounter=0
+messages.size()=0
+submitIndex=0
+submittedMessages.size()=0
+congestionSent=false
+throttling=true
+msgsPerSecond=400
+mtSubmitSpeed=0.0
+maxMtSubmitSpeed=0.18
+
+
+
+
+New Event router
+---------
+messages=53
+nodes=10 
+cursor=10
+nextWakeup=1577783240738
+nextExpire=1577783240738
+retrySize=0
+pendingMapSize=24
+Proxies that don't receive delivery reports: 
+-------------------------------------------
+Proxies that don't receive MO: 
+zarin_q
+samtest
+AgriBank
+parsian8201
+samenasr
+mehrrz
+tej_refah
+sepah3
+mellat1-win3311
+payamsms_stock
+smpptest
+ansar-mb
+receive3305
+receive3304
+melli-test
+isc2
+mellat1-3322
+psmstest
+mellat1-win
+mellat1-win3300
+mpdev
+mellat3_3317
+CGame
+sep5_httpd2
+parsian_8209
+mellat-http30
+sep5_long
+ghavamin_http2
+maskan
+saderat1
+Mellat1-3303
+mellat1-3344
+sepah2
+mellat2-34
+mellat1-32
+mellat1-31
+sep5_http
+mellat3_3332
+mellat1-3301
+mellat3_3312
+ws1
+mellat3_3323
+samams
+isc1
+mellat3_3330
+EnMobile
+ansar-http2
+sepah2vote
+TejaratVote
+npsms
+isc9
+isc4
+mellat4
+mellat3
+enbank_test
+ennama
+damavand
+en_mb
+coffee
+ws3-mo
+enbank_test2
+mellat1-3310
+ghtest
+simorgh
+ayandeh_mrch
+snap
+isc7
+wmoshow
+wmomatch
+entest
+isc5
+mellat2
+samtest-ams
+mptest
+bansar
+sepah-2101
+club91
+branch_mell2
+parsian_8202
+koorosh
+samtestq
+isctest
+parsian
+club90
+ansarp
+samen_mobile
+mellat1-30
+ansar-http
+mellat3_3331
+sepah6
+MCIG
+mtntest
+mellat1-win3321
+mellat1-3329
+reserved
+maskan_mobile
+-------------------------------------------
+
+PendingSize, key:4757@PROXY value:8
+PendingSize, key:2283@PROXY value:6
+PendingSize, key:1491 value:16
+PendingSize, key:1323@PROXY value:2
+
+Event Structure: 
+Size is 53
+[key=474, size=10] [key=4334, size=1] [key=4757@PROXY, size=8] [key=2091, size=6] [key=2937, size=1] [key=1393, size=2] 
+[key=2074, size=1] [key=1491, size=16] [key=2283@PROXY, size=6] [key=1323@PROXY, size=2] 
+
+Grim Reaper
+-----------
+running=true
+added=7297658
+expired=1793
+finalized=6746432
+expireListItems=317
+expireListSize=549438
+firstToExpireAt=Tue Dec 31 10:00:00 IRST 2019
+
+
+Event Router
+------------
+updateEventsSize=0
+pickedUpdateCount=14266512
+exceptionalRouting=rightel-route:3414 huawei-route:27576 
+
+
+Blocked Numbers
+---------------
+Blocked numbers=2
+
+mtNumberBlocked=0
+moNumberBlocked=0
+
+
+Diversions
+----------
+Replaced=0
+Duplicated=0
+Rejected=0
+
+mtDivertReplaced=0
+mtDivertDuplicated=0
+mtDivertRejected=0
+moDivertReplaced=0
+moDivertDuplicated=0
+moDivertRejected=0
+
+
+finalizedCount=6863671
+updateEventRequests=14266512
+processedUpdateEvents=14142252
+eventCommandAcceptedCount=7278581
+eventCommandRejectedCount=11399
+eventCommandTimedOutCount=0
+eventIOErrorCount=7
+eventMessageDeliveredCount=6778002
+eventMessageDeletedCount=0
+eventMessageExpiredCount=149055
+eventMessageRejectedCount=129
+eventMessageUndeliverableCount=49339
+eventUnknownCount=0
+eventUnhandledCount=0
+
+relayLevel=2
+registered=7278581:7278581
+cleared=6850479:6850479
+relayReceivedDelivered=45528
+relayReceivedIOError=0
+relayReceivedDeleted=0
+relayReceivedExpired=69237
+relayReceivedRejected=0
+relayReceivedUndeliverable=661
+relayReceivedUnknown=0
+nonCleared=428102
+relayed=126053:115426
+relayReceived=115426
+asyncQSize=0
+asyncQCapacity=200000
+
+eventCommandAcceptedNotFoundCount=0
+eventCommandRejectedNotFoundCount=0
+eventCommandTimedOutNotFoundCount=0
+eventIOErrorNotFoundCount=0
+eventMessageDeliveredNotFoundCount=45726
+eventMessageExpiredNotFoundCount=79659
+eventMessageRejectedNotFoundCount=0
+eventMessageUndeliverableNotFoundCount=668
+eventUnknownNotFoundCount=0
+
+Operators Stats:
+==============
+operator=BTEL
+--------
+SMSC_MESSAGE_EXPIRED=22217
+SMSC_MESSAGE_DELIVERED=4872740
+SMSC_MESSAGE_DELIVERED_NOT_FOUND=21840
+SMSC_MESSAGE_UNDELIVERABLE=8478
+SMSC_MESSAGE_REJECTED=127
+SMSC_COMMAND_ACCEPTED=5086076
+SMSC_MESSAGE_UNDELIVERABLE_NOT_FOUND=200
+COMMAND_REJECTED=535
+SMSC_MESSAGE_EXPIRED_NOT_FOUND=22083
+
+operator=ICA
+--------
+SMSC_MESSAGE_UNDELIVERABLE=16394
+SMSC_MESSAGE_UNDELIVERABLE_NOT_FOUND=450
+SMSC_COMMAND_ACCEPTED=1542382
+SMSC_MESSAGE_EXPIRED=46033
+SMSC_MESSAGE_DELIVERED=1440828
+SMSC_MESSAGE_EXPIRED_NOT_FOUND=52135
+COMMAND_REJECTED=9558
+SMSC_MESSAGE_DELIVERED_NOT_FOUND=22043
+
+operator=LOOP
+--------
+SMSC_MESSAGE_DELIVERED=196
+SMSC_COMMAND_ACCEPTED=196
+
+operator=PARDIS
+--------
+SMSC_MESSAGE_EXPIRED=1088
+SMSC_MESSAGE_DELIVERED=339105
+SMSC_MESSAGE_DELIVERED_NOT_FOUND=333
+SMSC_MESSAGE_UNDELIVERABLE=21717
+SMSC_MESSAGE_REJECTED=2
+SMSC_COMMAND_ACCEPTED=562024
+SMSC_MESSAGE_UNDELIVERABLE_NOT_FOUND=8
+COMMAND_REJECTED=1304
+SMSC_IO_ERROR=7
+SMSC_MESSAGE_EXPIRED_NOT_FOUND=1088
+
+operator=RIGHTEL
+--------
+SMSC_MESSAGE_UNDELIVERABLE=2082
+SMSC_MESSAGE_UNDELIVERABLE_NOT_FOUND=10
+SMSC_COMMAND_ACCEPTED=87484
+SMSC_MESSAGE_EXPIRED_NOT_FOUND=4290
+SMSC_MESSAGE_DELIVERED=79036
+COMMAND_REJECTED=2
+SMSC_MESSAGE_DELIVERED_NOT_FOUND=1468
+
+operator=SHATEL1
+--------
+SMSC_MESSAGE_DELIVERED=371
+SMSC_COMMAND_ACCEPTED=419
+SMSC_MESSAGE_EXPIRED=58
+SMSC_MESSAGE_EXPIRED_NOT_FOUND=63
+SMSC_MESSAGE_DELIVERED_NOT_FOUND=42
+
+
+
+Stats
+------------
+level=4
+agents=2351
+
+
+Persistence report
+==================
+finalizeCount=37146
+listenersTime=481
+mpmTime=29
+lookupOpCount=35321
+byOpTime=69
+lookupInternalCount=43989
+byInternalTime=86
+compositeHashSize=542215, cache=549920
+keyQueryCount=9987, keyQueryTime=6 msecs
+compositeQueryCount=1099, compositeQueryTime=4 msecs
+missedCompositeKeys=126053
+inserts=7279486, archiveInserts=6904081, updates=5884290, deletes=6845709, finalized=6904559, errors=0,
+nonDelete=58372, misses=0, expires=0,
+dirtyListSize=1844, objectListSize=0
+msgCounter=id=1;value=-1343367335;reserved=-1343366919
+
+Transport report
+================
+connectionID=44;since=2019-12-31 05:58:55;src=10.10.10.12:51692;dst=10.10.150.10:49490;info=isc3:1009,703,49510,209647[16,2,55,58]
+connectionID=38;since=2019-12-31 05:58:55;src=10.10.150.10:50348;dst=10.10.150.10:49490;info=post:553,429,1220,48850[9,1,1,13]
+connectionID=70;since=2019-12-31 05:58:55;src=89.43.15.1:51350;dst=10.10.150.10:49490;info=yaracard:123,1196,5785,23612[2,3,6,6]
+connectionID=69;since=2019-12-31 05:58:55;src=87.107.121.221:36452;dst=10.10.150.10:49490;info=rrp:4421,11768,5632,11783[73,39,6,3]
+connectionID=58;since=2019-12-31 05:58:55;src=82.99.216.43:57947;dst=10.10.150.10:49490;info=kandoo:11560,39325,124882,11686[192,131,138,3]
+connectionID=36;since=2019-12-31 05:58:55;src=10.104.15.253:54243;dst=10.10.150.10:49490;info=resalat:9929,27057,6268,9677[165,90,6,2]
+connectionID=9;since=2019-12-31 05:58:55;src=10.10.150.10:50326;dst=10.10.150.10:49490;info=adprest:154,123,1438,8894[2,0,1,2]
+connectionID=76;since=2019-12-31 05:58:56;src=87.107.52.204:60823;dst=10.10.150.10:49490;info=relax:24,62,148,6437[0,0,0,1]
+connectionID=77;since=2019-12-31 05:58:57;src=192.168.3.154:47201;dst=10.10.150.10:49490;info=citybank:4217,180,4067,4838[70,0,4,1]
+connectionID=28;since=2019-12-31 05:58:55;src=10.10.150.10:50346;dst=10.10.150.10:49490;info=abmshd:43,202,140,4496[0,0,0,1]
+connectionID=32;since=2019-12-31 05:58:55;src=10.200.7.69:58713;dst=10.10.150.10:49490;info=tejarat1:661,19872,2496,4443[11,66,2,1]
+connectionID=37;since=2019-12-31 05:58:55;src=192.168.163.19:50350;dst=10.10.150.10:49490;info=turism:3496,5012,15621,3496[58,16,17,0]
+connectionID=71;since=2019-12-31 05:58:55;src=217.218.130.11:47754;dst=10.10.150.10:49490;info=centbank:14,179,439,2747[0,0,0,0]
+connectionID=39;since=2019-12-31 05:58:55;src=10.10.10.18:54537;dst=10.10.150.10:49490;info=isc10:54,235,415,2739[0,0,0,0]
+connectionID=30;since=2019-12-31 05:58:55;src=172.28.128.2:37103;dst=10.10.150.10:49490;info=mellidb2:623,10491,1956,2291[10,34,2,0]
+connectionID=31;since=2019-12-31 05:58:55;src=10.40.194.62:53664;dst=10.10.150.10:49490;info=tejotp:3,3,462,2210[0,0,0,0]
+connectionID=23;since=2019-12-31 05:58:55;src=10.10.150.10:50340;dst=10.10.150.10:49490;info=kandoop2:9,19,278,2209[0,0,0,0]
+connectionID=43;since=2019-12-31 05:58:55;src=172.17.1.50:1191;dst=10.10.150.10:49490;info=enbank1:1610,2120,30604,1970[26,7,34,0]
+connectionID=66;since=2019-12-31 05:58:55;src=185.30.4.14:43597;dst=10.10.150.10:49490;info=ghavamin:382,8258,314,1572[6,27,0,0]
+connectionID=45;since=2019-12-31 05:58:55;src=10.0.5.30:50465;dst=10.10.150.10:49490;info=saman:3163,12018,35653,1108[52,40,39,0]
+connectionID=35;since=2019-12-31 05:58:55;src=172.20.226.5:53037;dst=10.10.150.10:49490;info=samkish:1324,3628,14819,998[22,12,16,0]
+connectionID=68;since=2019-12-31 05:58:55;src=82.99.242.188:48002;dst=10.10.150.10:49490;info=almas:12,15,52,809[0,0,0,0]
+connectionID=47;since=2019-12-31 05:58:55;src=192.168.112.5:48686;dst=10.10.150.10:49490;info=ikhodro:1,20,5,758[0,0,0,0]
+connectionID=34;since=2019-12-31 05:58:55;src=192.167.0.2:40585;dst=10.10.150.10:49490;info=sabtnew:4,4,23,664[0,0,0,0]
+connectionID=41;since=2019-12-31 05:58:55;src=10.10.10.15:60685;dst=10.10.150.10:49490;info=isc6:553,1988,11724,635[9,6,13,0]
+connectionID=75;since=2019-12-31 05:58:56;src=10.30.151.114:32856;dst=10.10.150.10:49490;info=hekmat:603,1496,9148,474[10,4,10,0]
+connectionID=61;since=2019-12-31 05:58:55;src=217.11.30.3:51182;dst=10.10.150.10:49490;info=afranet:3,42,67,465[0,0,0,0]
+connectionID=33;since=2019-12-31 05:58:55;src=192.168.47.11:39138;dst=10.10.150.10:49490;info=daybank:454,454,9146,454[7,1,10,0]
+connectionID=67;since=2019-12-31 05:58:55;src=37.228.138.114:46269;dst=10.10.150.10:49490;info=faradade:775,1862,14313,399[12,6,15,0]
+connectionID=13;since=2019-12-31 05:58:55;src=10.10.151.85:36630;dst=10.10.150.10:49490;info=tehinet2:78,1624,78,274[1,5,0,0]
+connectionID=14;since=2019-12-31 05:58:55;src=10.10.150.10:50328;dst=10.10.150.10:49490;info=chabok:560,4601,15823,273[9,15,17,0]
+connectionID=59;since=2019-12-31 05:58:55;src=89.43.15.1:43598;dst=10.10.150.10:49490;info=ayandeh:68,95,163,193[1,0,0,0]
+connectionID=27;since=2019-12-31 05:58:55;src=10.10.150.50:36612;dst=10.10.150.10:49490;info=newvote:6,6,15,185[0,0,0,0]
+connectionID=49;since=2019-12-31 05:58:55;src=10.1.5.103:58214;dst=10.10.150.10:49490;info=kafarin:116,1005,51,184[1,3,0,0]
+connectionID=60;since=2019-12-31 05:58:55;src=194.225.156.2:37073;dst=10.10.150.10:49490;info=samat:46,1441,3328,155[0,4,3,0]
+connectionID=26;since=2019-12-31 05:58:55;src=10.10.150.10:50344;dst=10.10.150.10:49490;info=sadadpay:39,523,1947,137[0,1,2,0]
+connectionID=56;since=2019-12-31 05:58:55;src=194.39.36.19:8064;dst=10.10.150.10:49490;info=middle:193,660,2396,132[3,2,2,0]
+connectionID=62;since=2019-12-31 05:58:55;src=46.209.138.203:43261;dst=10.10.150.10:49490;info=gasproxy:10,55,55,63[0,0,0,0]
+connectionID=72;since=2019-12-31 05:58:55;src=79.175.141.68:37062;dst=10.10.150.10:49490;info=kafebz:4,153,840,51[0,0,0,0]
+connectionID=40;since=2019-12-31 05:58:55;src=172.31.1.246:51168;dst=10.10.150.10:49490;info=sepah5:5,5,8,43[0,0,0,0]
+connectionID=74;since=2019-12-31 05:58:55;src=91.99.99.119:36476;dst=10.10.150.10:49490;info=tehinet:4,6,4,36[0,0,0,0]
+connectionID=57;since=2019-12-31 05:58:55;src=185.147.176.233:48972;dst=10.10.150.10:49490;info=saba:9,184,729,34[0,0,0,0]
+connectionID=73;since=2019-12-31 05:58:55;src=185.135.30.14:59260;dst=10.10.150.10:49490;info=mldbtst2:2,4,8,18[0,0,0,0]
+connectionID=63;since=2019-12-31 05:58:55;src=188.75.127.132:44464;dst=10.10.150.10:49490;info=sepehnet:6,6,6,18[0,0,0,0]
+connectionID=64;since=2019-12-31 05:58:55;src=2.188.15.73:51103;dst=10.10.150.10:49490;info=majpsms:6,6,6,17[0,0,0,0]
+connectionID=42;since=2019-12-31 05:58:55;src=10.10.10.13:43288;dst=10.10.150.10:49490;info=isc8:18,140,379,11[0,0,0,0]
+connectionID=55;since=2019-12-31 05:58:55;src=37.228.137.212:49120;dst=10.10.150.10:49490;info=melli3:4,54,4,8[0,0,0,0]
+connectionID=53;since=2019-12-31 05:58:55;src=82.99.196.142:49211;dst=10.10.150.10:49490;info=sabt:3,3,7,8[0,0,0,0]
+connectionID=65;since=2019-12-31 05:58:55;src=89.235.64.107:34472;dst=10.10.150.10:49490;info=melli1:2,2,2,2[0,0,0,0]
+connectionID=12;since=2019-12-31 05:58:55;src=10.10.150.25:36351;dst=10.10.150.10:49490;info=merat:2,2,2,2[0,0,0,0]
+connectionID=51;since=2019-12-31 05:58:55;src=91.232.66.1:45186;dst=10.10.150.10:49490;info=aap:1,1,1,1[0,0,0,0]
+connectionID=78;since=2019-12-31 05:58:57;src=192.168.3.157:60410;dst=10.10.150.10:49490;info=cityotp:0,0,0,0[0,0,0,0]
+connectionID=54;since=2019-12-31 05:58:55;src=2.188.15.67:50586;dst=10.10.150.10:49490;info=majles1:0,0,0,0[0,0,0,0]
+connectionID=52;since=2019-12-31 05:58:55;src=89.235.64.107:49806;dst=10.10.150.10:49490;info=meldbtst:0,0,0,0[0,0,0,0]
+connectionID=50;since=2019-12-31 05:58:55;src=172.24.179.1:44628;dst=10.10.150.10:49490;info=melal:0,0,0,0[0,0,0,0]
+connectionID=48;since=2019-12-31 05:58:55;src=10.20.30.24:60782;dst=10.10.150.10:49490;info=ayndhotp:0,0,0,0[0,0,0,0]
+connectionID=29;since=2019-12-31 05:58:55;src=10.10.150.27:41178;dst=10.10.150.10:49490;info=newpsms2:0,0,0,0[0,0,0,0]
+connectionID=25;since=2019-12-31 05:58:55;src=10.10.150.21:41698;dst=10.10.150.10:49490;info=websrv:0,0,0,0[0,0,0,0]
+connectionID=24;since=2019-12-31 05:58:55;src=10.10.150.10:50342;dst=10.10.150.10:49490;info=kandoop:0,0,0,0[0,0,0,0]
+connectionID=22;since=2019-12-31 05:58:55;src=10.10.150.10:50338;dst=10.10.150.10:49490;info=otp:0,0,0,0[0,0,0,0]
+connectionID=21;since=2019-12-31 05:58:55;src=10.10.150.10:50336;dst=10.10.150.10:49490;info=webidea:0,0,0,0[0,0,0,0]
+connectionID=20;since=2019-12-31 05:58:55;src=10.10.150.10:50334;dst=10.10.150.10:49490;info=post2:0,0,0,0[0,0,0,0]
+connectionID=19;since=2019-12-31 05:58:55;src=10.10.150.10:50332;dst=10.10.150.10:49490;info=prspolis:0,0,0,0[0,0,0,0]
+connectionID=18;since=2019-12-31 05:58:55;src=10.10.100.12:48806;dst=10.10.150.10:49490;info=lansms10:0,0,0,0[0,0,0,0]
+connectionID=17;since=2019-12-31 05:58:55;src=10.10.101.171:33065;dst=10.10.150.10:49490;info=samatdev:0,0,0,0[0,0,0,0]
+connectionID=16;since=2019-12-31 05:58:55;src=10.10.150.10:50330;dst=10.10.150.10:49490;info=snapmrkt:0,0,0,0[0,0,0,0]
+connectionID=15;since=2019-12-31 05:58:55;src=10.10.151.76:47346;dst=10.10.150.10:49490;info=ghazaeie:0,0,0,0[0,0,0,0]
+connectionID=11;since=2019-12-31 05:58:55;src=10.10.100.17:60010;dst=10.10.150.10:49490;info=adpsms:0,0,0,0[0,0,0,0]
+connectionID=10;since=2019-12-31 05:58:55;src=10.10.150.26:33969;dst=10.10.150.10:49490;info=newpsms:0,0,0,0[0,0,0,0]
+connectionID=8;since=2019-12-31 05:58:55;src=10.10.150.22:51784;dst=10.10.150.10:49490;info=web2mci:0,0,0,0[0,0,0,0]
+connectionID=7;since=2019-12-31 05:58:55;src=10.10.150.52:60496;dst=10.10.150.10:49490;info=newpsms3:0,0,0,0[0,0,0,0]
+connectionID=6;since=2019-12-31 05:58:55;src=10.10.150.10:50324;dst=10.10.150.10:49490;info=lansms9:0,0,0,0[0,0,0,0]
+
+
+Thread CPU Usage:
+	[Event-RouterOld, RUNNABLE, 1921529 ms]
+	[ch-36, RUNNABLE, 1653835 ms]
+	[lettuce-nioEventLoop-5-2, RUNNABLE, 1016293 ms]
+	[ch-77, RUNNABLE, 942098 ms]
+	[Persistence-sync, RUNNABLE, 930381 ms]
+	[ch-45, RUNNABLE, 582094 ms]
+	[SmppRx-BTEL-RX-1231055807, RUNNABLE, 551322 ms]
+	[SmppTx-BTEL-1231055807, RUNNABLE, 511080 ms]
+	[ch-58, RUNNABLE, 372140 ms]
+	[ch-43, RUNNABLE, 359617 ms]
+	[ch-32, RUNNABLE, 315781 ms]
+	[ch-44, RUNNABLE, 312600 ms]
+	[ch-30, RUNNABLE, 221445 ms]
+	[ch-75, RUNNABLE, 157272 ms]
+	[ch-70, RUNNABLE, 156136 ms]
+	[ch-66, RUNNABLE, 153019 ms]
+	[ch-41, RUNNABLE, 135016 ms]
+	[ch-33, RUNNABLE, 77030 ms]
+	[SmppTrxRx-IRCELL1-1231055807, RUNNABLE, 73550 ms]
+	[SmppTrxRx-IRCELL5-1231055807, RUNNABLE, 71190 ms]
+	[SmppTrxRx-IRCELL6-1231055807, RUNNABLE, 70880 ms]
+	[SmppTrxRx-IRCELL2-1231055807, RUNNABLE, 69855 ms]
+	[SmppTrxRx-IRCELL7-1231055807, RUNNABLE, 69020 ms]
+	[SmppTrxRx-IRCELL8-1231055807, RUNNABLE, 67804 ms]
+	[ch-37, RUNNABLE, 53694 ms]
+	[ch-14, RUNNABLE, 47974 ms]
+	[ch-38, RUNNABLE, 46303 ms]
+	[ch-13, RUNNABLE, 42783 ms]
+	[ch-67, RUNNABLE, 33675 ms]
+	[ch-49, RUNNABLE, 32718 ms]
+	[ch-35, RUNNABLE, 32419 ms]
+	[ch-59, RUNNABLE, 27670 ms]
+	[lettuce-nioEventLoop-11-2, RUNNABLE, 22888 ms]
+	[ch-9, RUNNABLE, 18872 ms]
+	[lettuce-nioEventLoop-8-2, RUNNABLE, 17291 ms]
+	[ch-60, RUNNABLE, 16669 ms]
+	[ch-69, RUNNABLE, 15130 ms]
+	[SmppRx-RIGHTEL-1231055807, RUNNABLE, 13912 ms]
+	[ch-56, RUNNABLE, 12859 ms]
+	[SmppTx-RIGHTEL-1231055807, RUNNABLE, 12527 ms]
+	[ch-28, RUNNABLE, 9981 ms]
+	[ch-76, RUNNABLE, 7208 ms]
+	[ch-26, RUNNABLE, 6428 ms]
+	[ch-71, RUNNABLE, 6123 ms]
+	[DestroyJavaVM, RUNNABLE, 4443 ms]
+	[ch-23, RUNNABLE, 4171 ms]
+	[ch-72, RUNNABLE, 3877 ms]
+	[ch-39, RUNNABLE, 3790 ms]
+	[ch-8, RUNNABLE, 3735 ms]
+	[ch-57, RUNNABLE, 3397 ms]
+	[SmppTx-SHATEL-MO-1231055807, RUNNABLE, 3271 ms]
+	[SmppRx-SHATEL-MO-1231055807, RUNNABLE, 3238 ms]
+	[http-0.0.0.0-8080-Processor3, RUNNABLE, 2736 ms]
+	[ch-31, RUNNABLE, 2654 ms]
+	[ch-42, RUNNABLE, 2277 ms]
+	[ch-47, RUNNABLE, 1626 ms]
+	[ch-68, RUNNABLE, 1587 ms]
+	[ch-55, RUNNABLE, 1389 ms]
+	[ch-27, RUNNABLE, 1040 ms]
+	[ch-34, RUNNABLE, 1033 ms]
+	[TcpipServer-49490, RUNNABLE, 1017 ms]
+	[ch-25, RUNNABLE, 964 ms]
+	[ch-65, RUNNABLE, 888 ms]
+	[ch-61, RUNNABLE, 579 ms]
+	[ch-10, RUNNABLE, 492 ms]
+	[lettuce-nioEventLoop-5-1, RUNNABLE, 450 ms]
+	[RMI TCP Connection(1093)-10.10.150.10, RUNNABLE, 427 ms]
+	[lettuce-nioEventLoop-11-1, RUNNABLE, 424 ms]
+	[lettuce-nioEventLoop-8-1, RUNNABLE, 418 ms]
+	[http-0.0.0.0-8080-Processor2, RUNNABLE, 325 ms]
+	[ch-7, RUNNABLE, 281 ms]
+	[SmppTrxRx-SHATEL1-1231055807, RUNNABLE, 274 ms]
+	[ch-40, RUNNABLE, 210 ms]
+	[RMI TCP Connection(1090)-127.0.0.1, RUNNABLE, 152 ms]
+	[ch-62, RUNNABLE, 121 ms]
+	[ch-53, RUNNABLE, 116 ms]
+	[RMI TCP Accept-0, RUNNABLE, 106 ms]
+	[ch-74, RUNNABLE, 101 ms]
+	[RMI TCP Accept-1099, RUNNABLE, 89 ms]
+	[ch-11, RUNNABLE, 83 ms]
+	[ch-63, RUNNABLE, 73 ms]
+	[ch-64, RUNNABLE, 72 ms]
+	[ch-29, RUNNABLE, 66 ms]
+	[RMI TCP Connection(1089)-10.10.150.10, RUNNABLE, 62 ms]
+	[ch-73, RUNNABLE, 47 ms]
+	[ch-51, RUNNABLE, 44 ms]
+	[ch-6, RUNNABLE, 44 ms]
+	[ch-12, RUNNABLE, 41 ms]
+	[ch-21, RUNNABLE, 39 ms]
+	[ch-18, RUNNABLE, 36 ms]
+	[ch-50, RUNNABLE, 36 ms]
+	[ch-15, RUNNABLE, 36 ms]
+	[ch-20, RUNNABLE, 36 ms]
+	[ch-19, RUNNABLE, 36 ms]
+	[ch-24, RUNNABLE, 36 ms]
+	[ch-48, RUNNABLE, 36 ms]
+	[ch-78, RUNNABLE, 35 ms]
+	[ch-54, RUNNABLE, 35 ms]
+	[ch-16, RUNNABLE, 35 ms]
+	[ch-52, RUNNABLE, 34 ms]
+	[ch-17, RUNNABLE, 34 ms]
+	[ch-22, RUNNABLE, 31 ms]
+	[RMI TCP Connection(1092)-10.10.150.10, RUNNABLE, 20 ms]
+	[RMI TCP Connection(1094)-10.10.150.10, RUNNABLE, 4 ms]
+	[qtp1202306289-141-selector-ServerConnectorManager@5fedd6f4/0, RUNNABLE, 4 ms]
+	[qtp1202306289-142-selector-ServerConnectorManager@5fedd6f4/1, RUNNABLE, 2 ms]
+	[qtp1202306289-143-selector-ServerConnectorManager@5fedd6f4/2, RUNNABLE, 2 ms]
+	[qtp1202306289-145-acceptor-0@493b45bb-ServerConnector@47fca2ec{HTTP/1.1}{0.0.0.0:8000}, RUNNABLE, 1 ms]
+	[RMI TCP Accept-0, RUNNABLE, 1 ms]
+	[qtp1202306289-144-selector-ServerConnectorManager@5fedd6f4/3, RUNNABLE, 1 ms]
+	[Signal Dispatcher, RUNNABLE, 0 ms]
+
+	Load: 2.64
+

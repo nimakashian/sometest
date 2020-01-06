@@ -20,7 +20,7 @@ public class M2 {
         ArrayList<Long> remMyDeque = new ArrayList<>();
 
 
-        for (int SIZE = 0; SIZE <= 2000000; SIZE = SIZE + 30000) {
+        for (int SIZE = 0; SIZE <= 100000; SIZE = SIZE + 100) {
 
             Vector<Integer> vector = new Vector<>();
             SynchronizedLinkedList<Integer> linkedList = new SynchronizedLinkedList<>();
@@ -28,6 +28,7 @@ public class M2 {
             SynchronizedPriorityQue<Integer> priorityQueue = new SynchronizedPriorityQue<>();
             SynchronizedTreeSet<Integer> treeSet = new SynchronizedTreeSet<>();
             SynchronizedMyDeque<Integer> myDeque = new SynchronizedMyDeque<>();
+//            ArrayList abstractQueue;
 
             long startTime=0;
             long endTime=0;

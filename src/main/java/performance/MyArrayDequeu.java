@@ -161,7 +161,7 @@ public class MyArrayDequeu<E> extends AbstractCollection<E>
         int oldCapacity = t - h;
         int n = elements.length;
 
-        int newCapacity = oldCapacity + (oldCapacity >> 1);
+        int newCapacity = oldCapacity + (oldCapacity << 1);
         if (newCapacity < 0)
             throw new IllegalStateException("Sorry, deque too big");
         Object[] a = new Object[(newCapacity < this.initialCapacity ? this.initialCapacity : newCapacity)];
