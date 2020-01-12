@@ -1,46 +1,27 @@
-import performance.*;
-
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.util.Vector;
+import java.io.IOException;
+import java.io.InterruptedIOException;
+import java.net.SocketException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public class M2_1 {
-    int reconnectionTry=0;
     public static void main(String[] args) {
-        M2_1 m= new M2_1();
-        Object o=m.getConnection();
-        if(o == null )
-            System.out.println("is null");
-        else
-            System.out.println( "is noooot null");
+
+        int nn = 10000;
+
+        String statusString = String.valueOf(System.currentTimeMillis()) +
+                ',' +
+                (nn / 1000000) + //lang
+                ',' +
+                (nn % 1000000)/10000 + //total
+                ',' +
+                0 + // ok parts
+                ',' +
+                (0); //failed
+        System.out.println(statusString);
     }
 
-
-    public Integer getConnection() {
-        Integer connection = null;
-
-
-
-        do {
-            try {
-                connection = null;
-            } catch (Exception e) {
-                System.out.println(e.getMessage());
-
-            }
-            if (connection != null) {
-
-                return connection;
-            }
-            try {
-                Thread.sleep(2 * 1000);
-            } catch (InterruptedException e) {
-                System.out.println(e.getMessage());
-            }
-            System.out.println(reconnectionTry);
-        } while (++reconnectionTry < 10);
-
-        return null;
+    public static void s() throws InterruptedIOException, NegativeArraySizeException, SocketException, Exception {
+        throw new IOException();
     }
-
 }
