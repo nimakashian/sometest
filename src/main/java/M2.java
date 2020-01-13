@@ -20,9 +20,11 @@ public class M2 {
         ArrayList<Long> remMyDeque = new ArrayList<>();
         ArrayList<Long> addMyLink = new ArrayList<>();
         ArrayList<Long> remMyLink = new ArrayList<>();
+        ArrayList<Long> addMyDS = new ArrayList<>();
+        ArrayList<Long> remMyDS = new ArrayList<>();
 
 
-        for (int SIZE = 0; SIZE <= 2000000; SIZE = SIZE + 1500) {
+        for (int SIZE = 0; SIZE <= 2000000; SIZE = SIZE + 15) {
 
             Vector<Integer> vector = new Vector<>();
             SynchronizedLinkedList<Integer> linkedList = new SynchronizedLinkedList<>();
@@ -31,11 +33,12 @@ public class M2 {
             SynchronizedTreeSet<Integer> treeSet = new SynchronizedTreeSet<>();
             SynchronizedMyDeque<Integer> myDeque = new SynchronizedMyDeque<>();
             SynchronizedMyLinkedList<Integer> myLinkedList = new SynchronizedMyLinkedList<>();
+            SynchronizedMyDataStructure myDataStructure = new SynchronizedMyDataStructure(10);
 
 
-            long startTime=0;
-            long endTime=0;
-            long duration=0;
+            long startTime = 0;
+            long endTime = 0;
+            long duration = 0;
 
 // MyQue add
             startTime = System.nanoTime();
@@ -56,9 +59,8 @@ public class M2 {
             duration = (endTime - startTime) / 1000;
             remMyDeque.add(duration);
 //            System.out.println("MyDeque remove:  " + duration);
-            myDeque=null;
+            myDeque = null;
             Runtime.getRuntime().gc();
-
 
 
 // Vector add
@@ -79,7 +81,7 @@ public class M2 {
             duration = (endTime - startTime) / 1000;
             remVector.add(duration);
 //            System.out.println("Vector remove:  " + duration);
-            vector=null;
+            vector = null;
             Runtime.getRuntime().gc();
 
 //// LinkedList add
@@ -121,7 +123,7 @@ public class M2 {
             duration = (endTime - startTime) / 1000;
             remDeque.add(duration);
 //            System.out.println("ArrayDeque remove:  " + duration);
-            arrayDeque=null;
+            arrayDeque = null;
             Runtime.getRuntime().gc();
 
 //// myLink add
@@ -145,35 +147,61 @@ public class M2 {
 //            myLinkedList=null;
 //            Runtime.getRuntime().gc();
 
+// My Data Structure add
+            startTime = System.nanoTime();
+            for (int i = 0; i < SIZE; i++) {
+                myDataStructure.addLast(i);
+            }
+            endTime = System.nanoTime();
+            duration = (endTime - startTime) / 1000;
+            addMyDS.add(duration);
+//            System.out.println("ArrayDequeue add: " + duration);
+// My Data Structure remove
+            startTime = System.nanoTime();
+            for (int i = SIZE - 1; i >= 0; i--) {
+                myDataStructure.removeFirst();
+            }
+            endTime = System.nanoTime();
+            duration = (endTime - startTime) / 1000;
+            remMyDS.add(duration);
+//            System.out.println("ArrayDeque remove:  " + duration);
+            arrayDeque = null;
+            Runtime.getRuntime().gc();
+
+
             System.out.println(SIZE + " ---------------------------");
             if (SIZE % 180000 == 0) {
-                System.out.println("addVector    "+addVector);
-                System.out.println("addLinkedList"+addLinked);
-                System.out.println("addArrayDeque"+addDeque);
-                System.out.println("addMyDeque   "+addMyDeque);
-                System.out.println("addMyLink   "+addMyLink);
+                System.out.println("addVector    " + addVector);
+                System.out.println("addLinkedList" + addLinked);
+                System.out.println("addArrayDeque" + addDeque);
+                System.out.println("addMyDeque   " + addMyDeque);
+                System.out.println("addMyLink   " + addMyLink);
+                System.out.println("addMyDS   " + addMyDS);
 
                 System.out.println();
-                System.out.println("remVector    "+remVector);
-                System.out.println("remLinkedList"+remLinked);
-                System.out.println("remArrayDeque"+remDeque);
-                System.out.println("remMyDeque   "+remMyDeque);
-                System.out.println("remMyLink   "+remMyLink);
+                System.out.println("remVector    " + remVector);
+                System.out.println("remLinkedList" + remLinked);
+                System.out.println("remArrayDeque" + remDeque);
+                System.out.println("remMyDeque   " + remMyDeque);
+                System.out.println("remMyLink   " + remMyLink);
+                System.out.println("addMyDS   " + remMyDS);
                 System.out.println(" ---------------------------");
             }
         }
-        System.out.println("addVector    "+addVector);
-        System.out.println("addLinkedList"+addLinked);
-        System.out.println("addArrayDeque"+addDeque);
-        System.out.println("addMyDeque   "+addMyDeque);
-        System.out.println("addMyLink   "+addMyLink);
+        System.out.println("addVector    " + addVector);
+        System.out.println("addLinkedList" + addLinked);
+        System.out.println("addArrayDeque" + addDeque);
+        System.out.println("addMyDeque   " + addMyDeque);
+        System.out.println("addMyLink   " + addMyLink);
+        System.out.println("addMyDS   " + addMyDS);
 
         System.out.println();
-        System.out.println("remVector    "+remVector);
-        System.out.println("remLinkedList"+remLinked);
-        System.out.println("remArrayDeque"+remDeque);
-        System.out.println("remMyDeque   "+remMyDeque);
-        System.out.println("remMyLink   "+remMyLink);
+        System.out.println("remVector    " + remVector);
+        System.out.println("remLinkedList" + remLinked);
+        System.out.println("remArrayDeque" + remDeque);
+        System.out.println("remMyDeque   " + remMyDeque);
+        System.out.println("remMyLink   " + remMyLink);
+        System.out.println("addMyDS   " + remMyDS);
         System.out.println(" ---------------------------");
 
     }
