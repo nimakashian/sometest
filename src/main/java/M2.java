@@ -24,7 +24,7 @@ public class M2 {
         ArrayList<Long> remMyDS = new ArrayList<>();
 
 
-        for (int SIZE = 0; SIZE <= 2000000; SIZE = SIZE + 15) {
+        for (int SIZE = 0; SIZE <= 2000000; SIZE = SIZE + 1500) {
 
             Vector<Integer> vector = new Vector<>();
             SynchronizedLinkedList<Integer> linkedList = new SynchronizedLinkedList<>();
@@ -33,12 +33,33 @@ public class M2 {
             SynchronizedTreeSet<Integer> treeSet = new SynchronizedTreeSet<>();
             SynchronizedMyDeque<Integer> myDeque = new SynchronizedMyDeque<>();
             SynchronizedMyLinkedList<Integer> myLinkedList = new SynchronizedMyLinkedList<>();
-            SynchronizedMyDataStructure myDataStructure = new SynchronizedMyDataStructure(10);
+            SynchronizedMyDataStructure myDataStructure = new SynchronizedMyDataStructure(1000,1000);
 
 
             long startTime = 0;
             long endTime = 0;
             long duration = 0;
+
+// My Data Structure add
+            startTime = System.nanoTime();
+            for (int i = 0; i < SIZE; i++) {
+                myDataStructure.addLast(i);
+            }
+            endTime = System.nanoTime();
+            duration = (endTime - startTime) / 1000;
+            addMyDS.add(duration);
+//            System.out.println("ArrayDequeue add: " + duration);
+// My Data Structure remove
+            startTime = System.nanoTime();
+            for (int i = SIZE - 1; i >= 0; i--) {
+                myDataStructure.removeFirst();
+            }
+            endTime = System.nanoTime();
+            duration = (endTime - startTime) / 1000;
+            remMyDS.add(duration);
+//            System.out.println("ArrayDeque remove:  " + duration);
+            myDataStructure = null;
+            Runtime.getRuntime().gc();
 
 // MyQue add
             startTime = System.nanoTime();
@@ -147,26 +168,7 @@ public class M2 {
 //            myLinkedList=null;
 //            Runtime.getRuntime().gc();
 
-// My Data Structure add
-            startTime = System.nanoTime();
-            for (int i = 0; i < SIZE; i++) {
-                myDataStructure.addLast(i);
-            }
-            endTime = System.nanoTime();
-            duration = (endTime - startTime) / 1000;
-            addMyDS.add(duration);
-//            System.out.println("ArrayDequeue add: " + duration);
-// My Data Structure remove
-            startTime = System.nanoTime();
-            for (int i = SIZE - 1; i >= 0; i--) {
-                myDataStructure.removeFirst();
-            }
-            endTime = System.nanoTime();
-            duration = (endTime - startTime) / 1000;
-            remMyDS.add(duration);
-//            System.out.println("ArrayDeque remove:  " + duration);
-            arrayDeque = null;
-            Runtime.getRuntime().gc();
+
 
 
             System.out.println(SIZE + " ---------------------------");

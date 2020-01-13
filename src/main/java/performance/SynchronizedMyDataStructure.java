@@ -3,41 +3,45 @@ package performance;
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 
 import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.NoSuchElementException;
 
 public class SynchronizedMyDataStructure<T> {
-    private int intialSize = 1000;
-    private ArrayDeque<Object[]> column;
+    private int rowSize = 1000;
+    private int columnSize = 100;
+    private ArrayList<Object[]> column;
     private Object[] row;
     private long size = 0;
     protected int last = 0;
     protected int first = 0;
 
-    public SynchronizedMyDataStructure(int size) {
-        this.intialSize = size;
-        column = new ArrayDeque<>();
+    public SynchronizedMyDataStructure(int rowSize , int columnSize) {
+        this.rowSize = rowSize;
+        this.columnSize = columnSize;
+        column = new ArrayList<>(columnSize);
         addColunm();
 
     }
+
 
     public SynchronizedMyDataStructure() {
 
     }
 
     private void addColunm() {
-        column.addLast(new Object[intialSize]);
+        column.add(new Object[rowSize]);
     }
 
     private void removeColunm() {
-        column.removeFirst();
+        column.remove(0);
     }
 
     public synchronized void addLast(T e) {
-        if (intialSize == last) {
+        if (rowSize == last) {
             addColunm();
             last = 0;
         }
-        (column.peekLast())[last++] = e;
+        (column.get(column.size()-1))[last++] = e;
         size++;
 
     }
@@ -45,12 +49,13 @@ public class SynchronizedMyDataStructure<T> {
     public synchronized T removeFirst() {
         if (size == 0)
             throw new NoSuchElementException("zero size");
-        if (intialSize == first + 1) {
+
+        T element = (T) (column.get(0))[first];
+        (column.get(0))[first++] = null;
+        if (rowSize == first) {
             removeColunm();
             first = 0;
         }
-        T element = (T) (column.peekFirst())[first];
-        (column.peekFirst())[first++] = null;
         size--;
         return element;
     }
