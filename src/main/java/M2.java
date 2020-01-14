@@ -24,16 +24,18 @@ public class M2 {
         ArrayList<Long> remMyDS = new ArrayList<>();
 
 
-        for (int SIZE = 0; SIZE <= 2000000; SIZE = SIZE + 1500) {
+
+
+        for (int SIZE = 0; SIZE <= 600000; SIZE = SIZE + 500) {
 
             Vector<Integer> vector = new Vector<>();
             SynchronizedLinkedList<Integer> linkedList = new SynchronizedLinkedList<>();
-            SynchronizedArrayDequeu<Integer> arrayDeque = new SynchronizedArrayDequeu<>();
+            SynchronizedArrayDequeu<Integer> arrayDeque = new SynchronizedArrayDequeu<>(1);
             SynchronizedPriorityQue<Integer> priorityQueue = new SynchronizedPriorityQue<>();
             SynchronizedTreeSet<Integer> treeSet = new SynchronizedTreeSet<>();
             SynchronizedMyDeque<Integer> myDeque = new SynchronizedMyDeque<>();
             SynchronizedMyLinkedList<Integer> myLinkedList = new SynchronizedMyLinkedList<>();
-            SynchronizedMyDataStructure myDataStructure = new SynchronizedMyDataStructure(1000,1000);
+            SynchronizedMyDataStructure myDataStructure = new SynchronizedMyDataStructure(500,100);
 
 
             long startTime = 0;
@@ -61,27 +63,27 @@ public class M2 {
             myDataStructure = null;
             Runtime.getRuntime().gc();
 
-// MyQue add
-            startTime = System.nanoTime();
-            for (int i = 0; i < SIZE; i++) {
-                myDeque.addLast(i);
-            }
-            endTime = System.nanoTime();
-            duration = (endTime - startTime) / 1000;
-            addMyDeque.add(duration);
-
-//            System.out.println("MyDeque add: " + duration);
-// MyDeque remove
-            startTime = System.nanoTime();
-            for (int i = SIZE - 1; i >= 0; i--) {
-                myDeque.removeFirst();
-            }
-            endTime = System.nanoTime();
-            duration = (endTime - startTime) / 1000;
-            remMyDeque.add(duration);
-//            System.out.println("MyDeque remove:  " + duration);
-            myDeque = null;
-            Runtime.getRuntime().gc();
+//// MyQue add
+//            startTime = System.nanoTime();
+//            for (int i = 0; i < SIZE; i++) {
+//                myDeque.addLast(i);
+//            }
+//            endTime = System.nanoTime();
+//            duration = (endTime - startTime) / 1000;
+//            addMyDeque.add(duration);
+//
+////            System.out.println("MyDeque add: " + duration);
+//// MyDeque remove
+//            startTime = System.nanoTime();
+//            for (int i = SIZE - 1; i >= 0; i--) {
+//                myDeque.removeFirst();
+//            }
+//            endTime = System.nanoTime();
+//            duration = (endTime - startTime) / 1000;
+//            remMyDeque.add(duration);
+////            System.out.println("MyDeque remove:  " + duration);
+//            myDeque = null;
+//            Runtime.getRuntime().gc();
 
 
 // Vector add
@@ -96,7 +98,7 @@ public class M2 {
 // Vector remove
             startTime = System.nanoTime();
             for (int i = SIZE - 1; i >= 0; i--) {
-                vector.remove(0);
+//                vector.remove(0);
             }
             endTime = System.nanoTime();
             duration = (endTime - startTime) / 1000;
@@ -191,19 +193,19 @@ public class M2 {
             }
         }
         System.out.println("addVector    " + addVector);
-        System.out.println("addLinkedList" + addLinked);
+//        System.out.println("addLinkedList" + addLinked);
         System.out.println("addArrayDeque" + addDeque);
-        System.out.println("addMyDeque   " + addMyDeque);
-        System.out.println("addMyLink   " + addMyLink);
+//        System.out.println("addMyDeque   " + addMyDeque);
+//        System.out.println("addMyLink   " + addMyLink);
         System.out.println("addMyDS   " + addMyDS);
 
         System.out.println();
         System.out.println("remVector    " + remVector);
-        System.out.println("remLinkedList" + remLinked);
+//        System.out.println("remLinkedList" + remLinked);
         System.out.println("remArrayDeque" + remDeque);
-        System.out.println("remMyDeque   " + remMyDeque);
-        System.out.println("remMyLink   " + remMyLink);
-        System.out.println("addMyDS   " + remMyDS);
+//        System.out.println("remMyDeque   " + remMyDeque);
+//        System.out.println("remMyLink   " + remMyLink);
+        System.out.println("remMyDS   " + remMyDS);
         System.out.println(" ---------------------------");
 
     }

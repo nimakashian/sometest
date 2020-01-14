@@ -6,6 +6,14 @@ import java.util.ArrayDeque;
 import java.util.LinkedList;
 
 public class SynchronizedArrayDequeu<T> {
+
+    private int size;
+
+    public SynchronizedArrayDequeu(int size) {
+        this.size = size;
+        linkedList = new ArrayDeque<T>(size);
+    }
+
     //    private LinkedList<T> linkedList = new LinkedList<>();
     private ArrayDeque<T> linkedList = new ArrayDeque<T>();
 

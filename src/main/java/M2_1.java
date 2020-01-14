@@ -7,18 +7,21 @@ import java.util.*;
 public class M2_1 {
     public static void main(String[] args) {
 
-        int nn = 10000;
+        Integer[] dest = new Integer[1000000];
 
-        String statusString = String.valueOf(System.currentTimeMillis()) +
-                ',' +
-                (nn / 1000000) + //lang
-                ',' +
-                (nn % 1000000)/10000 + //total
-                ',' +
-                0 + // ok parts
-                ',' +
-                (0); //failed
-        System.out.println(statusString);
+        for (Integer n : dest) {
+            n = new Integer(500000);
+        }
+        long avg;
+
+        long t1 = System.nanoTime();
+        Integer[] src = new Integer[dest.length];
+        int i = 0;
+        for (Integer n : dest) {
+            n = dest[i++];
+        }
+        long t2=System.nanoTime();
+
     }
 
     public static void s() throws InterruptedIOException, NegativeArraySizeException, SocketException, Exception {

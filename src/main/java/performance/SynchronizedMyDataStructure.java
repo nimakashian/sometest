@@ -9,7 +9,7 @@ import java.util.NoSuchElementException;
 public class SynchronizedMyDataStructure<T> {
     private int rowSize = 1000;
     private int columnSize = 100;
-    private ArrayList<Object[]> column;
+    private ArrayDeque<Object[]> column;
     private Object[] row;
     private long size = 0;
     protected int last = 0;
@@ -18,7 +18,7 @@ public class SynchronizedMyDataStructure<T> {
     public SynchronizedMyDataStructure(int rowSize , int columnSize) {
         this.rowSize = rowSize;
         this.columnSize = columnSize;
-        column = new ArrayList<>(columnSize);
+        column = new ArrayDeque<>(columnSize);
         addColunm();
 
     }
@@ -29,11 +29,11 @@ public class SynchronizedMyDataStructure<T> {
     }
 
     private void addColunm() {
-        column.add(new Object[rowSize]);
+        column.addLast(new Object[rowSize]);
     }
 
     private void removeColunm() {
-        column.remove(0);
+        column.removeFirst();
     }
 
     public synchronized void addLast(T e) {
@@ -41,7 +41,7 @@ public class SynchronizedMyDataStructure<T> {
             addColunm();
             last = 0;
         }
-        (column.get(column.size()-1))[last++] = e;
+        (column. peekLast())[last++] = e;
         size++;
 
     }
@@ -50,8 +50,8 @@ public class SynchronizedMyDataStructure<T> {
         if (size == 0)
             throw new NoSuchElementException("zero size");
 
-        T element = (T) (column.get(0))[first];
-        (column.get(0))[first++] = null;
+        T element = (T) (column.peekFirst())[first];
+        (column.peekFirst())[first++] = null;
         if (rowSize == first) {
             removeColunm();
             first = 0;
