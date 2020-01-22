@@ -29,10 +29,12 @@ public class SynchronizedArrayDequeu<T> {
     }
 
     public synchronized T removeFirst() {
-
         return linkedList.removeFirst();
 
+
     }
+
+
 //
 //    public synchronized T remove(int i) {
 //        if (linkedList.size() > 0)

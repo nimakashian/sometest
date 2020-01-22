@@ -1,3 +1,4 @@
+import javax.print.attribute.IntegerSyntax;
 import java.io.IOException;
 import java.io.InterruptedIOException;
 import java.net.SocketException;
@@ -7,20 +8,51 @@ import java.util.*;
 public class M2_1 {
     public static void main(String[] args) {
 
-        Integer[] dest = new Integer[1000000];
+        ArrayDeque<Integer> arrayDeque = new ArrayDeque<>();
+        Vector<Integer> integers =new Vector<>();
 
-        for (Integer n : dest) {
-            n = new Integer(500000);
-        }
-        long avg;
+        arrayDeque.addLast(1);
+        arrayDeque.addLast(2);
+        arrayDeque.addLast(3);
+        arrayDeque.addLast(4);
+        arrayDeque.addLast(5);
+        arrayDeque.addLast(6);
+        arrayDeque.addLast(7);
+        arrayDeque.addLast(8);
 
-        long t1 = System.nanoTime();
-        Integer[] src = new Integer[dest.length];
-        int i = 0;
-        for (Integer n : dest) {
-            n = dest[i++];
+        Iterator<Integer> arrIterator=arrayDeque.iterator();
+        while(arrIterator.hasNext()){
+            System.out.println(arrIterator.next());
         }
-        long t2=System.nanoTime();
+        arrayDeque.removeFirst();
+        arrayDeque.removeFirst();
+        Iterator<Integer> arrIterator2=arrayDeque.iterator();
+        while(arrIterator2.hasNext()){
+            System.out.println(arrIterator2.next());
+        }
+
+
+
+
+        integers.add(10);
+        integers.add(20);
+        integers.add(30);
+        integers.add(40);
+        integers.add(50);
+        integers.add(60);
+        integers.add(70);
+        integers.add(80);
+
+        Iterator<Integer> itr=integers.iterator();
+        while(itr.hasNext()){
+            System.out.println(itr.next());
+        }
+        integers.remove(0);
+        integers.remove(0);
+        Iterator<Integer> itr1=integers.iterator();
+        while(itr1.hasNext()){
+            System.out.println(itr1.next());
+        }
 
     }
 
