@@ -7,51 +7,31 @@ import java.util.*;
 
 public class M2_1 {
     public static void main(String[] args) {
+        Integer msg =new Integer(12);
+        SortedMap<Long, List<Integer>> expiresMap =
+                Collections.synchronizedSortedMap(new TreeMap<Long, List<Integer>>());
+        expiresMap.put(1000L,new ArrayList<>());
 
-        ArrayDeque<Integer> arrayDeque = new ArrayDeque<>();
-        Vector<Integer> integers =new Vector<>();
+        long key = 1000;
 
-        arrayDeque.addLast(1);
-        arrayDeque.addLast(2);
-        arrayDeque.addLast(3);
-        arrayDeque.addLast(4);
-        arrayDeque.addLast(5);
-        arrayDeque.addLast(6);
-        arrayDeque.addLast(7);
-        arrayDeque.addLast(8);
-
-        Iterator<Integer> arrIterator=arrayDeque.iterator();
-        while(arrIterator.hasNext()){
-            System.out.println(arrIterator.next());
+        List<Integer> expiresList = null;
+        synchronized (expiresMap) {
+            expiresList = expiresMap.get(key);
         }
-        arrayDeque.removeFirst();
-        arrayDeque.removeFirst();
-        Iterator<Integer> arrIterator2=arrayDeque.iterator();
-        while(arrIterator2.hasNext()){
-            System.out.println(arrIterator2.next());
-        }
+        if (expiresList != null) {
+            boolean removed = false;
+            synchronized (expiresList) {
+                removed = expiresList.remove(msg);
+            }
+            if (removed) {
 
 
-
-
-        integers.add(10);
-        integers.add(20);
-        integers.add(30);
-        integers.add(40);
-        integers.add(50);
-        integers.add(60);
-        integers.add(70);
-        integers.add(80);
-
-        Iterator<Integer> itr=integers.iterator();
-        while(itr.hasNext()){
-            System.out.println(itr.next());
-        }
-        integers.remove(0);
-        integers.remove(0);
-        Iterator<Integer> itr1=integers.iterator();
-        while(itr1.hasNext()){
-            System.out.println(itr1.next());
+                if (expiresList.size() == 0) {
+                    synchronized (expiresMap) {
+                        expiresMap.remove(key);
+                    }
+                }
+            }
         }
 
     }
