@@ -17,13 +17,12 @@ public class STreeNode {
     }
 
     private Vector addObjects() {
-        Vector lastObject = null;
-        if (size != 0 && size % LIMIT == 0) {
+        int lastObjectIndex = objectsArray.size()-1;
+        Vector lastObject = objectsArray.get(lastObjectIndex);;
+        if (lastObject.size() == LIMIT) {
             lastObject = new Vector();
             objectsArray.add(lastObject);
             return lastObject;
-        } else {
-            lastObject = objectsArray.get(size / LIMIT);
         }
         return lastObject;
     }
@@ -47,8 +46,14 @@ public class STreeNode {
     }
 
     boolean remove(int index) {
-        int objectsIndex=index / LIMIT;
-        int newIndex= index % LIMIT;
+        int objectsIndex=0;
+        int newIndex=0;
+        for(;objectsIndex<objectsArray.size() ;objectsIndex++){
+            newIndex =index;
+            index = index - objectsArray.get(objectsIndex).size();
+            if(index <=0 )
+                break;
+        }
 
         objectsArray.get(objectsIndex).remove(newIndex);
         size--;
@@ -96,7 +101,11 @@ public class STreeNode {
         }
 
         node.remove(1);
+        node.remove(5);
+        node.remove(6);
         node.remove(7);
+        node.remove(8);
+        node.remove(9);
 
 
 
