@@ -17,7 +17,6 @@ public class STreeNode {
     private ArrayList addObjects() {
         int lastObjectIndex = objectsArray.size() - 1;
         ArrayList lastObject = objectsArray.get(lastObjectIndex);
-        ;
         if (lastObject.size() == LIMIT) {
             lastObject = new ArrayList(LIMIT);
             objectsArray.add(lastObject);
@@ -26,17 +25,11 @@ public class STreeNode {
         return lastObject;
     }
 
-
-    private void removeObjects() {
-    }
-
-
     void append(Object obj) {
         ArrayList lastObject = addObjects();
         lastObject.add(obj);
         size++;
     }
-
 
     Object get(int index) {
         int objectsIndex = 0;
@@ -88,7 +81,6 @@ public class STreeNode {
     public void resetIndex() {
         pointer = 0;
     }
-
 
     Object getKey() {
         return key;
