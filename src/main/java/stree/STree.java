@@ -7,7 +7,7 @@ import java.util.Vector;
 public class STree {
     //TODO automatic STreeNode merging
 
-    /*private Vector<STreeNode> nodes = new Vector<>();
+    private Vector<STreeNode> nodes = new Vector<>();
     private int size = 0;
 
     public synchronized void append(Object obj, Object key) {
@@ -41,24 +41,30 @@ public class STree {
         size++;
 
     }
+
     // do a simple 0 indexed get on the whole tree
     public synchronized Object get(int index) {
         return null;
     }
+
     public int nextIndex(int node) {
         STreeNode stn = nodes.get(node);
         return stn.nextIndex();
     }
+
     public synchronized Object get(int node, int index) {
         STreeNode stn = nodes.get(node);
         return stn.get(index);
     }
+
     public synchronized STreeNode getNode(int node) {
         return nodes.get(node);
     }
+
     public synchronized int getCursor(STreeNode node) {
         return nodes.indexOf(node);
     }
+
     public synchronized boolean remove(int node, int index) {
         STreeNode stn = nodes.get(node);
         boolean last = stn.remove(index);
@@ -75,15 +81,19 @@ public class STree {
         size--;
         return last;
     }
+
     public synchronized int getSize() {
         return size;
     }
+
     public synchronized boolean isEmpty() {
         return size == 0;
     }
+
     public synchronized int getNodesSize() {
         return nodes.size();
     }
+
     public synchronized int getNodeSize(int node) {
         if (node < nodes.size()) {
 
@@ -94,11 +104,13 @@ public class STree {
         }
 
     }
+
     // get the key from a particular node
     public synchronized Object getNodeKey(int node) {
         STreeNode stn = (STreeNode) nodes.get(node);
         return stn.getKey();
     }
+
     public void showStructure() {
         System.out.println("Size is " + size);
         Iterator i = nodes.iterator();
@@ -109,12 +121,6 @@ public class STree {
     }
 
 
-
-    *//**
-     * adp: We add this method because we need to knoe content of a STree.
-     *
-     * @return
-     *//*
     public String getStructure() {
         StringBuffer sb = new StringBuffer();
         sb.append("Size is " + size);
@@ -145,5 +151,5 @@ public class STree {
             }
         }
         return false;
-    }*/
+    }
 }
