@@ -5,23 +5,23 @@ import java.util.List;
 import java.util.Vector;
 
 public class STreeNode {
-    private int LIMIT = 1000;
+    private int LIMIT = 5000;
     private Object key;
     private int pointer = 0;
     private int size;
-    private List<Vector> objectsArray = new ArrayList<>();
+    private ArrayList<ArrayList> objectsArray = new ArrayList<>();
 
     STreeNode(Object key) {
         this.key = key;
-        objectsArray.add(new Vector());
+        objectsArray.add(new ArrayList(LIMIT));
     }
 
-    private Vector addObjects() {
+    private ArrayList addObjects() {
         int lastObjectIndex = objectsArray.size() - 1;
-        Vector lastObject = objectsArray.get(lastObjectIndex);
+        ArrayList lastObject = objectsArray.get(lastObjectIndex);
         ;
         if (lastObject.size() == LIMIT) {
-            lastObject = new Vector();
+            lastObject = new ArrayList(LIMIT);
             objectsArray.add(lastObject);
             return lastObject;
         }
@@ -34,7 +34,7 @@ public class STreeNode {
 
 
     void append(Object obj) {
-        Vector lastObject = addObjects();
+        ArrayList lastObject = addObjects();
         lastObject.add(obj);
         size++;
     }
@@ -101,7 +101,7 @@ public class STreeNode {
     }
 
     public static void main(String[] args) {
-        for (int j = 1000; j < 50000; j = j + 1000) {
+        for (int j = 1000; j < 30000; j = j + 1000) {
             STreeNode node = new STreeNode("mori");
             node.LIMIT = j;
 
