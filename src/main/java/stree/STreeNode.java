@@ -1,8 +1,6 @@
 package stree;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Vector;
 
 public class STreeNode {
     private int LIMIT = 5000;
