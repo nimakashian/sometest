@@ -1,24 +1,24 @@
 package stree;
 
-import java.util.ArrayList;
+import java.util.Vector;
 
 public class STreeNode {
     private int LIMIT = 5000;
     private Object key;
     private int pointer = 0;
     private int size;
-    private ArrayList<ArrayList> objectsArray = new ArrayList<>();
+    private Vector<Vector> objectsArray = new Vector<>();
 
     STreeNode(Object key) {
         this.key = key;
-        objectsArray.add(new ArrayList(LIMIT));
+        objectsArray.add(new Vector(LIMIT));
     }
 
-    private ArrayList addObjects() {
+    private Vector addObjects() {
         int lastObjectIndex = objectsArray.size() - 1;
-        ArrayList lastObject = objectsArray.get(lastObjectIndex);
+        Vector lastObject = objectsArray.get(lastObjectIndex);
         if (lastObject.size() == LIMIT) {
-            lastObject = new ArrayList(LIMIT);
+            lastObject = new Vector(LIMIT);
             objectsArray.add(lastObject);
             return lastObject;
         }
@@ -26,7 +26,7 @@ public class STreeNode {
     }
 
     void append(Object obj) {
-        ArrayList lastObject = addObjects();
+        Vector lastObject = addObjects();
         lastObject.add(obj);
         size++;
     }

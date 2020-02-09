@@ -1,0 +1,4 @@
+JMH S 31 performance.CollectionBenchmark S 63 performance.generated.CollectionBenchmark_testAddVector_jmhTest S 13 testAddVector S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
+JMH S 34 jdbcconnection.ConnectionBenchmark S 62 jdbcconnection.generated.ConnectionBenchmark_cacheTest_jmhTest S 9 cacheTest S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 11 NANOSECONDS E E 
+JMH S 31 performance.CollectionBenchmark S 67 performance.generated.CollectionBenchmark_testAddLinkedList_jmhTest S 17 testAddLinkedList S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
+JMH S 34 jdbcconnection.ConnectionBenchmark S 64 jdbcconnection.generated.ConnectionBenchmark_nocacheTest_jmhTest S 11 nocacheTest S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 11 NANOSECONDS E E 
