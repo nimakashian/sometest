@@ -106,7 +106,7 @@ function clippyCopiedCallback() {
   // 500))
 }
 
-// Logging function that accounts for browsers that don't have window.console
+// Logging function that accounts for browsers that don't.json have window.console
 function log(){
   log.history = log.history || [];
   log.history.push(arguments);
@@ -1229,7 +1229,7 @@ SwaggerClient.prototype.build = function (mock) {
         } else if (response.status === 0) {
           return self.fail('Can\'t read from server.  It may not have the appropriate access-control-origin settings.');
         } else if (response.status === 404) {
-          return self.fail('Can\'t read swagger JSON from ' + self.url);
+          return self.fail('Can\'t.json read swagger JSON from ' + self.url);
         } else {
           return self.fail(response.status + ' : ' + response.statusText + ' ' + self.url);
         }
@@ -1853,14 +1853,14 @@ SuperagentHttpClient.prototype.execute = function (obj) {
       } else {
           try {
             possibleObj = jsyaml.safeLoad(res.text);
-            // can parse into a string... which we don't need running around in the system
+            // can parse into a string... which we don't.json need running around in the system
             possibleObj = (typeof possibleObj === 'string') ? null : possibleObj;
           } catch(e) {
             helpers.log('cannot parse JSON/YAML content');
           }
       }
 
-      // null means we can't parse into object
+      // null means we can't.json parse into object
       response.obj = possibleObj || null;
 
       response.status = res.status;
@@ -3751,7 +3751,7 @@ var Operation = module.exports = function (parent, scheme, operationId, httpMeth
       innerType = [innerType];
 
       if (typeof param.allowableValues === 'undefined') {
-        // can't show as a list if no values to select from
+        // can't.json show as a list if no values to select from
         delete param.isList;
         delete param.allowMultiple;
       }
@@ -4204,7 +4204,7 @@ Operation.prototype.getModelSampleJSON = function (type, models) {
   if(models[innerType]) {
     sampleJson = models[innerType].createJSONSample();
   } else if (this.getInlineModel(innerType)){
-    sampleJson = this.getInlineModel(innerType).createJSONSample(); // may return null, if type isn't correct
+    sampleJson = this.getInlineModel(innerType).createJSONSample(); // may return null, if type isn't.json correct
   }
 
 
@@ -4403,12 +4403,12 @@ Operation.prototype.setContentTypes = function (args, opts) {
 
   if (consumes && this.consumes) {
     if (this.consumes.indexOf(consumes) === -1) {
-      helpers.log('server doesn\'t consume ' + consumes + ', try ' + JSON.stringify(this.consumes));
+      helpers.log('server doesn\'t.json consume ' + consumes + ', try ' + JSON.stringify(this.consumes));
     }
   }
 
   if (!this.matchesAccept(accepts)) {
-    helpers.log('server can\'t produce ' + accepts);
+    helpers.log('server can\'t.json produce ' + accepts);
   }
 
   if ((consumes && body !== '') || (consumes === 'application/x-www-form-urlencoded')) {
@@ -4482,7 +4482,7 @@ Operation.prototype.encodePathCollection = function (type, name, value) {
   if (type === 'ssv') {
     separator = '%20';
   } else if (type === 'tsv') {
-    separator = '\\t';
+    separator = '\\t.json';
   } else if (type === 'pipes') {
     separator = '|';
   } else {
@@ -4518,7 +4518,7 @@ Operation.prototype.encodeQueryCollection = function (type, name, value) {
     } else if (type === 'ssv') {
       separator = '%20';
     } else if (type === 'tsv') {
-      separator = '\\t';
+      separator = '\\t.json';
     } else if (type === 'pipes') {
       separator = '|';
     } else if (type === 'brackets') {
@@ -4753,7 +4753,7 @@ function fromArrayLike (that, array) {
 }
 
 // Deserialize { type: 'Buffer', data: [1,2,3,...] } into a Buffer object.
-// Returns a zero-length buffer for inputs that don't conform to the spec.
+// Returns a zero-length buffer for inputs that don't.json conform to the spec.
 function fromJsonObject (that, object) {
   var array
   var length = 0
@@ -5279,7 +5279,7 @@ Buffer.prototype.slice = function slice (start, end) {
 }
 
 /*
- * Need to make sure that buffer isn't trying to write out of bounds.
+ * Need to make sure that buffer isn't.json trying to write out of bounds.
  */
 function checkOffset (offset, ext, length) {
   if ((offset % 1) !== 0 || offset < 0) throw new RangeError('offset is not uint')
@@ -5868,7 +5868,7 @@ Buffer._augment = function _augment (arr) {
 var INVALID_BASE64_RE = /[^+\/0-9A-z\-]/g
 
 function base64clean (str) {
-  // Node strips out invalid characters like \n and \t from the string, base64-js does not
+  // Node strips out invalid characters like \n and \t.json from the string, base64-js does not
   str = stringtrim(str).replace(INVALID_BASE64_RE, '')
   // Node converts strings with length < 2 to ''
   if (str.length < 2) return ''
@@ -6648,7 +6648,7 @@ process.umask = function() { return 0; };
 }(typeof window !== "undefined" ? window : this, function( window, noGlobal ) {
 
 // Support: Firefox 18+
-// Can't be in strict mode, several libs including ASP.NET trace
+// Can't.json be in strict mode, several libs including ASP.NET trace
 // the stack via arguments.caller.callee and Firefox dies if
 // you try to trace through "use strict" call chains. (#13335)
 //
@@ -6837,7 +6837,7 @@ jQuery.extend = jQuery.fn.extend = function() {
 					// Never move original objects, clone them
 					target[ name ] = jQuery.extend( deep, clone, copy );
 
-				// Don't bring in undefined values
+				// Don't.json bring in undefined values
 				} else if ( copy !== undefined ) {
 					target[ name ] = copy;
 				}
@@ -6894,7 +6894,7 @@ jQuery.extend({
 			return false;
 		}
 
-		// If the function hasn't returned already, we're confident that
+		// If the function hasn't.json returned already, we're confident that
 		// |obj| is a plain object, created by {} or constructed with new Object
 		return true;
 	},
@@ -7144,7 +7144,7 @@ function isArraylike( obj ) {
 
 	// Support: iOS 8.2 (not reproducible in simulator)
 	// `in` check used to prevent JIT error (gh-2145)
-	// hasOwn isn't used here due to false negatives
+	// hasOwn isn't.json used here due to false negatives
 	// regarding Nodelist length in IE
 	var length = "length" in obj && obj.length,
 		type = jQuery.type( obj );
@@ -7238,7 +7238,7 @@ var i,
 	// Regular expressions
 
 	// Whitespace characters http://www.w3.org/TR/css3-selectors/#whitespace
-	whitespace = "[\\x20\\t\\r\\n\\f]",
+	whitespace = "[\\x20\\t.json\\r\\n\\f]",
 	// http://www.w3.org/TR/css3-syntax/#characters
 	characterEncoding = "(?:\\\\.|[\\w-]|[^\\x00-\\xa0])+",
 
@@ -7350,7 +7350,7 @@ try {
 		function( target, els ) {
 			var j = target.length,
 				i = 0;
-			// Can't trust NodeList.length
+			// Can't.json trust NodeList.length
 			while ( (target[j++] = els[i++]) ) {}
 			target.length = j - 1;
 		}
@@ -7426,7 +7426,7 @@ function Sizzle( selector, context, results, seed ) {
 			// qSA works strangely on Element-rooted queries
 			// We can work around this by specifying an extra ID on the root
 			// and working up from there (Thanks to Andrew Dupont for the technique)
-			// IE 8 doesn't work on object elements
+			// IE 8 doesn't.json work on object elements
 			if ( nodeType === 1 && context.nodeName.toLowerCase() !== "object" ) {
 				groups = tokenize( selector );
 
@@ -7620,7 +7620,7 @@ support = Sizzle.support = {};
  * @returns {Boolean} True iff elem is a non-HTML XML node
  */
 isXML = Sizzle.isXML = function( elem ) {
-	// documentElement is verified for cases where it doesn't yet exist
+	// documentElement is verified for cases where it doesn't.json yet exist
 	// (such as loading iframes in IE - #4833)
 	var documentElement = elem && (elem.ownerDocument || elem).documentElement;
 	return documentElement ? documentElement.nodeName !== "HTML" : false;
@@ -7687,7 +7687,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 
 	// Support: IE<10
 	// Check if getElementById returns elements by name
-	// The broken getElementById methods don't pick up programatically-set names,
+	// The broken getElementById methods don't.json pick up programatically-set names,
 	// so use a roundabout getElementsByName test
 	support.getById = assert(function( div ) {
 		docElem.appendChild( div ).id = expando;
@@ -7730,7 +7730,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 			if ( typeof context.getElementsByTagName !== "undefined" ) {
 				return context.getElementsByTagName( tag );
 
-			// DocumentFragment nodes don't have gEBTN
+			// DocumentFragment nodes don't.json have gEBTN
 			} else if ( support.qsa ) {
 				return context.querySelectorAll( tag );
 			}
@@ -8050,7 +8050,7 @@ Sizzle.attr = function( elem, name ) {
 	}
 
 	var fn = Expr.attrHandle[ name.toLowerCase() ],
-		// Don't get fooled by Object.prototype properties (jQuery #13807)
+		// Don't.json get fooled by Object.prototype properties (jQuery #13807)
 		val = fn && hasOwn.call( Expr.attrHandle, name.toLowerCase() ) ?
 			fn( elem, name, !documentIsHTML ) :
 			undefined;
@@ -8306,7 +8306,7 @@ Expr = Sizzle.selectors = {
 										return false;
 									}
 								}
-								// Reverse direction for :only-* (if we haven't yet done so)
+								// Reverse direction for :only-* (if we haven't.json yet done so)
 								start = dir = type === "only" && !start && "nextSibling";
 							}
 							return true;
@@ -8429,7 +8429,7 @@ Expr = Sizzle.selectors = {
 				function( elem, context, xml ) {
 					input[0] = elem;
 					matcher( input, null, xml, results );
-					// Don't keep the element (issue #299)
+					// Don't.json keep the element (issue #299)
 					input[0] = null;
 					return !results.pop();
 				};
@@ -8638,7 +8638,7 @@ tokenize = Sizzle.tokenize = function( selector, parseOnly ) {
 		// Comma and first run
 		if ( !matched || (match = rcomma.exec( soFar )) ) {
 			if ( match ) {
-				// Don't consume trailing commas as valid
+				// Don't.json consume trailing commas as valid
 				soFar = soFar.slice( match[0].length ) || soFar;
 			}
 			groups.push( (tokens = []) );
@@ -8717,7 +8717,7 @@ function addCombinator( matcher, combinator, base ) {
 			var oldCache, outerCache,
 				newCache = [ dirruns, doneName ];
 
-			// We can't set arbitrary data on XML nodes, so they don't benefit from dir caching
+			// We can't.json set arbitrary data on XML nodes, so they don't.json benefit from dir caching
 			if ( xml ) {
 				while ( (elem = elem[ dir ]) ) {
 					if ( elem.nodeType === 1 || checkNonElements ) {
@@ -9159,7 +9159,7 @@ select = Sizzle.select = function( selector, context, results, seed ) {
 support.sortStable = expando.split("").sort( sortOrder ).join("") === expando;
 
 // Support: Chrome 14-35+
-// Always assume duplicates if they aren't passed to the comparison function
+// Always assume duplicates if they aren't.json passed to the comparison function
 support.detectDuplicates = !!hasDuplicate;
 
 // Initialize against the default document
@@ -9321,7 +9321,7 @@ jQuery.fn.extend({
 			this,
 
 			// If this is a positional/relative selector, check membership in the returned set
-			// so $("p:first").is("p:last") won't return true for a doc with two "p".
+			// so $("p:first").is("p:last") won't.json return true for a doc with two "p".
 			typeof selector === "string" && rneedsContext.test( selector ) ?
 				jQuery( selector ) :
 				selector || [],
@@ -9516,7 +9516,7 @@ jQuery.fn.extend({
 				if ( cur.nodeType < 11 && (pos ?
 					pos.index(cur) > -1 :
 
-					// Don't pass non-elements to Sizzle
+					// Don't.json pass non-elements to Sizzle
 					cur.nodeType === 1 &&
 						jQuery.find.matchesSelector(cur, selectors)) ) {
 
@@ -10347,13 +10347,13 @@ function dataAttr( elem, key, data ) {
 				data = data === "true" ? true :
 					data === "false" ? false :
 					data === "null" ? null :
-					// Only convert to a number if it doesn't change the string
+					// Only convert to a number if it doesn't.json change the string
 					+data + "" === data ? +data :
 					rbrace.test( data ) ? jQuery.parseJSON( data ) :
 					data;
 			} catch( e ) {}
 
-			// Make sure we set the data so it isn't changed later
+			// Make sure we set the data so it isn't.json changed later
 			data_user.set( elem, key, data );
 		} else {
 			data = undefined;
@@ -10456,7 +10456,7 @@ jQuery.fn.extend({
 					return data;
 				}
 
-				// We tried really hard, but the data doesn't exist.
+				// We tried really hard, but the data doesn't.json exist.
 				return;
 			}
 
@@ -10652,7 +10652,7 @@ var rcheckableType = (/^(?:checkbox|radio)$/i);
 	div.appendChild( input );
 
 	// Support: Safari<=5.1, Android<4.2
-	// Older WebKit doesn't clone checked state correctly in fragments
+	// Older WebKit doesn't.json clone checked state correctly in fragments
 	support.checkClone = div.cloneNode( true ).cloneNode( true ).lastChild.checked;
 
 	// Support: IE<=11+
@@ -10702,7 +10702,7 @@ jQuery.event = {
 			special, handlers, type, namespaces, origType,
 			elemData = data_priv.get( elem );
 
-		// Don't attach events to noData or text/comment nodes (but allow plain objects)
+		// Don't.json attach events to noData or text/comment nodes (but allow plain objects)
 		if ( !elemData ) {
 			return;
 		}
@@ -10880,7 +10880,7 @@ jQuery.event = {
 
 		cur = tmp = elem = elem || document;
 
-		// Don't do events on text and comment nodes
+		// Don't.json do events on text and comment nodes
 		if ( elem.nodeType === 3 || elem.nodeType === 8 ) {
 			return;
 		}
@@ -10978,10 +10978,10 @@ jQuery.event = {
 				jQuery.acceptData( elem ) ) {
 
 				// Call a native DOM method on the target with the same name name as the event.
-				// Don't do default actions on window, that's where global variables be (#6170)
+				// Don't.json do default actions on window, that's where global variables be (#6170)
 				if ( ontype && jQuery.isFunction( elem[ type ] ) && !jQuery.isWindow( elem ) ) {
 
-					// Don't re-trigger an onFOO event when we call its FOO() method
+					// Don't.json re-trigger an onFOO event when we call its FOO() method
 					tmp = elem[ ontype ];
 
 					if ( tmp ) {
@@ -11075,13 +11075,13 @@ jQuery.event = {
 
 			for ( ; cur !== this; cur = cur.parentNode || this ) {
 
-				// Don't process clicks on disabled elements (#6911, #8165, #11382, #11764)
+				// Don't.json process clicks on disabled elements (#6911, #8165, #11382, #11764)
 				if ( cur.disabled !== true || event.type !== "click" ) {
 					matches = [];
 					for ( i = 0; i < delegateCount; i++ ) {
 						handleObj = handlers[ i ];
 
-						// Don't conflict with Object.prototype properties (#13203)
+						// Don't.json conflict with Object.prototype properties (#13203)
 						sel = handleObj.selector + " ";
 
 						if ( matches[ sel ] === undefined ) {
@@ -11143,7 +11143,7 @@ jQuery.event = {
 			}
 
 			// Add which for click: 1 === left; 2 === middle; 3 === right
-			// Note: button is not normalized, so don't use it
+			// Note: button is not normalized, so don't.json use it
 			if ( !event.which && button !== undefined ) {
 				event.which = ( button & 1 ? 1 : ( button & 2 ? 3 : ( button & 4 ? 2 : 0 ) ) );
 			}
@@ -11180,7 +11180,7 @@ jQuery.event = {
 		}
 
 		// Support: Cordova 2.5 (WebKit) (#13255)
-		// All events should have a target; Cordova deviceready doesn't
+		// All events should have a target; Cordova deviceready doesn't.json
 		if ( !event.target ) {
 			event.target = document;
 		}
@@ -11227,7 +11227,7 @@ jQuery.event = {
 				}
 			},
 
-			// For cross-browser consistency, don't fire native .click() on links
+			// For cross-browser consistency, don't.json fire native .click() on links
 			_default: function( event ) {
 				return jQuery.nodeName( event.target, "a" );
 			}
@@ -11237,7 +11237,7 @@ jQuery.event = {
 			postDispatch: function( event ) {
 
 				// Support: Firefox 20+
-				// Firefox doesn't alert if the returnValue field is not set.
+				// Firefox doesn't.json alert if the returnValue field is not set.
 				if ( event.result !== undefined && event.originalEvent ) {
 					event.originalEvent.returnValue = event.result;
 				}
@@ -11305,7 +11305,7 @@ jQuery.Event = function( src, props ) {
 		jQuery.extend( this, props );
 	}
 
-	// Create a timestamp if incoming event doesn't have one
+	// Create a timestamp if incoming event doesn't.json have one
 	this.timeStamp = src && src.timeStamp || jQuery.now();
 
 	// Mark it as fixed
@@ -11980,7 +11980,7 @@ jQuery.fn.extend({
 			value = args[ 0 ],
 			isFunction = jQuery.isFunction( value );
 
-		// We can't cloneNode fragments that contain checked, in WebKit
+		// We can't.json cloneNode fragments that contain checked, in WebKit
 		if ( isFunction ||
 				( l > 1 && typeof value === "string" &&
 					!support.checkClone && rchecked.test( value ) ) ) {
@@ -12037,7 +12037,7 @@ jQuery.fn.extend({
 							!data_priv.access( node, "globalEval" ) && jQuery.contains( doc, node ) ) {
 
 							if ( node.src ) {
-								// Optional AJAX dependency, but won't run scripts if not present
+								// Optional AJAX dependency, but won't.json run scripts if not present
 								if ( jQuery._evalUrl ) {
 									jQuery._evalUrl( node.src );
 								}
@@ -12102,7 +12102,7 @@ function actualDisplay( name, doc ) {
 			// since it was removed from specification and supported only in FF
 			style.display : jQuery.css( elem[ 0 ], "display" );
 
-	// We don't have any data stored on the element,
+	// We don't.json have any data stored on the element,
 	// so use "detach" method as fast way to get rid of the element
 	elem.detach();
 
@@ -12126,7 +12126,7 @@ function defaultDisplay( nodeName ) {
 			// Use the already-created iframe if possible
 			iframe = (iframe || jQuery( "<iframe frameborder='0' width='0' height='0'/>" )).appendTo( doc.documentElement );
 
-			// Always write a new HTML skeleton so Webkit and Firefox don't choke on reuse
+			// Always write a new HTML skeleton so Webkit and Firefox don't.json choke on reuse
 			doc = iframe[ 0 ].contentDocument;
 
 			// Support: IE
@@ -12266,7 +12266,7 @@ function addGetHookIf( conditionFn, hookFn ) {
 	}
 
 	// Support: node.js jsdom
-	// Don't assume that getComputedStyle is a property of the global object
+	// Don't.json assume that getComputedStyle is a property of the global object
 	if ( window.getComputedStyle ) {
 		jQuery.extend( support, {
 			pixelPosition: function() {
@@ -12404,15 +12404,15 @@ function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {
 				val -= jQuery.css( elem, "padding" + cssExpand[ i ], true, styles );
 			}
 
-			// At this point, extra isn't border nor margin, so remove border
+			// At this point, extra isn't.json border nor margin, so remove border
 			if ( extra !== "margin" ) {
 				val -= jQuery.css( elem, "border" + cssExpand[ i ] + "Width", true, styles );
 			}
 		} else {
-			// At this point, extra isn't content, so add padding
+			// At this point, extra isn't.json content, so add padding
 			val += jQuery.css( elem, "padding" + cssExpand[ i ], true, styles );
 
-			// At this point, extra isn't content nor padding, so add border
+			// At this point, extra isn't.json content nor padding, so add border
 			if ( extra !== "padding" ) {
 				val += jQuery.css( elem, "border" + cssExpand[ i ] + "Width", true, styles );
 			}
@@ -12534,7 +12534,7 @@ jQuery.extend({
 		}
 	},
 
-	// Don't automatically add "px" to these possibly-unitless properties
+	// Don't.json automatically add "px" to these possibly-unitless properties
 	cssNumber: {
 		"columnCount": true,
 		"fillOpacity": true,
@@ -12559,7 +12559,7 @@ jQuery.extend({
 	// Get and set the style property on a DOM Node
 	style: function( elem, name, value, extra ) {
 
-		// Don't set styles on text and comment nodes
+		// Don't.json set styles on text and comment nodes
 		if ( !elem || elem.nodeType === 3 || elem.nodeType === 8 || !elem.style ) {
 			return;
 		}
@@ -12585,7 +12585,7 @@ jQuery.extend({
 				type = "number";
 			}
 
-			// Make sure that null and NaN values aren't set (#7116)
+			// Make sure that null and NaN values aren't.json set (#7116)
 			if ( value == null || value !== value ) {
 				return;
 			}
@@ -12906,7 +12906,7 @@ var
 
 				do {
 					// If previous iteration zeroed out, double until we get *something*.
-					// Use string for doubling so we don't accidentally see scale as unchanged below
+					// Use string for doubling so we don't.json accidentally see scale as unchanged below
 					scale = scale || ".5";
 
 					// Adjust and apply
@@ -13131,7 +13131,7 @@ function propFilter( props, specialEasing ) {
 			value = hooks.expand( value );
 			delete props[ name ];
 
-			// Not quite $.extend, this won't overwrite existing keys.
+			// Not quite $.extend, this won't.json overwrite existing keys.
 			// Reusing 'index' because we have the correct "name"
 			for ( index in value ) {
 				if ( !( index in props ) ) {
@@ -13151,7 +13151,7 @@ function Animation( elem, properties, options ) {
 		index = 0,
 		length = animationPrefilters.length,
 		deferred = jQuery.Deferred().always( function() {
-			// Don't match elem in the :animated selector
+			// Don't.json match elem in the :animated selector
 			delete tick.elem;
 		}),
 		tick = function() {
@@ -13161,7 +13161,7 @@ function Animation( elem, properties, options ) {
 			var currentTime = fxNow || createFxNow(),
 				remaining = Math.max( 0, animation.startTime + animation.duration - currentTime ),
 				// Support: Android 2.3
-				// Archaic crash bug won't allow us to use `1 - ( 0.5 || 0 )` (#12497)
+				// Archaic crash bug won't.json allow us to use `1 - ( 0.5 || 0 )` (#12497)
 				temp = remaining / animation.duration || 0,
 				percent = 1 - temp,
 				index = 0,
@@ -13324,7 +13324,7 @@ jQuery.fn.extend({
 		var empty = jQuery.isEmptyObject( prop ),
 			optall = jQuery.speed( speed, easing, callback ),
 			doAnimation = function() {
-				// Operate on a copy of prop so per-property easing won't be lost
+				// Operate on a copy of prop so per-property easing won't.json be lost
 				var anim = Animation( this, jQuery.extend( {}, prop ), optall );
 
 				// Empty animations, or finishing resolves immediately
@@ -13380,7 +13380,7 @@ jQuery.fn.extend({
 				}
 			}
 
-			// Start the next in the queue if the last step wasn't forced.
+			// Start the next in the queue if the last step wasn't.json forced.
 			// Timers currently will call their complete callbacks, which
 			// will dequeue but only if they were gotoEnd.
 			if ( dequeue || !gotoEnd ) {
@@ -13570,7 +13570,7 @@ jQuery.extend({
 		var hooks, ret,
 			nType = elem.nodeType;
 
-		// don't get/set attributes on text, comment and attribute nodes
+		// don't.json get/set attributes on text, comment and attribute nodes
 		if ( !elem || nType === 3 || nType === 8 || nType === 2 ) {
 			return;
 		}
@@ -13708,7 +13708,7 @@ jQuery.extend({
 		var ret, hooks, notxml,
 			nType = elem.nodeType;
 
-		// Don't get/set properties on text, comment and attribute nodes
+		// Don't.json get/set properties on text, comment and attribute nodes
 		if ( !elem || nType === 3 || nType === 8 || nType === 2 ) {
 			return;
 		}
@@ -14019,16 +14019,16 @@ jQuery.extend({
 				for ( ; i < max; i++ ) {
 					option = options[ i ];
 
-					// IE6-9 doesn't update selected after form reset (#2551)
+					// IE6-9 doesn't.json update selected after form reset (#2551)
 					if ( ( option.selected || i === index ) &&
-							// Don't return options that are disabled or in a disabled optgroup
+							// Don't.json return options that are disabled or in a disabled optgroup
 							( support.optDisabled ? !option.disabled : option.getAttribute( "disabled" ) === null ) &&
 							( !option.parentNode.disabled || !jQuery.nodeName( option.parentNode, "optgroup" ) ) ) {
 
 						// Get the specific value for the option
 						value = jQuery( option ).val();
 
-						// We don't need an array for one selects
+						// We don't.json need an array for one selects
 						if ( one ) {
 							return value;
 						}
@@ -14485,9 +14485,9 @@ jQuery.extend({
 			"text xml": jQuery.parseXML
 		},
 
-		// For options that shouldn't be deep extended:
+		// For options that shouldn't.json be deep extended:
 		// you can add your own custom options here if
-		// and when you create one that shouldn't be
+		// and when you create one that shouldn't.json be
 		// deep extended (see ajaxExtend)
 		flatOptions: {
 			url: true,
@@ -14669,7 +14669,7 @@ jQuery.extend({
 		}
 
 		// We can fire global events as of now if asked to
-		// Don't fire events if jQuery.event is undefined in an AMD-usage scenario (#15118)
+		// Don't.json fire events if jQuery.event is undefined in an AMD-usage scenario (#15118)
 		fireGlobals = jQuery.event && s.global;
 
 		// Watch for a new set of requests
@@ -15186,7 +15186,7 @@ jQuery.ajaxTransport(function( options ) {
 				// For cross-domain requests, seeing as conditions for a preflight are
 				// akin to a jigsaw puzzle, we simply never set it to be sure.
 				// (it can always be set on a per-request basis or even using ajaxSetup)
-				// For same-domain requests, won't change header if already provided.
+				// For same-domain requests, won't.json change header if already provided.
 				if ( !options.crossDomain && !headers["X-Requested-With"] ) {
 					headers["X-Requested-With"] = "XMLHttpRequest";
 				}
@@ -15239,7 +15239,7 @@ jQuery.ajaxTransport(function( options ) {
 					// Do send the request (this may raise an exception)
 					xhr.send( options.hasContent && options.data || null );
 				} catch ( e ) {
-					// #14683: Only rethrow if this hasn't been notified as an error yet
+					// #14683: Only rethrow if this hasn't.json been notified as an error yet
 					if ( callback ) {
 						throw e;
 					}
@@ -15380,7 +15380,7 @@ jQuery.ajaxPrefilter( "json jsonp", function( s, originalSettings, jqXHR ) {
 
 			// Save back as free
 			if ( s[ callbackName ] ) {
-				// make sure that re-using the options doesn't screw things around
+				// make sure that re-using the options doesn't.json screw things around
 				s.jsonpCallback = originalSettings.jsonpCallback;
 
 				// save the callback name for future use
@@ -15605,7 +15605,7 @@ jQuery.fn.extend({
 		}
 
 		// Support: BlackBerry 5, iOS 3 (original iPhone)
-		// If we don't have gBCR, just use 0,0 rather than error
+		// If we don't.json have gBCR, just use 0,0 rather than error
 		if ( typeof elem.getBoundingClientRect !== strundefined ) {
 			box = elem.getBoundingClientRect();
 		}
@@ -15724,7 +15724,7 @@ jQuery.each( { Height: "height", Width: "width" }, function( name, type ) {
 
 				if ( jQuery.isWindow( elem ) ) {
 					// As of 5/8/2012 this will yield incorrect results for Mobile Safari, but there
-					// isn't a whole lot we can do. See pull request at this URL for discussion:
+					// isn't.json a whole lot we can do. See pull request at this URL for discussion:
 					// https://github.com/jquery/jquery/pull/764
 					return elem.document.documentElement[ "client" + name ];
 				}
@@ -15974,7 +15974,7 @@ var ESCAPE_SEQUENCES = {};
 ESCAPE_SEQUENCES[0x00]   = '\\0';
 ESCAPE_SEQUENCES[0x07]   = '\\a';
 ESCAPE_SEQUENCES[0x08]   = '\\b';
-ESCAPE_SEQUENCES[0x09]   = '\\t';
+ESCAPE_SEQUENCES[0x09]   = '\\t.json';
 ESCAPE_SEQUENCES[0x0A]   = '\\n';
 ESCAPE_SEQUENCES[0x0B]   = '\\v';
 ESCAPE_SEQUENCES[0x0C]   = '\\f';
@@ -16279,7 +16279,7 @@ function writeScalar(state, object, level) {
     folded = false;
   }
 
-  // If it's literally one line, then don't bother with the literal.
+  // If it's literally one line, then don't.json bother with the literal.
   // We may still want to do a fold, though, if it's a super long line.
   if (!sawLineFeed) {
     literal = false;
@@ -16895,7 +16895,7 @@ function simpleEscapeSequence(c) {
   return (c === 0x30/* 0 */) ? '\x00' :
         (c === 0x61/* a */) ? '\x07' :
         (c === 0x62/* b */) ? '\x08' :
-        (c === 0x74/* t */) ? '\x09' :
+        (c === 0x74/* t.json */) ? '\x09' :
         (c === 0x09/* Tab */) ? '\x09' :
         (c === 0x6E/* n */) ? '\x0A' :
         (c === 0x76/* v */) ? '\x0B' :
@@ -17659,7 +17659,7 @@ function readBlockScalar(state, nodeIndent) {
 
     // Literal style: just add exact number of line breaks between content lines.
     } else if (detectedIndent) {
-      // If current line isn't the first one - count line break from the last content line.
+      // If current line isn't.json the first one - count line break from the last content line.
       state.result += common.repeat('\n', emptyLines + 1);
     } else {
       // In case of the first content line - count only empty lines.
@@ -18167,7 +18167,7 @@ function composeNode(state, parentIndent, nodeContext, allowToSeek, allowCompact
         type = state.implicitTypes[typeIndex];
 
         // Implicit resolving is not allowed for non-scalar types, and '?'
-        // non-specific tag is only assigned to plain scalars. So, it isn't
+        // non-specific tag is only assigned to plain scalars. So, it isn't.json
         // needed to check for 'kind' conformity.
 
         if (type.resolve(state.result)) { // `state.result` updated in resolver if matched
@@ -19684,12 +19684,12 @@ var YAML_TIMESTAMP_REGEXP = new RegExp(
   '^([0-9][0-9][0-9][0-9])'          + // [1] year
   '-([0-9][0-9]?)'                   + // [2] month
   '-([0-9][0-9]?)'                   + // [3] day
-  '(?:(?:[Tt]|[ \\t]+)'              + // ...
+  '(?:(?:[Tt]|[ \\t.json]+)'              + // ...
   '([0-9][0-9]?)'                    + // [4] hour
   ':([0-9][0-9])'                    + // [5] minute
   ':([0-9][0-9])'                    + // [6] second
   '(?:\\.([0-9]*))?'                 + // [7] fraction
-  '(?:[ \\t]*(Z|([-+])([0-9][0-9]?)' + // [8] tz [9] tz_sign [10] tz_hour
+  '(?:[ \\t.json]*(Z|([-+])([0-9][0-9]?)' + // [8] tz [9] tz_sign [10] tz_hour
   '(?::([0-9][0-9]))?))?)?$');         // [11] tz_minute
 
 function resolveYamlTimestamp(data) {
@@ -21051,7 +21051,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
         }
 
         // Return a regular expression object for this pattern-flag pair, or
-        // `null` in case the current environment doesn't support the flags it
+        // `null` in case the current environment doesn't.json support the flags it
         // uses.
         try {
             return new RegExp(pattern, flags);
@@ -28038,7 +28038,7 @@ function mergeData(data, source) {
     (srcBitmask == ARY_FLAG && bitmask == REARG_FLAG && data[7].length <= source[8]) ||
     (srcBitmask == (ARY_FLAG | REARG_FLAG) && bitmask == CURRY_FLAG);
 
-  // Exit early if metadata can't be merged.
+  // Exit early if metadata can't.json be merged.
   if (!(isCommon || isCombo)) {
     return data;
   }
@@ -29006,7 +29006,7 @@ function keysIn(object) {
     result[index] = (index + '');
   }
   // lodash skips the `constructor` property when it infers it is iterating
-  // over a `prototype` object because IE < 9 can't set the `[[Enumerable]]`
+  // over a `prototype` object because IE < 9 can't.json set the `[[Enumerable]]`
   // attribute of an existing property and the `constructor` property of a
   // prototype defaults to non-enumerable.
   for (var key in object) {
@@ -29196,7 +29196,7 @@ var support = {};
   /**
    * Detect lack of support for accessing string characters by index.
    *
-   * IE < 8 can't access characters by index. IE 8 can only access characters
+   * IE < 8 can't.json access characters by index. IE 8 can only access characters
    * by index on string literals, not string objects.
    *
    * @memberOf _.support
@@ -29307,7 +29307,7 @@ function noop(){};
 
 /**
  * Check if `obj` is a host object,
- * we don't want to serialize these :)
+ * we don't.json want to serialize these :)
  *
  * TODO: future proof, move to compoent land
  *
@@ -30216,7 +30216,7 @@ Request.prototype.end = function(fn){
       xhr.upload.onprogress = handleProgress;
     }
   } catch(e) {
-    // Accessing xhr.upload fails in IE from a web worker, so just pretend it doesn't exist.
+    // Accessing xhr.upload fails in IE from a web worker, so just pretend it doesn't.json exist.
     // Reported here:
     // https://connect.microsoft.com/IE/feedback/details/837245/xmlhttprequest-upload-throws-invalid-argument-when-used-from-web-worker-context
   }
@@ -30819,7 +30819,7 @@ window.SwaggerUi = Backbone.Router.extend({
 
 window.SwaggerUi.Views = {};
 
-// don't break backward compatibility with previous versions and warn users to upgrade their code
+// don't.json break backward compatibility with previous versions and warn users to upgrade their code
 (function(){
   window.authorizations = {
     add: function() {
@@ -31746,7 +31746,7 @@ SwaggerUi.Views.OperationView = Backbone.View.extend({
       try {
         json = JSON.stringify(JSON.parse(content), null, '  ');
       } catch (_error) {
-        json = 'can\'t parse JSON.  Raw result:\n\n' + content;
+        json = 'can\'t.json parse JSON.  Raw result:\n\n' + content;
       }
       code = $('<code />').text(json);
       pre = $('<pre class="json" />').append(code);

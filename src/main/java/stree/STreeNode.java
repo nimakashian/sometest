@@ -120,7 +120,7 @@ public class STreeNode {
                 if (dur > max) max = dur;
                 if (dur < min) min = dur;
                 sum = sum + dur;
-//                System.out.println(min + "\t" + sum + "\t" + max);
+//                System.out.println(min + "\t.json" + sum + "\t.json" + max);
             }
             System.out.println(min + "\t" + sum + "\t" + max);
 //        System.out.println(i);

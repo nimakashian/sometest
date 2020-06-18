@@ -1,0 +1,17 @@
+<string property="SrcAddr" name="src"/><string property="DestAddr" name="dest"/><string property="MessageBody"
+                                                                                        name="msg"/><boolean
+property="RegisteredDelivery" name="delivery"/><int property="SrcAddrTON" name="srcton"/><int property="SrcAddrNPI"
+                                                                                              name="srcnpi"/><int
+property="DestAddrTON" name="destton"/><int property="DestAddrNPI" name="destnpi"/><int property="ValidityPeriod"
+                                                                                        name="validity"/><string
+property="messageId" name="clientId"/><string property="UDH" name="udh"/><int property="DCS" name="dcs"/>
+
+
+<string property="SrcAddr" name="src"/><string property="DestAddr" name="dest"/><string property="MessageBody"
+                                                                                        name="msg"/><boolean
+property="RegisteredDelivery" name="delivery"/><int property="SrcAddrTON" name="srcton"/><int property="SrcAddrNPI"
+                                                                                              name="srcnpi"/><int
+property="DestAddrTON" name="destton"/><int property="DestAddrNPI" name="destnpi"/><int property="ValidityPeriod"
+                                                                                        name="validity"/><string
+property="messageId" name="clientId"/><string property="UDH" name="udh"/><int property="DCS" name="dcs"/>
+

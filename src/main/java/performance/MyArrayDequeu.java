@@ -125,7 +125,7 @@ public class MyArrayDequeu<E> extends AbstractCollection<E>
     private static int calculateSize(int numElements) {
         int initialCapacity = MIN_INITIAL_CAPACITY;
         // Find the best power of two to hold elements.
-        // Tests "<=" because arrays aren't kept full.
+        // Tests "<=" because arrays aren't.json kept full.
         if (numElements >= initialCapacity) {
             initialCapacity = numElements;
             initialCapacity |= (initialCapacity >>> 1);
@@ -654,7 +654,7 @@ public class MyArrayDequeu<E> extends AbstractCollection<E>
                 throw new NoSuchElementException();
             @SuppressWarnings("unchecked")
             E result = (E) elements[cursor];
-            // This check doesn't catch all possible comodifications,
+            // This check doesn't.json catch all possible comodifications,
             // but does catch the ones that corrupt traversal
             if (tail != fence || result == null)
                 throw new ConcurrentModificationException();
