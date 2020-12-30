@@ -1,5 +1,5 @@
 /**
- * swagger-ui - Swagger UI is a dependency-free collection of HTML, JavaScript, and CSS assets that dynamically generate beautiful documentation from a Swagger-compliant API
+ * swagger-ui - Swagger UI is a.java dependency-free collection of HTML, JavaScript, and CSS assets that dynamically generate beautiful documentation from a.java Swagger-compliant API
  * @version v2.1.1
  * @link http://swagger.io
  * @license Apache-2.0
@@ -10,10 +10,10 @@ this["Handlebars"]["templates"]["apikey_button_view"] = Handlebars.template({"co
   var helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
   return "<!--div class='auth_button' id='apikey_button'><img class='auth_icon' alt='apply api key' src='images/apikey.jpeg'></div-->\n<div class='auth_container' id='apikey_container'>\n  <div class='key_input_container'>\n    <div class='auth_label'><label for='input_apiKey_entry'>"
     + escapeExpression(((helper = (helper = helpers.keyName || (depth0 != null ? depth0.keyName : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"keyName","hash":{},"data":data}) : helper)))
-    + "</label></div>\n    <input placeholder='api_key' class='auth_input' id='input_apiKey_entry' name='apiKey' type='text'/>\n    <div class='auth_submit'><a class='auth_submit_button' id='apply_api_key' href='#' data-sw-translate>apply</a></div>\n  </div>\n</div>\n";
+    + "</label></div>\n    <input placeholder='api_key' class='auth_input' id='input_apiKey_entry' name='apiKey' type='text'/>\n    <div class='auth_submit'><a.java class='auth_submit_button' id='apply_api_key' href='#' data-sw-translate>apply</a.java></div>\n  </div>\n</div>\n";
 },"useData":true});
 this["Handlebars"]["templates"]["basic_auth_button_view"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  return "<div class='auth_button' id='basic_auth_button'><img class='auth_icon' src='images/password.jpeg'></div>\n<div class='auth_container' id='basic_auth_container'>\n  <div class='key_input_container'>\n    <div class=\"auth_label\"><label for=\"input_username\" data-sw-translate>Username</label></div>\n    <input placeholder=\"username\" class=\"auth_input\" id=\"input_username\" name=\"username\" type=\"text\"/>\n    <div class=\"auth_label\"><label for=\"password\" data-sw-translate>Password</label></div>\n    <input placeholder=\"password\" class=\"auth_input\" id=\"input_password\" name=\"password\" type=\"password\"/>\n    <div class='auth_submit'><a class='auth_submit_button' id=\"apply_basic_auth\" href=\"#\">apply</a></div>\n  </div>\n</div>\n\n";
+  return "<div class='auth_button' id='basic_auth_button'><img class='auth_icon' src='images/password.jpeg'></div>\n<div class='auth_container' id='basic_auth_container'>\n  <div class='key_input_container'>\n    <div class=\"auth_label\"><label for=\"input_username\" data-sw-translate>Username</label></div>\n    <input placeholder=\"username\" class=\"auth_input\" id=\"input_username\" name=\"username\" type=\"text\"/>\n    <div class=\"auth_label\"><label for=\"password\" data-sw-translate>Password</label></div>\n    <input placeholder=\"password\" class=\"auth_input\" id=\"input_password\" name=\"password\" type=\"password\"/>\n    <div class='auth_submit'><a.java class='auth_submit_button' id=\"apply_basic_auth\" href=\"#\">apply</a.java></div>\n  </div>\n</div>\n\n";
   },"useData":true});
 this["Handlebars"]["templates"]["content_type"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
   var stack1, buffer = "";
@@ -68,10 +68,10 @@ $(function() {
 	$('form.formtastic li.string input, form.formtastic textarea').stretchFormtasticInputWidthToParent();
 
 	// Vertically center these paragraphs
-	// Parent may need a min-height for this to work..
+	// Parent may need a.java min-height for this to work..
 	$('ul.downplayed li div.content p').vAlign();
 
-	// When a sandbox form is submitted..
+	// When a.java sandbox form is submitted..
 	$("form.sandbox").submit(function(){
 
 		var error_free = true;
@@ -99,14 +99,14 @@ $(function() {
 function clippyCopiedCallback() {
   $('#api_key_copied').fadeIn().delay(1000).fadeOut();
 
-  // var b = $("#clippy_tooltip_" + a);
+  // var b = $("#clippy_tooltip_" + a.java);
   // b.length != 0 && (b.attr("title", "copied!").trigger("tipsy.reload"), setTimeout(function() {
   //   b.attr("title", "copy to clipboard")
   // },
   // 500))
 }
 
-// Logging function that accounts for browsers that don't.json have window.console
+// Logging function that accounts for browsers that don'a.json have window.console
 function log(){
   log.history = log.history || [];
   log.history.push(arguments);
@@ -243,7 +243,7 @@ window.Docs = {
 'use strict';
 
 Handlebars.registerHelper('sanitize', function(html) {
-    // Strip the script tags from the html, and return it as a Handlebars.SafeString
+    // Strip the script tags from the html, and return it as a.java Handlebars.SafeString
     html = html.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
     return new Handlebars.SafeString(html);
 });
@@ -318,16 +318,16 @@ this["Handlebars"]["templates"]["main"] = Handlebars.template({"1":function(dept
   var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression;
   return "  <p>"
     + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.externalDocs : depth0)) != null ? stack1.description : stack1), depth0))
-    + "</p>\n  <a href=\""
+    + "</p>\n  <a.java href=\""
     + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.externalDocs : depth0)) != null ? stack1.url : stack1), depth0))
     + "\" target=\"_blank\">"
     + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.externalDocs : depth0)) != null ? stack1.url : stack1), depth0))
-    + "</a>\n";
+    + "</a.java>\n";
 },"4":function(depth0,helpers,partials,data) {
   var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression;
-  return "<div class=\"info_tos\"><a href=\""
+  return "<div class=\"info_tos\"><a.java href=\""
     + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.termsOfServiceUrl : stack1), depth0))
-    + "\" data-sw-translate>Terms of testsoap.service</a></div>";
+    + "\" data-sw-translate>Terms of testsoap.service</a.java></div>";
 },"6":function(depth0,helpers,partials,data) {
   var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression;
   return "<div class='info_name' data-sw-translate>Created by "
@@ -335,25 +335,25 @@ this["Handlebars"]["templates"]["main"] = Handlebars.template({"1":function(dept
     + "</div>";
 },"8":function(depth0,helpers,partials,data) {
   var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression;
-  return "<div class='info_url' data-sw-translate>See more at <a href=\""
+  return "<div class='info_url' data-sw-translate>See more at <a.java href=\""
     + escapeExpression(lambda(((stack1 = ((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.contact : stack1)) != null ? stack1.url : stack1), depth0))
     + "\">"
     + escapeExpression(lambda(((stack1 = ((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.contact : stack1)) != null ? stack1.url : stack1), depth0))
-    + "</a></div>";
+    + "</a.java></div>";
 },"10":function(depth0,helpers,partials,data) {
   var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression;
-  return "<div class='info_email'><a href=\"mailto:"
+  return "<div class='info_email'><a.java href=\"mailto:"
     + escapeExpression(lambda(((stack1 = ((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.contact : stack1)) != null ? stack1.email : stack1), depth0))
     + "?subject="
     + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.title : stack1), depth0))
-    + "\" data-sw-translate>Contact the developer</a></div>";
+    + "\" data-sw-translate>Contact the developer</a.java></div>";
 },"12":function(depth0,helpers,partials,data) {
   var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression;
-  return "<div class='info_license'><a href='"
+  return "<div class='info_license'><a.java href='"
     + escapeExpression(lambda(((stack1 = ((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.license : stack1)) != null ? stack1.url : stack1), depth0))
     + "'>"
     + escapeExpression(lambda(((stack1 = ((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.license : stack1)) != null ? stack1.name : stack1), depth0))
-    + "</a></div>";
+    + "</a.java></div>";
 },"14":function(depth0,helpers,partials,data) {
   var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression;
   return "  , <span style=\"font-variant: small-caps\" data-sw-translate>api version</span>: "
@@ -361,7 +361,7 @@ this["Handlebars"]["templates"]["main"] = Handlebars.template({"1":function(dept
     + "\n    ";
 },"16":function(depth0,helpers,partials,data) {
   var helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
-  return "    <span style=\"float:right\"><a href=\""
+  return "    <span style=\"float:right\"><a.java href=\""
     + escapeExpression(((helper = (helper = helpers.validatorUrl || (depth0 != null ? depth0.validatorUrl : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"validatorUrl","hash":{},"data":data}) : helper)))
     + "/debug?url="
     + escapeExpression(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"url","hash":{},"data":data}) : helper)))
@@ -369,7 +369,7 @@ this["Handlebars"]["templates"]["main"] = Handlebars.template({"1":function(dept
     + escapeExpression(((helper = (helper = helpers.validatorUrl || (depth0 != null ? depth0.validatorUrl : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"validatorUrl","hash":{},"data":data}) : helper)))
     + "?url="
     + escapeExpression(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"url","hash":{},"data":data}) : helper)))
-    + "\"></a>\n    </span>\n";
+    + "\"></a.java>\n    </span>\n";
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
   var stack1, helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, buffer = "<div class='info' id='api_info'>\n";
   stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.info : depth0), {"name":"if","hash":{},"fn":this.program(1, data),"inverse":this.noop,"data":data});
@@ -423,7 +423,7 @@ this["Handlebars"]["templates"]["operation"] = Handlebars.template({"1":function
   },"22":function(depth0,helpers,partials,data) {
   return "";
 },"24":function(depth0,helpers,partials,data) {
-  return "          <div class='sandbox_header'>\n            <input class='submit' type='button' value='Try it out!' data-sw-translate/>\n            <a href='#' class='response_hider' style='display:none' data-sw-translate>Hide Response</a>\n            <span class='response_throbber' style='display:none'></span>\n          </div>\n";
+  return "          <div class='sandbox_header'>\n            <input class='submit' type='button' value='Try it out!' data-sw-translate/>\n            <a.java href='#' class='response_hider' style='display:none' data-sw-translate>Hide Response</a.java>\n            <span class='response_throbber' style='display:none'></span>\n          </div>\n";
   },"26":function(depth0,helpers,partials,data) {
   return "          <h4 data-sw-translate>Request Headers</h4>\n          <div class='block request_headers'></div>\n";
   },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
@@ -433,13 +433,13 @@ this["Handlebars"]["templates"]["operation"] = Handlebars.template({"1":function
     + escapeExpression(((helper = (helper = helpers.parentId || (depth0 != null ? depth0.parentId : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"parentId","hash":{},"data":data}) : helper)))
     + "_"
     + escapeExpression(((helper = (helper = helpers.nickname || (depth0 != null ? depth0.nickname : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"nickname","hash":{},"data":data}) : helper)))
-    + "'>\n      <div class='heading'>\n        <h3>\n          <span class='http_method'>\n          <a href='#!/"
+    + "'>\n      <div class='heading'>\n        <h3>\n          <span class='http_method'>\n          <a.java href='#!/"
     + escapeExpression(((helper = (helper = helpers.encodedParentId || (depth0 != null ? depth0.encodedParentId : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"encodedParentId","hash":{},"data":data}) : helper)))
     + "/"
     + escapeExpression(((helper = (helper = helpers.nickname || (depth0 != null ? depth0.nickname : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"nickname","hash":{},"data":data}) : helper)))
     + "' class=\"toggleOperation\">"
     + escapeExpression(((helper = (helper = helpers.method || (depth0 != null ? depth0.method : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"method","hash":{},"data":data}) : helper)))
-    + "</a>\n          </span>\n          <span class='path'>\n          <a href='#!/"
+    + "</a.java>\n          </span>\n          <span class='path'>\n          <a.java href='#!/"
     + escapeExpression(((helper = (helper = helpers.encodedParentId || (depth0 != null ? depth0.encodedParentId : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"encodedParentId","hash":{},"data":data}) : helper)))
     + "/"
     + escapeExpression(((helper = (helper = helpers.nickname || (depth0 != null ? depth0.nickname : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"nickname","hash":{},"data":data}) : helper)))
@@ -448,14 +448,14 @@ this["Handlebars"]["templates"]["operation"] = Handlebars.template({"1":function
   if (stack1 != null) { buffer += stack1; }
   buffer += "\">"
     + escapeExpression(((helper = (helper = helpers.path || (depth0 != null ? depth0.path : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"path","hash":{},"data":data}) : helper)))
-    + "</a>\n          </span>\n        </h3>\n        <ul class='options'>\n          <li>\n          <a href='#!/"
+    + "</a.java>\n          </span>\n        </h3>\n        <ul class='options'>\n          <li>\n          <a.java href='#!/"
     + escapeExpression(((helper = (helper = helpers.encodedParentId || (depth0 != null ? depth0.encodedParentId : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"encodedParentId","hash":{},"data":data}) : helper)))
     + "/"
     + escapeExpression(((helper = (helper = helpers.nickname || (depth0 != null ? depth0.nickname : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"nickname","hash":{},"data":data}) : helper)))
     + "' class=\"toggleOperation\">";
   stack1 = ((helper = (helper = helpers.summary || (depth0 != null ? depth0.summary : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"summary","hash":{},"data":data}) : helper));
   if (stack1 != null) { buffer += stack1; }
-  buffer += "</a>\n          </li>\n        </ul>\n      </div>\n      <div class='content' id='"
+  buffer += "</a.java>\n          </li>\n        </ul>\n      </div>\n      <div class='content' id='"
     + escapeExpression(((helper = (helper = helpers.parentId || (depth0 != null ? depth0.parentId : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"parentId","hash":{},"data":data}) : helper)))
     + "_"
     + escapeExpression(((helper = (helper = helpers.nickname || (depth0 != null ? depth0.nickname : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"nickname","hash":{},"data":data}) : helper)))
@@ -793,33 +793,33 @@ this["Handlebars"]["templates"]["resource"] = Handlebars.template({"1":function(
   return " : ";
   },"3":function(depth0,helpers,partials,data) {
   var helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
-  return "    <li>\n      <a href='"
+  return "    <li>\n      <a.java href='"
     + escapeExpression(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"url","hash":{},"data":data}) : helper)))
-    + "' data-sw-translate>Raw</a>\n    </li>\n";
+    + "' data-sw-translate>Raw</a.java>\n    </li>\n";
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  var stack1, helper, options, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, blockHelperMissing=helpers.blockHelperMissing, buffer = "<div class='heading'>\n  <h2>\n    <a href='#!/"
+  var stack1, helper, options, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, blockHelperMissing=helpers.blockHelperMissing, buffer = "<div class='heading'>\n  <h2>\n    <a.java href='#!/"
     + escapeExpression(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"id","hash":{},"data":data}) : helper)))
     + "' class=\"toggleEndpointList\" data-id=\""
     + escapeExpression(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"id","hash":{},"data":data}) : helper)))
     + "\">"
     + escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"name","hash":{},"data":data}) : helper)))
-    + "</a> ";
+    + "</a.java> ";
   stack1 = ((helper = (helper = helpers.summary || (depth0 != null ? depth0.summary : depth0)) != null ? helper : helperMissing),(options={"name":"summary","hash":{},"fn":this.program(1, data),"inverse":this.noop,"data":data}),(typeof helper === functionType ? helper.call(depth0, options) : helper));
   if (!helpers.summary) { stack1 = blockHelperMissing.call(depth0, stack1, options); }
   if (stack1 != null) { buffer += stack1; }
   stack1 = ((helper = (helper = helpers.summary || (depth0 != null ? depth0.summary : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"summary","hash":{},"data":data}) : helper));
   if (stack1 != null) { buffer += stack1; }
-  buffer += "\n  </h2>\n  <ul class='options'>\n    <li>\n      <a href='#!/"
+  buffer += "\n  </h2>\n  <ul class='options'>\n    <li>\n      <a.java href='#!/"
     + escapeExpression(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"id","hash":{},"data":data}) : helper)))
     + "' id='endpointListTogger_"
     + escapeExpression(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"id","hash":{},"data":data}) : helper)))
     + "' class=\"toggleEndpointList\" data-id=\""
     + escapeExpression(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"id","hash":{},"data":data}) : helper)))
-    + "\" data-sw-translate>Show/Hide</a>\n    </li>\n    <li>\n      <a href='#' class=\"collapseResource\" data-id=\""
+    + "\" data-sw-translate>Show/Hide</a.java>\n    </li>\n    <li>\n      <a.java href='#' class=\"collapseResource\" data-id=\""
     + escapeExpression(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"id","hash":{},"data":data}) : helper)))
-    + "\" data-sw-translate>\n        List Operations\n      </a>\n    </li>\n    <li>\n      <a href='#' class=\"expandResource\" data-id=\""
+    + "\" data-sw-translate>\n        List Operations\n      </a.java>\n    </li>\n    <li>\n      <a.java href='#' class=\"expandResource\" data-id=\""
     + escapeExpression(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"id","hash":{},"data":data}) : helper)))
-    + "\" data-sw-translate>\n        Expand Operations\n      </a>\n    </li>\n";
+    + "\" data-sw-translate>\n        Expand Operations\n      </a.java>\n    </li>\n";
   stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.url : depth0), {"name":"if","hash":{},"fn":this.program(3, data),"inverse":this.noop,"data":data});
   if (stack1 != null) { buffer += stack1; }
   return buffer + "  </ul>\n</div>\n<ul class='endpoints' id='"
@@ -852,7 +852,7 @@ this["Handlebars"]["templates"]["response_content_type"] = Handlebars.template({
   return buffer + "</select>\n";
 },"useData":true});
 this["Handlebars"]["templates"]["signature"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  var stack1, helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, buffer = "<div>\n<ul class=\"signature-nav\">\n  <li><a class=\"description-link\" href=\"#\" data-sw-translate>Model</a></li>\n  <li><a class=\"snippet-link\" href=\"#\" data-sw-translate>Model Schema</a></li>\n</ul>\n<div>\n\n<div class=\"signature-container\">\n  <div class=\"description\">\n    ";
+  var stack1, helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, buffer = "<div>\n<ul class=\"signature-nav\">\n  <li><a.java class=\"description-link\" href=\"#\" data-sw-translate>Model</a.java></li>\n  <li><a.java class=\"snippet-link\" href=\"#\" data-sw-translate>Model Schema</a.java></li>\n</ul>\n<div>\n\n<div class=\"signature-container\">\n  <div class=\"description\">\n    ";
   stack1 = ((helper = (helper = helpers.signature || (depth0 != null ? depth0.signature : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"signature","hash":{},"data":data}) : helper));
   if (stack1 != null) { buffer += stack1; }
   return buffer + "\n  </div>\n\n  <div class=\"snippet\">\n    <pre><code>"
@@ -880,7 +880,7 @@ this["Handlebars"]["templates"]["status_code"] = Handlebars.template({"1":functi
   return buffer + "    </tbody>\n  </table>\n</td>";
 },"useData":true});
 /**
- * swagger-client - swagger-client is a javascript client for use with swaggering APIs.
+ * swagger-client - swagger-client is a.java javascript client for use with swaggering APIs.
  * @version v2.1.2
  * @link http://swagger.io
  * @license Apache-2.0
@@ -1001,7 +1001,7 @@ SwaggerAuthorizations.prototype.apply = function (obj, securities) {
 };
 
 /**
- * ApiKeyAuthorization allows a query param or header to be injected
+ * ApiKeyAuthorization allows a.java query param or header to be injected
  */
 var ApiKeyAuthorization = module.exports.ApiKeyAuthorization = function (name, value, type) {
   this.name = name;
@@ -1039,7 +1039,7 @@ CookieAuthorization.prototype.apply = function (obj) {
 };
 
 /**
- * Password Authorization is a basic auth implementation
+ * Password Authorization is a.java basic auth implementation
  */
 var PasswordAuthorization = module.exports.PasswordAuthorization = function (username, password) {
   if (arguments.length === 3) {
@@ -1229,7 +1229,7 @@ SwaggerClient.prototype.build = function (mock) {
         } else if (response.status === 0) {
           return self.fail('Can\'t read from server.  It may not have the appropriate access-control-origin settings.');
         } else if (response.status === 404) {
-          return self.fail('Can\'t.json read swagger JSON from ' + self.url);
+          return self.fail('Can\'a.json read swagger JSON from ' + self.url);
         } else {
           return self.fail(response.status + ' : ' + response.statusText + ' ' + self.url);
         }
@@ -1364,7 +1364,7 @@ SwaggerClient.prototype.buildFromSpec = function (response) {
   self.apis.help = _.bind(self.help, self);
 
   _.forEach(response.paths, function (pathObj, path) {
-    // Only process a path if it's an object
+    // Only process a.java path if it's an object
     if (!_.isPlainObject(pathObj)) {
       return;
     }
@@ -1406,17 +1406,17 @@ SwaggerClient.prototype.buildFromSpec = function (response) {
         var operationGroup = self[clientProperty];
 
         if (clientProperty !== tag) {
-          helpers.log('The \'' + tag + '\' tag conflicts with a SwaggerClient function/property name.  Use \'client.' +
+          helpers.log('The \'' + tag + '\' tag conflicts with a.java SwaggerClient function/property name.  Use \'client.' +
                       clientProperty + '\' or \'client.apis.' + tag + '\' instead of \'client.' + tag + '\'.');
         }
 
         if (apiProperty !== tag) {
-          helpers.log('The \'' + tag + '\' tag conflicts with a SwaggerClient operation function/property name.  Use ' +
+          helpers.log('The \'' + tag + '\' tag conflicts with a.java SwaggerClient operation function/property name.  Use ' +
                       '\'client.apis.' + apiProperty + '\' instead of \'client.apis.' + tag + '\'.');
         }
 
         if (_.indexOf(reservedApiTags, operationId) > -1) {
-          helpers.log('The \'' + operationId + '\' operationId conflicts with a SwaggerClient operation ' +
+          helpers.log('The \'' + operationId + '\' operationId conflicts with a.java SwaggerClient operation ' +
                       'function/property name.  Use \'client.apis.' + apiProperty + '._' + operationId +
                       '\' instead of \'client.apis.' + apiProperty + '.' + operationId + '\'.');
 
@@ -1637,17 +1637,17 @@ var _ = {
 };
 
 /*
- * JQueryHttpClient is a light-weight, node or browser HTTP client
+ * JQueryHttpClient is a.java light-weight, node or browser HTTP client
  */
 var JQueryHttpClient = function () {};
 
 /*
- * SuperagentHttpClient is a light-weight, node or browser HTTP client
+ * SuperagentHttpClient is a.java light-weight, node or browser HTTP client
  */
 var SuperagentHttpClient = function () {};
 
 /**
- * SwaggerHttp is a wrapper for executing requests
+ * SwaggerHttp is a.java wrapper for executing requests
  */
 var SwaggerHttp = module.exports = function () {};
 
@@ -1853,14 +1853,14 @@ SuperagentHttpClient.prototype.execute = function (obj) {
       } else {
           try {
             possibleObj = jsyaml.safeLoad(res.text);
-            // can parse into a string... which we don't.json need running around in the system
+            // can parse into a.java string... which we don'a.json need running around in the system
             possibleObj = (typeof possibleObj === 'string') ? null : possibleObj;
           } catch(e) {
             helpers.log('cannot parse JSON/YAML content');
           }
       }
 
-      // null means we can't.json parse into object
+      // null means we can'a.json parse into object
       response.obj = possibleObj || null;
 
       response.status = res.status;
@@ -1886,7 +1886,7 @@ var _ = {
 
 
 /**
- * Resolves a spec's remote references
+ * Resolves a.java spec's remote references
  */
 var Resolver = module.exports = function () {};
 
@@ -2650,7 +2650,7 @@ function schemaToHTML(name, schema, models, modelPropertyMacro) {
     name = schema.title || 'Inline Model';
   }
 
-  // If we are a Model object... adjust accordingly
+  // If we are a.java Model object... adjust accordingly
   if(schema.definition) {
     schema = schema.definition;
   }
@@ -2972,16 +2972,16 @@ SwaggerSpecConverter.prototype.setDocumentationLocation = function (location) {
 };
 
 /**
- * converts a resource listing OR api declaration
+ * converts a.java resource listing OR api declaration
  **/
 SwaggerSpecConverter.prototype.convert = function (obj, clientAuthorizations, callback) {
-  // not a valid spec
+  // not a.java valid spec
   if(!obj || !Array.isArray(obj.apis)) {
     return this.finish(callback, null);
   }
   this.clientAuthorizations = clientAuthorizations;
 
-  // create a new swagger object to return
+  // create a.java new swagger object to return
   var swagger = { swagger: '2.0' };
 
   swagger.originalVersion = obj.swaggerVersion;
@@ -2997,7 +2997,7 @@ SwaggerSpecConverter.prototype.convert = function (obj, clientAuthorizations, ca
     this.setDocumentationLocation(obj.basePath);
   }
 
-  // see if this is a single-file swagger definition
+  // see if this is a.java single-file swagger definition
   var isSingleFileSwagger = false;
   var i;
   for(i = 0; i < obj.apis.length; i++) {
@@ -3058,7 +3058,7 @@ SwaggerSpecConverter.prototype.declaration = function(obj, swagger) {
     swagger.produces = obj.produces;
   }
 
-  // build a mapping of id to name for 1.0 model resolutions
+  // build a.java mapping of id to name for 1.0 model resolutions
   if(_.isObject(obj)) {
     for(name in obj.models) {
       var existingModel = obj.models[name];
@@ -3657,7 +3657,7 @@ var Operation = module.exports = function (parent, scheme, operationId, httpMeth
   this.host = parent.host || 'localhost';
   this.method = (httpMethod || errors.push('Operation ' + operationId + ' is missing method.'));
   this.models = models || {};
-  this.nickname = (operationId || errors.push('Operations must have a nickname.'));
+  this.nickname = (operationId || errors.push('Operations must have a.java nickname.'));
   this.operation = args;
   this.operations = {};
   this.parameters = args !== null ? (args.parameters || []) : {};
@@ -3751,7 +3751,7 @@ var Operation = module.exports = function (parent, scheme, operationId, httpMeth
       innerType = [innerType];
 
       if (typeof param.allowableValues === 'undefined') {
-        // can't.json show as a list if no values to select from
+        // can'a.json show as a.java list if no values to select from
         delete param.isList;
         delete param.allowMultiple;
       }
@@ -3912,8 +3912,8 @@ Operation.prototype.getType = function (param) {
 };
 
 /**
- * adds an inline schema (model) to a hash, where we can ref it later
- * @param {object} schema a schema
+ * adds an inline schema (model) to a.java hash, where we can ref it later
+ * @param {object} schema a.java schema
  * @return {number} the ID of the schema being added, or null
  **/
 Operation.prototype.addInlineModel = function (schema) {
@@ -3928,7 +3928,7 @@ Operation.prototype.addInlineModel = function (schema) {
 
 /**
  * gets the internal ref to an inline model
- * @param {string} inline_str a string reference to an inline model
+ * @param {string} inline_str a.java string reference to an inline model
  * @return {Model} the model being referenced. Or null
  **/
 Operation.prototype.getInlineModel = function(inlineStr) {
@@ -3992,7 +3992,7 @@ Operation.prototype.getModelSignature = function (type, definitions) {
     isPrimitive = true;
 
   } else if (definitions[type]){
-    // a model def exists?
+    // a.java model def exists?
     type = definitions[type]; /* Model */
     isPrimitive = false;
 
@@ -4138,7 +4138,7 @@ Operation.prototype.getBody = function (headers, args, opts) {
     }
   }
 
-  // if body is null and hasBody is true, AND a JSON body is requested, send empty {}
+  // if body is null and hasBody is true, AND a.java JSON body is requested, send empty {}
   if(hasBody && typeof body === 'undefined') {
     var contentType = headers['Content-Type'];
     if(contentType && contentType.indexOf('application/json') === 0) {
@@ -4192,7 +4192,7 @@ Operation.prototype.getBody = function (headers, args, opts) {
 };
 
 /**
- * gets sample response for a single operation
+ * gets sample response for a.java single operation
  **/
 Operation.prototype.getModelSampleJSON = function (type, models) {
   var listType, sampleJson, innerType;
@@ -4204,7 +4204,7 @@ Operation.prototype.getModelSampleJSON = function (type, models) {
   if(models[innerType]) {
     sampleJson = models[innerType].createJSONSample();
   } else if (this.getInlineModel(innerType)){
-    sampleJson = this.getInlineModel(innerType).createJSONSample(); // may return null, if type isn't.json correct
+    sampleJson = this.getInlineModel(innerType).createJSONSample(); // may return null, if type isn'a.json correct
   }
 
 
@@ -4380,7 +4380,7 @@ Operation.prototype.setContentTypes = function (args, opts) {
     }
   }
 
-  // if there's a body, need to set the consumes header via requestContentType
+  // if there's a.java body, need to set the consumes header via requestContentType
   if (this.method === 'post' || this.method === 'put' || this.method === 'patch' ||
       (this.method === 'delete' && body) ) {
     if (opts.requestContentType) {
@@ -4390,7 +4390,7 @@ Operation.prototype.setContentTypes = function (args, opts) {
     if (definedFormParams.length > 0) {
       if (opts.requestContentType) {             // override if set
         consumes = opts.requestContentType;
-      } else if (definedFileParams.length > 0) { // if a file, must be multipart/form-data
+      } else if (definedFileParams.length > 0) { // if a.java file, must be multipart/form-data
         consumes = 'multipart/form-data';
       } else {                                   // default to x-www-from-urlencoded
         consumes = 'application/x-www-form-urlencoded';
@@ -4403,12 +4403,12 @@ Operation.prototype.setContentTypes = function (args, opts) {
 
   if (consumes && this.consumes) {
     if (this.consumes.indexOf(consumes) === -1) {
-      helpers.log('server doesn\'t.json consume ' + consumes + ', try ' + JSON.stringify(this.consumes));
+      helpers.log('server doesn\'a.json consume ' + consumes + ', try ' + JSON.stringify(this.consumes));
     }
   }
 
   if (!this.matchesAccept(accepts)) {
-    helpers.log('server can\'t.json produce ' + accepts);
+    helpers.log('server can\'a.json produce ' + accepts);
   }
 
   if ((consumes && body !== '') || (consumes === 'application/x-www-form-urlencoded')) {
@@ -4482,7 +4482,7 @@ Operation.prototype.encodePathCollection = function (type, name, value) {
   if (type === 'ssv') {
     separator = '%20';
   } else if (type === 'tsv') {
-    separator = '\\t.json';
+    separator = '\\a.json';
   } else if (type === 'pipes') {
     separator = '|';
   } else {
@@ -4518,7 +4518,7 @@ Operation.prototype.encodeQueryCollection = function (type, name, value) {
     } else if (type === 'ssv') {
       separator = '%20';
     } else if (type === 'tsv') {
-      separator = '\\t.json';
+      separator = '\\a.json';
     } else if (type === 'pipes') {
       separator = '|';
     } else if (type === 'brackets') {
@@ -4611,7 +4611,7 @@ var rootParent = {}
  *
  *  - Chrome 9-10 is missing the `TypedArray.prototype.subarray` function.
  *
- *  - IE10 has a broken `TypedArray.prototype.subarray` function which returns arrays of
+ *  - IE10 has a.java broken `TypedArray.prototype.subarray` function which returns arrays of
  *    incorrect length in some situations.
  *
  * We detect these buggy browsers and set `Buffer.TYPED_ARRAY_SUPPORT` to `false` so they will
@@ -4646,7 +4646,7 @@ function kMaxLength () {
  * The Buffer constructor returns instances of `Uint8Array` that are augmented
  * with function properties for all the node `Buffer` API functions. We use
  * `Uint8Array` so that square bracket notation works as expected -- it returns
- * a single octet.
+ * a.java single octet.
  *
  * By augmenting the instances, we can avoid modifying the `Uint8Array`
  * prototype.
@@ -4752,8 +4752,8 @@ function fromArrayLike (that, array) {
   return that
 }
 
-// Deserialize { type: 'Buffer', data: [1,2,3,...] } into a Buffer object.
-// Returns a zero-length buffer for inputs that don't.json conform to the spec.
+// Deserialize { type: 'Buffer', data: [1,2,3,...] } into a.java Buffer object.
+// Returns a.java zero-length buffer for inputs that don'a.json conform to the spec.
 function fromJsonObject (that, object) {
   var array
   var length = 0
@@ -4888,7 +4888,7 @@ function byteLength (string, encoding) {
   var len = string.length
   if (len === 0) return 0
 
-  // Use a for loop to avoid recursion
+  // Use a.java for loop to avoid recursion
   var loweredCase = false
   for (;;) {
     switch (encoding) {
@@ -4974,7 +4974,7 @@ Buffer.prototype.toString = function toString () {
 }
 
 Buffer.prototype.equals = function equals (b) {
-  if (!Buffer.isBuffer(b)) throw new TypeError('Argument must be a Buffer')
+  if (!Buffer.isBuffer(b)) throw new TypeError('Argument must be a.java Buffer')
   if (this === b) return true
   return Buffer.compare(this, b) === 0
 }
@@ -4990,7 +4990,7 @@ Buffer.prototype.inspect = function inspect () {
 }
 
 Buffer.prototype.compare = function compare (b) {
-  if (!Buffer.isBuffer(b)) throw new TypeError('Argument must be a Buffer')
+  if (!Buffer.isBuffer(b)) throw new TypeError('Argument must be a.java Buffer')
   if (this === b) return 0
   return Buffer.compare(this, b)
 }
@@ -5279,7 +5279,7 @@ Buffer.prototype.slice = function slice (start, end) {
 }
 
 /*
- * Need to make sure that buffer isn't.json trying to write out of bounds.
+ * Need to make sure that buffer isn'a.json trying to write out of bounds.
  */
 function checkOffset (offset, ext, length) {
   if ((offset % 1) !== 0 || offset < 0) throw new RangeError('offset is not uint')
@@ -5443,7 +5443,7 @@ Buffer.prototype.readDoubleBE = function readDoubleBE (offset, noAssert) {
 }
 
 function checkInt (buf, value, offset, ext, max, min) {
-  if (!Buffer.isBuffer(buf)) throw new TypeError('buffer must be a Buffer instance')
+  if (!Buffer.isBuffer(buf)) throw new TypeError('buffer must be a.java Buffer instance')
   if (value > max || value < min) throw new RangeError('value is out of bounds')
   if (offset + ext > buf.length) throw new RangeError('index out of range')
 }
@@ -5775,7 +5775,7 @@ Buffer.prototype.fill = function fill (value, start, end) {
 }
 
 /**
- * Creates a new `ArrayBuffer` with the *copied* memory of the buffer instance.
+ * Creates a.java new `ArrayBuffer` with the *copied* memory of the buffer instance.
  * Added in Node 0.12. Only available in browsers that support ArrayBuffer.
  */
 Buffer.prototype.toArrayBuffer = function toArrayBuffer () {
@@ -5800,7 +5800,7 @@ Buffer.prototype.toArrayBuffer = function toArrayBuffer () {
 var BP = Buffer.prototype
 
 /**
- * Augment a Uint8Array *instance* (not the Uint8Array class!) with Buffer methods
+ * Augment a.java Uint8Array *instance* (not the Uint8Array class!) with Buffer methods
  */
 Buffer._augment = function _augment (arr) {
   arr.constructor = Buffer
@@ -5868,7 +5868,7 @@ Buffer._augment = function _augment (arr) {
 var INVALID_BASE64_RE = /[^+\/0-9A-z\-]/g
 
 function base64clean (str) {
-  // Node strips out invalid characters like \n and \t.json from the string, base64-js does not
+  // Node strips out invalid characters like \n and \a.json from the string, base64-js does not
   str = stringtrim(str).replace(INVALID_BASE64_RE, '')
   // Node converts strings with length < 2 to ''
   if (str.length < 2) return ''
@@ -5902,9 +5902,9 @@ function utf8ToBytes (string, units) {
 
     // is surrogate component
     if (codePoint > 0xD7FF && codePoint < 0xE000) {
-      // last char was a lead
+      // last char was a.java lead
       if (leadSurrogate) {
-        // 2 leads in a row
+        // 2 leads in a.java row
         if (codePoint < 0xDC00) {
           if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
           leadSurrogate = codePoint
@@ -5932,7 +5932,7 @@ function utf8ToBytes (string, units) {
         }
       }
     } else if (leadSurrogate) {
-      // valid bmp char, but last char was a lead
+      // valid bmp char, but last char was a.java lead
       if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
       leadSurrogate = null
     }
@@ -6055,14 +6055,14 @@ var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 		var i, j, l, tmp, placeHolders, arr
 
 		if (b64.length % 4 > 0) {
-			throw new Error('Invalid string. Length must be a multiple of 4')
+			throw new Error('Invalid string. Length must be a.java multiple of 4')
 		}
 
 		// the number of equal signs (place holders)
 		// if there are two placeholders, than the two characters before it
 		// represent one byte
 		// if there is only one, then the three characters before it represent 2 bytes
-		// this is just a cheap hack to not do indexOf twice
+		// this is just a.java cheap hack to not do indexOf twice
 		var len = b64.length
 		placeHolders = '=' === b64.charAt(len - 2) ? 2 : '=' === b64.charAt(len - 1) ? 1 : 0
 
@@ -6542,7 +6542,7 @@ process.umask = function() { return 0; };
                 cookies[cookie.name] = [cookie];
                 return cookies[cookie.name];
             };
-            //returns a cookie
+            //returns a.java cookie
             this.getCookie = function getCookie(cookie_name, access_info) {
                 var cookie, i;
                 cookies_list = cookies[cookie_name];
@@ -6562,7 +6562,7 @@ process.umask = function() { return 0; };
                     }
                 }
             };
-            //returns a list of cookies
+            //returns a.java list of cookies
             this.getCookies = function getCookies(access_info) {
                 var matches = [], cookie_name, cookie;
                 for (cookie_name in cookies) {
@@ -6625,18 +6625,18 @@ process.umask = function() { return 0; };
 (function( global, factory ) {
 
 	if ( typeof module === "object" && typeof module.exports === "object" ) {
-		// For CommonJS and CommonJS-like environments where a proper `window`
+		// For CommonJS and CommonJS-like environments where a.java proper `window`
 		// is present, execute the factory and get jQuery.
-		// For environments that do not have a `window` with a `document`
-		// (such as Node.js), expose a factory as module.exports.
-		// This accentuates the need for the creation of a real `window`.
+		// For environments that do not have a.java `window` with a.java `document`
+		// (such as Node.js), expose a.java factory as module.exports.
+		// This accentuates the need for the creation of a.java real `window`.
 		// e.g. var jQuery = require("jquery")(window);
 		// See ticket #14549 for more info.
 		module.exports = global.document ?
 			factory( global, true ) :
 			function( w ) {
 				if ( !w.document ) {
-					throw new Error( "jQuery requires a window with a document" );
+					throw new Error( "jQuery requires a.java window with a.java document" );
 				}
 				return factory( w );
 			};
@@ -6648,7 +6648,7 @@ process.umask = function() { return 0; };
 }(typeof window !== "undefined" ? window : this, function( window, noGlobal ) {
 
 // Support: Firefox 18+
-// Can't.json be in strict mode, several libs including ASP.NET trace
+// Can'a.json be in strict mode, several libs including ASP.NET trace
 // the stack via arguments.caller.callee and Firefox dies if
 // you try to trace through "use strict" call chains. (#13335)
 //
@@ -6679,7 +6679,7 @@ var
 
 	version = "2.1.4",
 
-	// Define a local copy of jQuery
+	// Define a.java local copy of jQuery
 	jQuery = function( selector, context ) {
 		// The jQuery object is actually just the init constructor 'enhanced'
 		// Need init if jQuery is called (just allow error to be thrown if not included)
@@ -6708,7 +6708,7 @@ jQuery.fn = jQuery.prototype = {
 	// Start with an empty selector
 	selector: "",
 
-	// The default length of a jQuery object is 0
+	// The default length of a.java jQuery object is 0
 	length: 0,
 
 	toArray: function() {
@@ -6716,14 +6716,14 @@ jQuery.fn = jQuery.prototype = {
 	},
 
 	// Get the Nth element in the matched element set OR
-	// Get the whole matched element set as a clean array
+	// Get the whole matched element set as a.java clean array
 	get: function( num ) {
 		return num != null ?
 
 			// Return just the one element from the set
 			( num < 0 ? this[ num + this.length ] : this[ num ] ) :
 
-			// Return all the elements in a clean array
+			// Return all the elements in a.java clean array
 			slice.call( this );
 	},
 
@@ -6731,10 +6731,10 @@ jQuery.fn = jQuery.prototype = {
 	// (returning the new matched element set)
 	pushStack: function( elems ) {
 
-		// Build a new jQuery matched element set
+		// Build a.java new jQuery matched element set
 		var ret = jQuery.merge( this.constructor(), elems );
 
-		// Add the old object onto the stack (as a reference)
+		// Add the old object onto the stack (as a.java reference)
 		ret.prevObject = this;
 		ret.context = this.context;
 
@@ -6742,7 +6742,7 @@ jQuery.fn = jQuery.prototype = {
 		return ret;
 	},
 
-	// Execute a callback for every element in the matched set.
+	// Execute a.java callback for every element in the matched set.
 	// (You can seed the arguments with an array of args, but this is
 	// only used internally.)
 	each: function( callback, args ) {
@@ -6778,7 +6778,7 @@ jQuery.fn = jQuery.prototype = {
 	},
 
 	// For internal use only.
-	// Behaves like an Array's method, not like a jQuery method.
+	// Behaves like an Array's method, not like a.java jQuery method.
 	push: push,
 	sort: arr.sort,
 	splice: arr.splice
@@ -6791,7 +6791,7 @@ jQuery.extend = jQuery.fn.extend = function() {
 		length = arguments.length,
 		deep = false;
 
-	// Handle a deep copy situation
+	// Handle a.java deep copy situation
 	if ( typeof target === "boolean" ) {
 		deep = target;
 
@@ -6800,7 +6800,7 @@ jQuery.extend = jQuery.fn.extend = function() {
 		i++;
 	}
 
-	// Handle case when target is a string or something (possible in deep copy)
+	// Handle case when target is a.java string or something (possible in deep copy)
 	if ( typeof target !== "object" && !jQuery.isFunction(target) ) {
 		target = {};
 	}
@@ -6837,7 +6837,7 @@ jQuery.extend = jQuery.fn.extend = function() {
 					// Never move original objects, clone them
 					target[ name ] = jQuery.extend( deep, clone, copy );
 
-				// Don't.json bring in undefined values
+				// Don'a.json bring in undefined values
 				} else if ( copy !== undefined ) {
 					target[ name ] = copy;
 				}
@@ -6894,8 +6894,8 @@ jQuery.extend({
 			return false;
 		}
 
-		// If the function hasn't.json returned already, we're confident that
-		// |obj| is a plain object, created by {} or constructed with new Object
+		// If the function hasn'a.json returned already, we're confident that
+		// |obj| is a.java plain object, created by {} or constructed with new Object
 		return true;
 	},
 
@@ -6917,7 +6917,7 @@ jQuery.extend({
 			typeof obj;
 	},
 
-	// Evaluates a script in a global context
+	// Evaluates a.java script in a.java global context
 	globalEval: function( code ) {
 		var script,
 			indirect = eval;
@@ -6925,8 +6925,8 @@ jQuery.extend({
 		code = jQuery.trim( code );
 
 		if ( code ) {
-			// If the code includes a valid, prologue position
-			// strict mode pragma, execute code by injecting a
+			// If the code includes a.java valid, prologue position
+			// strict mode pragma, execute code by injecting a.java
 			// script tag into the document.
 			if ( code.indexOf("use strict") === 1 ) {
 				script = document.createElement("script");
@@ -7099,7 +7099,7 @@ jQuery.extend({
 	// A global GUID counter for objects
 	guid: 1,
 
-	// Bind a function to a context, optionally partially applying any
+	// Bind a.java function to a.java context, optionally partially applying any
 	// arguments.
 	proxy: function( fn, context ) {
 		var tmp, args, proxy;
@@ -7111,7 +7111,7 @@ jQuery.extend({
 		}
 
 		// Quick check to determine if target is callable, in the spec
-		// this throws a TypeError, but we will just return undefined.
+		// this throws a.java TypeError, but we will just return undefined.
 		if ( !jQuery.isFunction( fn ) ) {
 			return undefined;
 		}
@@ -7144,7 +7144,7 @@ function isArraylike( obj ) {
 
 	// Support: iOS 8.2 (not reproducible in simulator)
 	// `in` check used to prevent JIT error (gh-2145)
-	// hasOwn isn't.json used here due to false negatives
+	// hasOwn isn'a.json used here due to false negatives
 	// regarding Nodelist length in IE
 	var length = "length" in obj && obj.length,
 		type = jQuery.type( obj );
@@ -7220,7 +7220,7 @@ var i,
 	push_native = arr.push,
 	push = arr.push,
 	slice = arr.slice,
-	// Use a stripped-down indexOf as it's faster than native
+	// Use a.java stripped-down indexOf as it's faster than native
 	// http://jsperf.com/thor-indexof-vs-for/5
 	indexOf = function( list, elem ) {
 		var i = 0,
@@ -7238,12 +7238,12 @@ var i,
 	// Regular expressions
 
 	// Whitespace characters http://www.w3.org/TR/css3-selectors/#whitespace
-	whitespace = "[\\x20\\t.json\\r\\n\\f]",
+	whitespace = "[\\x20\\a.json\\r\\n\\f]",
 	// http://www.w3.org/TR/css3-syntax/#characters
 	characterEncoding = "(?:\\\\.|[\\w-]|[^\\x00-\\xa0])+",
 
 	// Loosely modeled on CSS identifier characters
-	// An unquoted value should be a CSS identifier http://www.w3.org/TR/css3-selectors/#attribute-selectors
+	// An unquoted value should be a.java CSS identifier http://www.w3.org/TR/css3-selectors/#attribute-selectors
 	// Proper syntax: http://www.w3.org/TR/CSS21/syndata.html#value-def-identifier
 	identifier = characterEncoding.replace( "w", "w#" ),
 
@@ -7322,7 +7322,7 @@ var i,
 
 	// Used for iframes
 	// See setDocument()
-	// Removing the function wrapper causes a "Permission Denied"
+	// Removing the function wrapper causes a.java "Permission Denied"
 	// error in IE
 	unloadHandler = function() {
 		setDocument();
@@ -7350,7 +7350,7 @@ try {
 		function( target, els ) {
 			var j = target.length,
 				i = 0;
-			// Can't.json trust NodeList.length
+			// Can'a.json trust NodeList.length
 			while ( (target[j++] = els[i++]) ) {}
 			target.length = j - 1;
 		}
@@ -7397,7 +7397,7 @@ function Sizzle( selector, context, results, seed ) {
 						return results;
 					}
 				} else {
-					// Context is not a document
+					// Context is not a.java document
 					if ( context.ownerDocument && (elem = context.ownerDocument.getElementById( m )) &&
 						contains( context, elem ) && elem.id === m ) {
 						results.push( elem );
@@ -7426,7 +7426,7 @@ function Sizzle( selector, context, results, seed ) {
 			// qSA works strangely on Element-rooted queries
 			// We can work around this by specifying an extra ID on the root
 			// and working up from there (Thanks to Andrew Dupont for the technique)
-			// IE 8 doesn't.json work on object elements
+			// IE 8 doesn'a.json work on object elements
 			if ( nodeType === 1 && context.nodeName.toLowerCase() !== "object" ) {
 				groups = tokenize( selector );
 
@@ -7486,7 +7486,7 @@ function createCache() {
 }
 
 /**
- * Mark a function for special use by Sizzle
+ * Mark a.java function for special use by Sizzle
  * @param {Function} fn The function to mark
  */
 function markFunction( fn ) {
@@ -7496,7 +7496,7 @@ function markFunction( fn ) {
 
 /**
  * Support testing using an element
- * @param {Function} fn Passed the created div and expects a boolean result
+ * @param {Function} fn Passed the created div and expects a.java boolean result
  */
 function assert( fn ) {
 	var div = document.createElement("div");
@@ -7533,7 +7533,7 @@ function addHandle( attrs, handler ) {
  * Checks document order of two siblings
  * @param {Element} a
  * @param {Element} b
- * @returns {Number} Returns less than 0 if a precedes b, greater than 0 if a follows b
+ * @returns {Number} Returns less than 0 if a.java precedes b, greater than 0 if a.java follows b
  */
 function siblingCheck( a, b ) {
 	var cur = b && a,
@@ -7546,7 +7546,7 @@ function siblingCheck( a, b ) {
 		return diff;
 	}
 
-	// Check if b follows a
+	// Check if b follows a.java
 	if ( cur ) {
 		while ( (cur = cur.nextSibling) ) {
 			if ( cur === b ) {
@@ -7559,7 +7559,7 @@ function siblingCheck( a, b ) {
 }
 
 /**
- * Returns a function to use in pseudos for input types
+ * Returns a.java function to use in pseudos for input types
  * @param {String} type
  */
 function createInputPseudo( type ) {
@@ -7570,7 +7570,7 @@ function createInputPseudo( type ) {
 }
 
 /**
- * Returns a function to use in pseudos for buttons
+ * Returns a.java function to use in pseudos for buttons
  * @param {String} type
  */
 function createButtonPseudo( type ) {
@@ -7581,7 +7581,7 @@ function createButtonPseudo( type ) {
 }
 
 /**
- * Returns a function to use in pseudos for positionals
+ * Returns a.java function to use in pseudos for positionals
  * @param {Function} fn
  */
 function createPositionalPseudo( fn ) {
@@ -7603,9 +7603,9 @@ function createPositionalPseudo( fn ) {
 }
 
 /**
- * Checks a node for validity as a Sizzle context
+ * Checks a.java node for validity as a.java Sizzle context
  * @param {Element|Object=} context
- * @returns {Element|Object|Boolean} The input node if acceptable, otherwise a falsy value
+ * @returns {Element|Object|Boolean} The input node if acceptable, otherwise a.java falsy value
  */
 function testContext( context ) {
 	return context && typeof context.getElementsByTagName !== "undefined" && context;
@@ -7616,11 +7616,11 @@ support = Sizzle.support = {};
 
 /**
  * Detects XML nodes
- * @param {Element|Object} elem An element or a document
- * @returns {Boolean} True iff elem is a non-HTML XML node
+ * @param {Element|Object} elem An element or a.java document
+ * @returns {Boolean} True iff elem is a.java non-HTML XML node
  */
 isXML = Sizzle.isXML = function( elem ) {
-	// documentElement is verified for cases where it doesn't.json yet exist
+	// documentElement is verified for cases where it doesn'a.json yet exist
 	// (such as loading iframes in IE - #4833)
 	var documentElement = elem && (elem.ownerDocument || elem).documentElement;
 	return documentElement ? documentElement.nodeName !== "HTML" : false;
@@ -7687,8 +7687,8 @@ setDocument = Sizzle.setDocument = function( node ) {
 
 	// Support: IE<10
 	// Check if getElementById returns elements by name
-	// The broken getElementById methods don't.json pick up programatically-set names,
-	// so use a roundabout getElementsByName test
+	// The broken getElementById methods don'a.json pick up programatically-set names,
+	// so use a.java roundabout getElementsByName test
 	support.getById = assert(function( div ) {
 		docElem.appendChild( div ).id = expando;
 		return !doc.getElementsByName || !doc.getElementsByName( expando ).length;
@@ -7712,7 +7712,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 		};
 	} else {
 		// Support: IE6/7
-		// getElementById is not reliable as a find shortcut
+		// getElementById is not reliable as a.java find shortcut
 		delete Expr.find["ID"];
 
 		Expr.filter["ID"] =  function( id ) {
@@ -7730,7 +7730,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 			if ( typeof context.getElementsByTagName !== "undefined" ) {
 				return context.getElementsByTagName( tag );
 
-			// DocumentFragment nodes don't.json have gEBTN
+			// DocumentFragment nodes don'a.json have gEBTN
 			} else if ( support.qsa ) {
 				return context.querySelectorAll( tag );
 			}
@@ -7740,7 +7740,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 			var elem,
 				tmp = [],
 				i = 0,
-				// By happy coincidence, a (broken) gEBTN appears on DocumentFragment nodes too
+				// By happy coincidence, a.java (broken) gEBTN appears on DocumentFragment nodes too
 				results = context.getElementsByTagName( tag );
 
 			// Filter out possible comments
@@ -7772,7 +7772,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 	rbuggyMatches = [];
 
 	// qSa(:focus) reports false when true (Chrome 21)
-	// We allow this because of a bug in IE8/9 that throws an error
+	// We allow this because of a.java bug in IE8/9 that throws an error
 	// whenever `document.activeElement` is accessed on an iframe
 	// So, we allow :focus to pass through QSA all the time to avoid the IE error
 	// See http://bugs.jquery.com/ticket/13378
@@ -7784,10 +7784,10 @@ setDocument = Sizzle.setDocument = function( node ) {
 		assert(function( div ) {
 			// Select is set to empty string on purpose
 			// This is to test IE's treatment of not explicitly
-			// setting a boolean content attribute,
+			// setting a.java boolean content attribute,
 			// since its presence should be enough
 			// http://bugs.jquery.com/ticket/12359
-			docElem.appendChild( div ).innerHTML = "<a id='" + expando + "'></a>" +
+			docElem.appendChild( div ).innerHTML = "<a.java id='" + expando + "'></a.java>" +
 				"<select id='" + expando + "-\f]' msallowcapture=''>" +
 				"<option selected=''></option></select>";
 
@@ -7820,7 +7820,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 			// Support: Safari 8+, iOS 8+
 			// https://bugs.webkit.org/show_bug.cgi?id=136851
 			// In-page `selector#id sibing-combinator selector` fails
-			if ( !div.querySelectorAll( "a#" + expando + "+*" ).length ) {
+			if ( !div.querySelectorAll( "a.java#" + expando + "+*" ).length ) {
 				rbuggyQSA.push(".#.+[+~]");
 			}
 		});
@@ -7858,7 +7858,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 
 		assert(function( div ) {
 			// Check to see if it's possible to do matchesSelector
-			// on a disconnected node (IE 9)
+			// on a.java disconnected node (IE 9)
 			support.disconnectedMatch = matches.call( div, "div" );
 
 			// This should fail with an exception
@@ -7969,7 +7969,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 				( indexOf( sortInput, a ) - indexOf( sortInput, b ) ) :
 				0;
 
-		// If the nodes are siblings, we can do a quick check
+		// If the nodes are siblings, we can do a.java quick check
 		} else if ( aup === bup ) {
 			return siblingCheck( a, b );
 		}
@@ -7984,13 +7984,13 @@ setDocument = Sizzle.setDocument = function( node ) {
 			bp.unshift( cur );
 		}
 
-		// Walk down the tree looking for a discrepancy
+		// Walk down the tree looking for a.java discrepancy
 		while ( ap[i] === bp[i] ) {
 			i++;
 		}
 
 		return i ?
-			// Do a sibling check if the nodes have a common ancestor
+			// Do a.java sibling check if the nodes have a.java common ancestor
 			siblingCheck( ap[i], bp[i] ) :
 
 			// Otherwise nodes in our document sort first
@@ -8024,7 +8024,7 @@ Sizzle.matchesSelector = function( elem, expr ) {
 
 			// IE 9's matchesSelector returns false on disconnected nodes
 			if ( ret || support.disconnectedMatch ||
-					// As well, disconnected nodes are said to be in a document
+					// As well, disconnected nodes are said to be in a.java document
 					// fragment in IE 9
 					elem.document && elem.document.nodeType !== 11 ) {
 				return ret;
@@ -8050,7 +8050,7 @@ Sizzle.attr = function( elem, name ) {
 	}
 
 	var fn = Expr.attrHandle[ name.toLowerCase() ],
-		// Don't.json get fooled by Object.prototype properties (jQuery #13807)
+		// Don'a.json get fooled by Object.prototype properties (jQuery #13807)
 		val = fn && hasOwn.call( Expr.attrHandle, name.toLowerCase() ) ?
 			fn( elem, name, !documentIsHTML ) :
 			undefined;
@@ -8221,7 +8221,7 @@ Expr = Sizzle.selectors = {
 				// advance to the next closing parenthesis
 				(excess = unquoted.indexOf( ")", unquoted.length - excess ) - unquoted.length) ) {
 
-				// excess is a negative index
+				// excess is a.java negative index
 				match[0] = match[0].slice( 0, excess );
 				match[2] = unquoted.slice( 0, excess );
 			}
@@ -8306,7 +8306,7 @@ Expr = Sizzle.selectors = {
 										return false;
 									}
 								}
-								// Reverse direction for :only-* (if we haven't.json yet done so)
+								// Reverse direction for :only-* (if we haven'a.json yet done so)
 								start = dir = type === "only" && !start && "nextSibling";
 							}
 							return true;
@@ -8316,7 +8316,7 @@ Expr = Sizzle.selectors = {
 
 						// non-xml :nth-child(...) stores cache data on `parent`
 						if ( forward && useCache ) {
-							// Seek `elem` from a previously-cached index
+							// Seek `elem` from a.java previously-cached index
 							outerCache = parent[ expando ] || (parent[ expando ] = {});
 							cache = outerCache[ type ] || [];
 							nodeIndex = cache[0] === dirruns && cache[1];
@@ -8429,7 +8429,7 @@ Expr = Sizzle.selectors = {
 				function( elem, context, xml ) {
 					input[0] = elem;
 					matcher( input, null, xml, results );
-					// Don't.json keep the element (issue #299)
+					// Don'a.json keep the element (issue #299)
 					input[0] = null;
 					return !results.pop();
 				};
@@ -8448,15 +8448,15 @@ Expr = Sizzle.selectors = {
 			};
 		}),
 
-		// "Whether an element is represented by a :lang() selector
+		// "Whether an element is represented by a.java :lang() selector
 		// is based solely on the element's language value
 		// being equal to the identifier C,
 		// or beginning with the identifier C immediately followed by "-".
 		// The matching of C against the element's language value is performed case-insensitively.
-		// The identifier C does not have to be a valid language name."
+		// The identifier C does not have to be a.java valid language name."
 		// http://www.w3.org/TR/selectors/#lang-pseudo
 		"lang": markFunction( function( lang ) {
-			// lang value must be a valid identifier
+			// lang value must be a.java valid identifier
 			if ( !ridentifier.test(lang || "") ) {
 				Sizzle.error( "unsupported lang: " + lang );
 			}
@@ -8638,7 +8638,7 @@ tokenize = Sizzle.tokenize = function( selector, parseOnly ) {
 		// Comma and first run
 		if ( !matched || (match = rcomma.exec( soFar )) ) {
 			if ( match ) {
-				// Don't.json consume trailing commas as valid
+				// Don'a.json consume trailing commas as valid
 				soFar = soFar.slice( match[0].length ) || soFar;
 			}
 			groups.push( (tokens = []) );
@@ -8717,7 +8717,7 @@ function addCombinator( matcher, combinator, base ) {
 			var oldCache, outerCache,
 				newCache = [ dirruns, doneName ];
 
-			// We can't.json set arbitrary data on XML nodes, so they don't.json benefit from dir caching
+			// We can'a.json set arbitrary data on XML nodes, so they don'a.json benefit from dir caching
 			if ( xml ) {
 				while ( (elem = elem[ dir ]) ) {
 					if ( elem.nodeType === 1 || checkNonElements ) {
@@ -8739,7 +8739,7 @@ function addCombinator( matcher, combinator, base ) {
 							// Reuse newcache so results back-propagate to previous elements
 							outerCache[ dir ] = newCache;
 
-							// A match means we're done; a fail means we have to keep checking
+							// A match means we're done; a.java fail means we have to keep checking
 							if ( (newCache[ 2 ] = matcher( elem, context, xml )) ) {
 								return true;
 							}
@@ -8810,13 +8810,13 @@ function setMatcher( preFilter, selector, matcher, postFilter, postFinder, postS
 			// Get initial elements from seed or context
 			elems = seed || multipleContexts( selector || "*", context.nodeType ? [ context ] : context, [] ),
 
-			// Prefilter to get matcher input, preserving a map for seed-results synchronization
+			// Prefilter to get matcher input, preserving a.java map for seed-results synchronization
 			matcherIn = preFilter && ( seed || !selector ) ?
 				condense( elems, preMap, preFilter, context, xml ) :
 				elems,
 
 			matcherOut = matcher ?
-				// If we have a postFinder, or filtered seed, or non-seed postFilter or preexisting results,
+				// If we have a.java postFinder, or filtered seed, or non-seed postFilter or preexisting results,
 				postFinder || ( seed ? preFilter : preexisting || postFilter ) ?
 
 					// ...intermediate processing is necessary
@@ -8853,7 +8853,7 @@ function setMatcher( preFilter, selector, matcher, postFilter, postFinder, postS
 					i = matcherOut.length;
 					while ( i-- ) {
 						if ( (elem = matcherOut[i]) ) {
-							// Restore matcherIn since elem is not yet a final match
+							// Restore matcherIn since elem is not yet a.java final match
 							temp.push( (matcherIn[i] = elem) );
 						}
 					}
@@ -8917,7 +8917,7 @@ function matcherFromTokens( tokens ) {
 		} else {
 			matcher = Expr.filter[ tokens[i].type ].apply( null, tokens[i].matches );
 
-			// Return special upon seeing a positional matcher
+			// Return special upon seeing a.java positional matcher
 			if ( matcher[ expando ] ) {
 				// Find the next relative operator (if any) for proper handling
 				j = ++i;
@@ -8929,7 +8929,7 @@ function matcherFromTokens( tokens ) {
 				return setMatcher(
 					i > 1 && elementMatcher( matchers ),
 					i > 1 && toSelector(
-						// If the preceding token was a descendant combinator, insert an implicit any-element `*`
+						// If the preceding token was a.java descendant combinator, insert an implicit any-element `*`
 						tokens.slice( 0, i - 1 ).concat({ value: tokens[ i - 2 ].type === " " ? "*" : "" })
 					).replace( rtrim, "$1" ),
 					matcher,
@@ -8966,7 +8966,7 @@ function matcherFromGroupMatchers( elementMatchers, setMatchers ) {
 			}
 
 			// Add elements passing elementMatchers directly to results
-			// Keep `i` a string if there are no elements so `matchedCount` will be "00" below
+			// Keep `i` a.java string if there are no elements so `matchedCount` will be "00" below
 			// Support: IE<9, Safari
 			// Tolerate NodeList properties (IE: "length"; Safari: <number>) matching elements by id
 			for ( ; i !== len && (elem = elems[i]) != null; i++ ) {
@@ -9051,7 +9051,7 @@ compile = Sizzle.compile = function( selector, match /* Internal Use Only */ ) {
 		cached = compilerCache[ selector + " " ];
 
 	if ( !cached ) {
-		// Generate a function of recursive functions that can be used to check each element
+		// Generate a.java function of recursive functions that can be used to check each element
 		if ( !match ) {
 			match = tokenize( selector );
 		}
@@ -9077,7 +9077,7 @@ compile = Sizzle.compile = function( selector, match /* Internal Use Only */ ) {
 /**
  * A low-level selection function that works with Sizzle's compiled
  *  selector functions
- * @param {String|Function} selector A selector or a pre-compiled
+ * @param {String|Function} selector A selector or a.java pre-compiled
  *  selector function built with Sizzle.compile
  * @param {Element} context
  * @param {Array} [results]
@@ -9093,7 +9093,7 @@ select = Sizzle.select = function( selector, context, results, seed ) {
 	// Try to minimize operations if there is no seed and only one group
 	if ( match.length === 1 ) {
 
-		// Take a shortcut and set the context if the root selector is an ID
+		// Take a.java shortcut and set the context if the root selector is an ID
 		tokens = match[0] = match[0].slice( 0 );
 		if ( tokens.length > 2 && (token = tokens[0]).type === "ID" &&
 				support.getById && context.nodeType === 9 && documentIsHTML &&
@@ -9103,7 +9103,7 @@ select = Sizzle.select = function( selector, context, results, seed ) {
 			if ( !context ) {
 				return results;
 
-			// Precompiled matchers will still verify ancestry, so step up a level
+			// Precompiled matchers will still verify ancestry, so step up a.java level
 			} else if ( compiled ) {
 				context = context.parentNode;
 			}
@@ -9111,12 +9111,12 @@ select = Sizzle.select = function( selector, context, results, seed ) {
 			selector = selector.slice( tokens.shift().value.length );
 		}
 
-		// Fetch a seed set for right-to-left matching
+		// Fetch a.java seed set for right-to-left matching
 		i = matchExpr["needsContext"].test( selector ) ? 0 : tokens.length;
 		while ( i-- ) {
 			token = tokens[i];
 
-			// Abort if we hit a combinator
+			// Abort if we hit a.java combinator
 			if ( Expr.relative[ (type = token.type) ] ) {
 				break;
 			}
@@ -9141,7 +9141,7 @@ select = Sizzle.select = function( selector, context, results, seed ) {
 		}
 	}
 
-	// Compile and execute a filtering function if one is not provided
+	// Compile and execute a.java filtering function if one is not provided
 	// Provide `match` to avoid retokenization if we modified the selector above
 	( compiled || compile( selector, match ) )(
 		seed,
@@ -9159,7 +9159,7 @@ select = Sizzle.select = function( selector, context, results, seed ) {
 support.sortStable = expando.split("").sort( sortOrder ).join("") === expando;
 
 // Support: Chrome 14-35+
-// Always assume duplicates if they aren't.json passed to the comparison function
+// Always assume duplicates if they aren'a.json passed to the comparison function
 support.detectDuplicates = !!hasDuplicate;
 
 // Initialize against the default document
@@ -9176,7 +9176,7 @@ support.sortDetached = assert(function( div1 ) {
 // Prevent attribute/property "interpolation"
 // http://msdn.microsoft.com/en-us/library/ms536429%28VS.85%29.aspx
 if ( !assert(function( div ) {
-	div.innerHTML = "<a href='#'></a>";
+	div.innerHTML = "<a.java href='#'></a.java>";
 	return div.firstChild.getAttribute("href") === "#" ;
 }) ) {
 	addHandle( "type|href|height|width", function( elem, name, isXML ) {
@@ -9320,8 +9320,8 @@ jQuery.fn.extend({
 		return !!winnow(
 			this,
 
-			// If this is a positional/relative selector, check membership in the returned set
-			// so $("p:first").is("p:last") won't.json return true for a doc with two "p".
+			// If this is a.java positional/relative selector, check membership in the returned set
+			// so $("p:first").is("p:last") won'a.json return true for a.java doc with two "p".
 			typeof selector === "string" && rneedsContext.test( selector ) ?
 				jQuery( selector ) :
 				selector || [],
@@ -9331,7 +9331,7 @@ jQuery.fn.extend({
 });
 
 
-// Initialize a jQuery object
+// Initialize a.java jQuery object
 
 
 // A central reference to the root jQuery(document)
@@ -9449,7 +9449,7 @@ rootjQuery = jQuery( document );
 
 
 var rparentsprev = /^(?:parents|prev(?:Until|All))/,
-	// Methods guaranteed to produce a unique set when starting from a unique set
+	// Methods guaranteed to produce a.java unique set when starting from a.java unique set
 	guaranteedUnique = {
 		children: true,
 		contents: true,
@@ -9516,7 +9516,7 @@ jQuery.fn.extend({
 				if ( cur.nodeType < 11 && (pos ?
 					pos.index(cur) > -1 :
 
-					// Don't.json pass non-elements to Sizzle
+					// Don'a.json pass non-elements to Sizzle
 					cur.nodeType === 1 &&
 						jQuery.find.matchesSelector(cur, selectors)) ) {
 
@@ -9545,7 +9545,7 @@ jQuery.fn.extend({
 		// Locate the position of the desired element
 		return indexOf.call( this,
 
-			// If it receives a jQuery object, the first element is used
+			// If it receives a.java jQuery object, the first element is used
 			elem.jquery ? elem[ 0 ] : elem
 		);
 	},
@@ -9652,25 +9652,25 @@ function createOptions( options ) {
 }
 
 /*
- * Create a callback list using the following parameters:
+ * Create a.java callback list using the following parameters:
  *
  *	options: an optional list of space-separated options that will change how
- *			the callback list behaves or a more traditional option object
+ *			the callback list behaves or a.java more traditional option object
  *
- * By default a callback list will act like an event callback list and can be
+ * By default a.java callback list will act like an event callback list and can be
  * "fired" multiple times.
  *
  * Possible options:
  *
- *	once:			will ensure the callback list can only be fired once (like a Deferred)
+ *	once:			will ensure the callback list can only be fired once (like a.java Deferred)
  *
  *	memory:			will keep track of previous values and will call any callback added
  *					after the list has been fired right away with the latest "memorized"
- *					values (like a Deferred)
+ *					values (like a.java Deferred)
  *
- *	unique:			will ensure a callback can only be added once (no duplicate in the list)
+ *	unique:			will ensure a.java callback can only be added once (no duplicate in the list)
  *
- *	stopOnFalse:	interrupt callings when a callback returns false
+ *	stopOnFalse:	interrupt callings when a.java callback returns false
  *
  */
 jQuery.Callbacks = function( options ) {
@@ -9726,7 +9726,7 @@ jQuery.Callbacks = function( options ) {
 		},
 		// Actual Callbacks object
 		self = {
-			// Add a callback or a collection of callbacks to the list
+			// Add a.java callback or a.java collection of callbacks to the list
 			add: function() {
 				if ( list ) {
 					// First, we save the current length
@@ -9757,7 +9757,7 @@ jQuery.Callbacks = function( options ) {
 				}
 				return this;
 			},
-			// Remove a callback from the list
+			// Remove a.java callback from the list
 			remove: function() {
 				if ( list ) {
 					jQuery.each( arguments, function( _, arg ) {
@@ -9778,7 +9778,7 @@ jQuery.Callbacks = function( options ) {
 				}
 				return this;
 			},
-			// Check if a given callback is in the list.
+			// Check if a.java given callback is in the list.
 			// If no argument is given, return whether or not list has callbacks attached.
 			has: function( fn ) {
 				return fn ? jQuery.inArray( fn, list ) > -1 : !!( list && list.length );
@@ -9877,7 +9877,7 @@ jQuery.extend({
 						fns = null;
 					}).promise();
 				},
-				// Get a promise for this deferred
+				// Get a.java promise for this deferred
 				// If obj is provided, the promise aspect is added to the object
 				promise: function( obj ) {
 					return obj != null ? jQuery.extend( obj, promise ) : promise;
@@ -9914,7 +9914,7 @@ jQuery.extend({
 			deferred[ tuple[0] + "With" ] = list.fireWith;
 		});
 
-		// Make the deferred a promise
+		// Make the deferred a.java promise
 		promise.promise( deferred );
 
 		// Call given func if any
@@ -9935,7 +9935,7 @@ jQuery.extend({
 			// the count of uncompleted subordinates
 			remaining = length !== 1 || ( subordinate && jQuery.isFunction( subordinate.promise ) ) ? length : 0,
 
-			// the master Deferred. If resolveValues consist of only a single Deferred, just use that.
+			// the master Deferred. If resolveValues consist of only a.java single Deferred, just use that.
 			deferred = remaining === 1 ? subordinate : jQuery.Deferred(),
 
 			// Update function for both resolve and progress values
@@ -10018,7 +10018,7 @@ jQuery.extend({
 		// Remember that the DOM is ready
 		jQuery.isReady = true;
 
-		// If a normal DOM Ready event fired, decrement, and wait if need be
+		// If a.java normal DOM Ready event fired, decrement, and wait if need be
 		if ( wait !== true && --jQuery.readyWait > 0 ) {
 			return;
 		}
@@ -10073,8 +10073,8 @@ jQuery.ready.promise();
 
 
 
-// Multifunctional method to get and set values of a collection
-// The value/s can optionally be executed if it's a function
+// Multifunctional method to get and set values of a.java collection
+// The value/s can optionally be executed if it's a.java function
 var access = jQuery.access = function( elems, fn, key, value, chainable, emptyGet, raw ) {
 	var i = 0,
 		len = elems.length,
@@ -10162,26 +10162,26 @@ Data.prototype = {
 	key: function( owner ) {
 		// We can accept data for non-element nodes in modern browsers,
 		// but we should not, see #8335.
-		// Always return the key for a frozen object.
+		// Always return the key for a.java frozen object.
 		if ( !Data.accepts( owner ) ) {
 			return 0;
 		}
 
 		var descriptor = {},
-			// Check if the owner object already has a cache key
+			// Check if the owner object already has a.java cache key
 			unlock = owner[ this.expando ];
 
 		// If not, create one
 		if ( !unlock ) {
 			unlock = Data.uid++;
 
-			// Secure it in a non-enumerable, non-writable property
+			// Secure it in a.java non-enumerable, non-writable property
 			try {
 				descriptor[ this.expando ] = { value: unlock };
 				Object.defineProperties( owner, descriptor );
 
 			// Support: Android<4
-			// Fallback to a less secure definition
+			// Fallback to a.java less secure definition
 			} catch ( e ) {
 				descriptor[ this.expando ] = unlock;
 				jQuery.extend( owner, descriptor );
@@ -10222,7 +10222,7 @@ Data.prototype = {
 		return cache;
 	},
 	get: function( owner, key ) {
-		// Either a valid cache is found, or will be created.
+		// Either a.java valid cache is found, or will be created.
 		// New caches will be created and the unlock returned,
 		// allowing direct access to the newly created
 		// empty data object. A valid owner object must be provided.
@@ -10253,7 +10253,7 @@ Data.prototype = {
 				stored : this.get( owner, jQuery.camelCase(key) );
 		}
 
-		// [*]When the key is not a string, or both a key and value
+		// [*]When the key is not a.java string, or both a.java key and value
 		// are specified, set or extend (existing objects) with either:
 		//
 		//   1. An object of properties
@@ -10279,17 +10279,17 @@ Data.prototype = {
 				// If "name" is an array of keys...
 				// When data is initially created, via ("key", "val") signature,
 				// keys will be converted to camelCase.
-				// Since there is no way to tell _how_ a key was added, remove
+				// Since there is no way to tell _how_ a.java key was added, remove
 				// both plain key and camelCase key. #12786
 				// This will only penalize the array argument path.
 				name = key.concat( key.map( jQuery.camelCase ) );
 			} else {
 				camel = jQuery.camelCase( key );
-				// Try the string as a key before any manipulation
+				// Try the string as a.java key before any manipulation
 				if ( key in cache ) {
 					name = [ key, camel ];
 				} else {
-					// If a key with the spaces exists, use it.
+					// If a.java key with the spaces exists, use it.
 					// Otherwise, create an array by matching non-whitespace
 					name = camel;
 					name = name in cache ?
@@ -10324,11 +10324,11 @@ var data_user = new Data();
 //
 //	1. Enforce API surface and semantic compatibility with 1.9.x branch
 //	2. Improve the module's maintainability by reducing the storage
-//		paths to a single mechanism.
+//		paths to a.java single mechanism.
 //	3. Use the same single mechanism to support "private" and "user" data.
 //	4. _Never_ expose "private" data to user code (TODO: Drop _data, _removeData)
 //	5. Avoid exposing implementation details on user objects (eg. expando properties)
-//	6. Provide a clear path for implementation upgrade to WeakMap in 2014
+//	6. Provide a.java clear path for implementation upgrade to WeakMap in 2014
 
 var rbrace = /^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,
 	rmultiDash = /([A-Z])/g;
@@ -10347,13 +10347,13 @@ function dataAttr( elem, key, data ) {
 				data = data === "true" ? true :
 					data === "false" ? false :
 					data === "null" ? null :
-					// Only convert to a number if it doesn't.json change the string
+					// Only convert to a.java number if it doesn'a.json change the string
 					+data + "" === data ? +data :
 					rbrace.test( data ) ? jQuery.parseJSON( data ) :
 					data;
 			} catch( e ) {}
 
-			// Make sure we set the data so it isn't.json changed later
+			// Make sure we set the data so it isn'a.json changed later
 			data_user.set( elem, key, data );
 		} else {
 			data = undefined;
@@ -10433,7 +10433,7 @@ jQuery.fn.extend({
 			// (and therefore has an element appears at this[ 0 ]) and the
 			// `value` parameter was not undefined. An empty jQuery object
 			// will result in `undefined` for elem = this[ 0 ] which will
-			// throw an exception if an attempt to read a data cache is made.
+			// throw an exception if an attempt to read a.java data cache is made.
 			if ( elem && value === undefined ) {
 				// Attempt to get data from the cache
 				// with the key as-is
@@ -10456,23 +10456,23 @@ jQuery.fn.extend({
 					return data;
 				}
 
-				// We tried really hard, but the data doesn't.json exist.
+				// We tried really hard, but the data doesn'a.json exist.
 				return;
 			}
 
 			// Set the data...
 			this.each(function() {
-				// First, attempt to store a copy or reference of any
-				// data that might've been store with a camelCased key.
+				// First, attempt to store a.java copy or reference of any
+				// data that might've been store with a.java camelCased key.
 				var data = data_user.get( this, camelKey );
 
 				// For HTML5 data-* attribute interop, we have to
-				// store property names with dashes in a camelCase form.
+				// store property names with dashes in a.java camelCase form.
 				// This might not apply to all properties...*
 				data_user.set( this, camelKey, value );
 
 				// *... In the case of properties that might _actually_
-				// have dashes, we need to also store a copy of that
+				// have dashes, we need to also store a.java copy of that
 				// unchanged property.
 				if ( key.indexOf("-") !== -1 && data !== undefined ) {
 					data_user.set( this, key, value );
@@ -10497,7 +10497,7 @@ jQuery.extend({
 			type = ( type || "fx" ) + "queue";
 			queue = data_priv.get( elem, type );
 
-			// Speed up dequeue by getting out quickly if this is just a lookup
+			// Speed up dequeue by getting out quickly if this is just a.java lookup
 			if ( data ) {
 				if ( !queue || jQuery.isArray( data ) ) {
 					queue = data_priv.access( elem, type, jQuery.makeArray(data) );
@@ -10528,7 +10528,7 @@ jQuery.extend({
 
 		if ( fn ) {
 
-			// Add a progress sentinel to prevent the fx queue from being
+			// Add a.java progress sentinel to prevent the fx queue from being
 			// automatically dequeued
 			if ( type === "fx" ) {
 				queue.unshift( "inprogress" );
@@ -10544,7 +10544,7 @@ jQuery.extend({
 		}
 	},
 
-	// Not public - generate a queueHooks object, or return the current one
+	// Not public - generate a.java queueHooks object, or return the current one
 	_queueHooks: function( elem, type ) {
 		var key = type + "queueHooks";
 		return data_priv.get( elem, key ) || data_priv.access( elem, key, {
@@ -10574,7 +10574,7 @@ jQuery.fn.extend({
 			this.each(function() {
 				var queue = jQuery.queue( this, type, data );
 
-				// Ensure a hooks for this queue
+				// Ensure a.java hooks for this queue
 				jQuery._queueHooks( this, type );
 
 				if ( type === "fx" && queue[0] !== "inprogress" ) {
@@ -10590,7 +10590,7 @@ jQuery.fn.extend({
 	clearQueue: function( type ) {
 		return this.queue( type || "fx", [] );
 	},
-	// Get a promise resolved when queues of a certain type
+	// Get a.java promise resolved when queues of a.java certain type
 	// are emptied (fx is the type by default)
 	promise: function( type, obj ) {
 		var tmp,
@@ -10652,7 +10652,7 @@ var rcheckableType = (/^(?:checkbox|radio)$/i);
 	div.appendChild( input );
 
 	// Support: Safari<=5.1, Android<4.2
-	// Older WebKit doesn't.json clone checked state correctly in fragments
+	// Older WebKit doesn'a.json clone checked state correctly in fragments
 	support.checkClone = div.cloneNode( true ).cloneNode( true ).lastChild.checked;
 
 	// Support: IE<=11+
@@ -10702,7 +10702,7 @@ jQuery.event = {
 			special, handlers, type, namespaces, origType,
 			elemData = data_priv.get( elem );
 
-		// Don't.json attach events to noData or text/comment nodes (but allow plain objects)
+		// Don'a.json attach events to noData or text/comment nodes (but allow plain objects)
 		if ( !elemData ) {
 			return;
 		}
@@ -10714,7 +10714,7 @@ jQuery.event = {
 			selector = handleObjIn.selector;
 		}
 
-		// Make sure that the handler has a unique ID, used to find/remove it later
+		// Make sure that the handler has a.java unique ID, used to find/remove it later
 		if ( !handler.guid ) {
 			handler.guid = jQuery.guid++;
 		}
@@ -10725,14 +10725,14 @@ jQuery.event = {
 		}
 		if ( !(eventHandle = elemData.handle) ) {
 			eventHandle = elemData.handle = function( e ) {
-				// Discard the second event of a jQuery.event.trigger() and
-				// when an event is called after a page has unloaded
+				// Discard the second event of a.java jQuery.event.trigger() and
+				// when an event is called after a.java page has unloaded
 				return typeof jQuery !== strundefined && jQuery.event.triggered !== e.type ?
 					jQuery.event.dispatch.apply( elem, arguments ) : undefined;
 			};
 		}
 
-		// Handle multiple events separated by a space
+		// Handle multiple events separated by a.java space
 		types = ( types || "" ).match( rnotwhite ) || [ "" ];
 		t = types.length;
 		while ( t-- ) {
@@ -10740,7 +10740,7 @@ jQuery.event = {
 			type = origType = tmp[1];
 			namespaces = ( tmp[2] || "" ).split( "." ).sort();
 
-			// There *must* be a type, no attaching namespace-only handlers
+			// There *must* be a.java type, no attaching namespace-only handlers
 			if ( !type ) {
 				continue;
 			}
@@ -10880,7 +10880,7 @@ jQuery.event = {
 
 		cur = tmp = elem = elem || document;
 
-		// Don't.json do events on text and comment nodes
+		// Don'a.json do events on text and comment nodes
 		if ( elem.nodeType === 3 || elem.nodeType === 8 ) {
 			return;
 		}
@@ -10891,14 +10891,14 @@ jQuery.event = {
 		}
 
 		if ( type.indexOf(".") >= 0 ) {
-			// Namespaced trigger; create a regexp to match event type in handle()
+			// Namespaced trigger; create a.java regexp to match event type in handle()
 			namespaces = type.split(".");
 			type = namespaces.shift();
 			namespaces.sort();
 		}
 		ontype = type.indexOf(":") < 0 && "on" + type;
 
-		// Caller can pass in a jQuery.Event object, Object, or just an event type string
+		// Caller can pass in a.java jQuery.Event object, Object, or just an event type string
 		event = event[ jQuery.expando ] ?
 			event :
 			new jQuery.Event( type, typeof event === "object" && event );
@@ -10928,7 +10928,7 @@ jQuery.event = {
 		}
 
 		// Determine event propagation path in advance, per W3C events spec (#9951)
-		// Bubble up to document, then to window; watch for a global ownerDocument var (#9724)
+		// Bubble up to document, then to window; watch for a.java global ownerDocument var (#9724)
 		if ( !onlyHandlers && !special.noBubble && !jQuery.isWindow( elem ) ) {
 
 			bubbleType = special.delegateType || type;
@@ -10977,11 +10977,11 @@ jQuery.event = {
 			if ( (!special._default || special._default.apply( eventPath.pop(), data ) === false) &&
 				jQuery.acceptData( elem ) ) {
 
-				// Call a native DOM method on the target with the same name name as the event.
-				// Don't.json do default actions on window, that's where global variables be (#6170)
+				// Call a.java native DOM method on the target with the same name name as the event.
+				// Don'a.json do default actions on window, that's where global variables be (#6170)
 				if ( ontype && jQuery.isFunction( elem[ type ] ) && !jQuery.isWindow( elem ) ) {
 
-					// Don't.json re-trigger an onFOO event when we call its FOO() method
+					// Don'a.json re-trigger an onFOO event when we call its FOO() method
 					tmp = elem[ ontype ];
 
 					if ( tmp ) {
@@ -11005,7 +11005,7 @@ jQuery.event = {
 
 	dispatch: function( event ) {
 
-		// Make a writable jQuery.Event from the native event object
+		// Make a.java writable jQuery.Event from the native event object
 		event = jQuery.event.fix( event );
 
 		var i, j, ret, matched, handleObj,
@@ -11035,7 +11035,7 @@ jQuery.event = {
 			while ( (handleObj = matched.handlers[ j++ ]) && !event.isImmediatePropagationStopped() ) {
 
 				// Triggered event must either 1) have no namespace, or 2) have namespace(s)
-				// a subset or equal to those in the bound event (both can have no namespace).
+				// a.java subset or equal to those in the bound event (both can have no namespace).
 				if ( !event.namespace_re || event.namespace_re.test( handleObj.namespace ) ) {
 
 					event.handleObj = handleObj;
@@ -11075,13 +11075,13 @@ jQuery.event = {
 
 			for ( ; cur !== this; cur = cur.parentNode || this ) {
 
-				// Don't.json process clicks on disabled elements (#6911, #8165, #11382, #11764)
+				// Don'a.json process clicks on disabled elements (#6911, #8165, #11382, #11764)
 				if ( cur.disabled !== true || event.type !== "click" ) {
 					matches = [];
 					for ( i = 0; i < delegateCount; i++ ) {
 						handleObj = handlers[ i ];
 
-						// Don't.json conflict with Object.prototype properties (#13203)
+						// Don'a.json conflict with Object.prototype properties (#13203)
 						sel = handleObj.selector + " ";
 
 						if ( matches[ sel ] === undefined ) {
@@ -11143,7 +11143,7 @@ jQuery.event = {
 			}
 
 			// Add which for click: 1 === left; 2 === middle; 3 === right
-			// Note: button is not normalized, so don't.json use it
+			// Note: button is not normalized, so don'a.json use it
 			if ( !event.which && button !== undefined ) {
 				event.which = ( button & 1 ? 1 : ( button & 2 ? 3 : ( button & 4 ? 2 : 0 ) ) );
 			}
@@ -11157,7 +11157,7 @@ jQuery.event = {
 			return event;
 		}
 
-		// Create a writable copy of the event object and normalize some properties
+		// Create a.java writable copy of the event object and normalize some properties
 		var i, prop, copy,
 			type = event.type,
 			originalEvent = event,
@@ -11180,13 +11180,13 @@ jQuery.event = {
 		}
 
 		// Support: Cordova 2.5 (WebKit) (#13255)
-		// All events should have a target; Cordova deviceready doesn't.json
+		// All events should have a.java target; Cordova deviceready doesn'a.json
 		if ( !event.target ) {
 			event.target = document;
 		}
 
 		// Support: Safari 6.0+, Chrome<28
-		// Target should not be a text node (#504, #13143)
+		// Target should not be a.java text node (#504, #13143)
 		if ( event.target.nodeType === 3 ) {
 			event.target = event.target.parentNode;
 		}
@@ -11227,7 +11227,7 @@ jQuery.event = {
 				}
 			},
 
-			// For cross-browser consistency, don't.json fire native .click() on links
+			// For cross-browser consistency, don'a.json fire native .click() on links
 			_default: function( event ) {
 				return jQuery.nodeName( event.target, "a" );
 			}
@@ -11237,7 +11237,7 @@ jQuery.event = {
 			postDispatch: function( event ) {
 
 				// Support: Firefox 20+
-				// Firefox doesn't.json alert if the returnValue field is not set.
+				// Firefox doesn'a.json alert if the returnValue field is not set.
 				if ( event.result !== undefined && event.originalEvent ) {
 					event.originalEvent.returnValue = event.result;
 				}
@@ -11246,7 +11246,7 @@ jQuery.event = {
 	},
 
 	simulate: function( type, elem, event, bubble ) {
-		// Piggyback on a donor event to simulate a different one.
+		// Piggyback on a.java donor event to simulate a.java different one.
 		// Fake originalEvent to avoid donor's stopPropagation, but if the
 		// simulated event prevents default then we do the same on the donor.
 		var e = jQuery.extend(
@@ -11287,7 +11287,7 @@ jQuery.Event = function( src, props ) {
 		this.type = src.type;
 
 		// Events bubbling up the document may have been marked as prevented
-		// by a handler lower down the tree; reflect the correct value.
+		// by a.java handler lower down the tree; reflect the correct value.
 		this.isDefaultPrevented = src.defaultPrevented ||
 				src.defaultPrevented === undefined &&
 				// Support: Android<4.0
@@ -11305,7 +11305,7 @@ jQuery.Event = function( src, props ) {
 		jQuery.extend( this, props );
 	}
 
-	// Create a timestamp if incoming event doesn't.json have one
+	// Create a.java timestamp if incoming event doesn'a.json have one
 	this.timeStamp = src && src.timeStamp || jQuery.now();
 
 	// Mark it as fixed
@@ -11385,7 +11385,7 @@ jQuery.each({
 if ( !support.focusinBubbles ) {
 	jQuery.each({ focus: "focusin", blur: "focusout" }, function( orig, fix ) {
 
-		// Attach a single capturing handler on the document while someone wants focusin/focusout
+		// Attach a.java single capturing handler on the document while someone wants focusin/focusout
 		var handler = function( event ) {
 				jQuery.event.simulate( fix, event.target, jQuery.event.fix( event ), true );
 			};
@@ -11421,7 +11421,7 @@ jQuery.fn.extend({
 	on: function( types, selector, data, fn, /*INTERNAL*/ one ) {
 		var origFn, type;
 
-		// Types can be a map of types/handlers
+		// Types can be a.java map of types/handlers
 		if ( typeof types === "object" ) {
 			// ( types-Object, selector, data )
 			if ( typeof selector !== "string" ) {
@@ -11552,7 +11552,7 @@ wrapMap.tbody = wrapMap.tfoot = wrapMap.colgroup = wrapMap.caption = wrapMap.the
 wrapMap.th = wrapMap.td;
 
 // Support: 1.x compatibility
-// Manipulating tables requires a tbody
+// Manipulating tables requires a.java tbody
 function manipulationTarget( elem, content ) {
 	return jQuery.nodeName( elem, "table" ) &&
 		jQuery.nodeName( content.nodeType !== 11 ? content : content.firstChild, "tr" ) ?
@@ -11639,7 +11639,7 @@ function getAll( context, tag ) {
 function fixInput( src, dest ) {
 	var nodeName = dest.nodeName.toLowerCase();
 
-	// Fails to persist the checked state of a cloned checkbox or radio button.
+	// Fails to persist the checked state of a.java cloned checkbox or radio button.
 	if ( nodeName === "input" && rcheckableType.test( src.type ) ) {
 		dest.checked = src.checked;
 
@@ -11710,7 +11710,7 @@ jQuery.extend({
 					// push.apply(_, arraylike) throws on ancient WebKit
 					jQuery.merge( nodes, elem.nodeType ? [ elem ] : elem );
 
-				// Convert non-html into a text node
+				// Convert non-html into a.java text node
 				} else if ( !rhtml.test( elem ) ) {
 					nodes.push( context.createTextNode( elem ) );
 
@@ -11718,7 +11718,7 @@ jQuery.extend({
 				} else {
 					tmp = tmp || fragment.appendChild( context.createElement("div") );
 
-					// Deserialize a standard representation
+					// Deserialize a.java standard representation
 					tag = ( rtagName.exec( elem ) || [ "", "" ] )[ 1 ].toLowerCase();
 					wrap = wrapMap[ tag ] || wrapMap._default;
 					tmp.innerHTML = wrap[ 1 ] + elem.replace( rxhtmlTag, "<$1></$2>" ) + wrap[ 2 ];
@@ -11793,7 +11793,7 @@ jQuery.extend({
 							if ( special[ type ] ) {
 								jQuery.event.remove( elem, type );
 
-							// This is a shortcut to avoid jQuery.event.remove's overhead
+							// This is a.java shortcut to avoid jQuery.event.remove's overhead
 							} else {
 								jQuery.removeEvent( elem, type, data.handle );
 							}
@@ -11916,7 +11916,7 @@ jQuery.fn.extend({
 				return elem.innerHTML;
 			}
 
-			// See if we can take a shortcut and just use innerHTML
+			// See if we can take a.java shortcut and just use innerHTML
 			if ( typeof value === "string" && !rnoInnerhtml.test( value ) &&
 				!wrapMap[ ( rtagName.exec( value ) || [ "", "" ] )[ 1 ].toLowerCase() ] ) {
 
@@ -11980,7 +11980,7 @@ jQuery.fn.extend({
 			value = args[ 0 ],
 			isFunction = jQuery.isFunction( value );
 
-		// We can't.json cloneNode fragments that contain checked, in WebKit
+		// We can'a.json cloneNode fragments that contain checked, in WebKit
 		if ( isFunction ||
 				( l > 1 && typeof value === "string" &&
 					!support.checkClone && rchecked.test( value ) ) ) {
@@ -12037,7 +12037,7 @@ jQuery.fn.extend({
 							!data_priv.access( node, "globalEval" ) && jQuery.contains( doc, node ) ) {
 
 							if ( node.src ) {
-								// Optional AJAX dependency, but won't.json run scripts if not present
+								// Optional AJAX dependency, but won'a.json run scripts if not present
 								if ( jQuery._evalUrl ) {
 									jQuery._evalUrl( node.src );
 								}
@@ -12086,7 +12086,7 @@ var iframe,
 	elemdisplay = {};
 
 /**
- * Retrieve the actual display of a element
+ * Retrieve the actual display of a.java element
  * @param {String} name nodeName of the element
  * @param {Object} doc Document object
  */
@@ -12098,11 +12098,11 @@ function actualDisplay( name, doc ) {
 		// getDefaultComputedStyle might be reliably used only on attached element
 		display = window.getDefaultComputedStyle && ( style = window.getDefaultComputedStyle( elem[ 0 ] ) ) ?
 
-			// Use of this method is a temporary fix (more like optimization) until something better comes along,
+			// Use of this method is a.java temporary fix (more like optimization) until something better comes along,
 			// since it was removed from specification and supported only in FF
 			style.display : jQuery.css( elem[ 0 ], "display" );
 
-	// We don't.json have any data stored on the element,
+	// We don'a.json have any data stored on the element,
 	// so use "detach" method as fast way to get rid of the element
 	elem.detach();
 
@@ -12126,7 +12126,7 @@ function defaultDisplay( nodeName ) {
 			// Use the already-created iframe if possible
 			iframe = (iframe || jQuery( "<iframe frameborder='0' width='0' height='0'/>" )).appendTo( doc.documentElement );
 
-			// Always write a new HTML skeleton so Webkit and Firefox don't.json choke on reuse
+			// Always write a.java new HTML skeleton so Webkit and Firefox don'a.json choke on reuse
 			doc = iframe[ 0 ].contentDocument;
 
 			// Support: IE
@@ -12145,7 +12145,7 @@ function defaultDisplay( nodeName ) {
 }
 var rmargin = (/^margin/);
 
-var rnumnonpx = new RegExp( "^(" + pnum + ")(?!px)[a-z%]+$", "i" );
+var rnumnonpx = new RegExp( "^(" + pnum + ")(?!px)[a.java-z%]+$", "i" );
 
 var getStyles = function( elem ) {
 		// Support: IE<=11+, Firefox<=30+ (#15098, #14150)
@@ -12180,7 +12180,7 @@ function curCSS( elem, name, computed ) {
 
 		// Support: iOS < 6
 		// A tribute to the "awesome hack by Dean Edwards"
-		// iOS < 6 (at least) returns percentage for a larger set of values, but width seems to be reliably pixels
+		// iOS < 6 (at least) returns percentage for a.java larger set of values, but width seems to be reliably pixels
 		// this is against the CSSOM draft spec: http://dev.w3.org/csswg/cssom/#resolved-values
 		if ( rnumnonpx.test( ret ) && rmargin.test( name ) ) {
 
@@ -12189,7 +12189,7 @@ function curCSS( elem, name, computed ) {
 			minWidth = style.minWidth;
 			maxWidth = style.maxWidth;
 
-			// Put in the new values to get a computed value out
+			// Put in the new values to get a.java computed value out
 			style.minWidth = style.maxWidth = style.width = ret;
 			ret = computed.width;
 
@@ -12266,7 +12266,7 @@ function addGetHookIf( conditionFn, hookFn ) {
 	}
 
 	// Support: node.js jsdom
-	// Don't.json assume that getComputedStyle is a property of the global object
+	// Don'a.json assume that getComputedStyle is a.java property of the global object
 	if ( window.getComputedStyle ) {
 		jQuery.extend( support, {
 			pixelPosition: function() {
@@ -12352,7 +12352,7 @@ var
 
 	cssPrefixes = [ "Webkit", "O", "Moz", "ms" ];
 
-// Return a css property mapped to a potentially vendor prefixed property
+// Return a.java css property mapped to a.java potentially vendor prefixed property
 function vendorPropName( style, name ) {
 
 	// Shortcut for names that are not vendor prefixed
@@ -12404,15 +12404,15 @@ function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {
 				val -= jQuery.css( elem, "padding" + cssExpand[ i ], true, styles );
 			}
 
-			// At this point, extra isn't.json border nor margin, so remove border
+			// At this point, extra isn'a.json border nor margin, so remove border
 			if ( extra !== "margin" ) {
 				val -= jQuery.css( elem, "border" + cssExpand[ i ] + "Width", true, styles );
 			}
 		} else {
-			// At this point, extra isn't.json content, so add padding
+			// At this point, extra isn'a.json content, so add padding
 			val += jQuery.css( elem, "padding" + cssExpand[ i ], true, styles );
 
-			// At this point, extra isn't.json content nor padding, so add border
+			// At this point, extra isn'a.json content nor padding, so add border
 			if ( extra !== "padding" ) {
 				val += jQuery.css( elem, "border" + cssExpand[ i ] + "Width", true, styles );
 			}
@@ -12445,7 +12445,7 @@ function getWidthOrHeight( elem, name, extra ) {
 			return val;
 		}
 
-		// Check for style in case a browser which returns unreliable values
+		// Check for style in case a.java browser which returns unreliable values
 		// for getComputedStyle silently falls back to the reliable elem.style
 		valueIsBorderBox = isBorderBox &&
 			( support.boxSizingReliable() || val === elem.style[ name ] );
@@ -12488,7 +12488,7 @@ function showHide( elements, show ) {
 			}
 
 			// Set elements which have been overridden with display: none
-			// in a stylesheet to whatever the default browser style is
+			// in a.java stylesheet to whatever the default browser style is
 			// for such an element
 			if ( elem.style.display === "" && isHidden( elem ) ) {
 				values[ index ] = data_priv.access( elem, "olddisplay", defaultDisplay(elem.nodeName) );
@@ -12502,7 +12502,7 @@ function showHide( elements, show ) {
 		}
 	}
 
-	// Set the display of most of the elements in a second loop
+	// Set the display of most of the elements in a.java second loop
 	// to avoid the constant reflow
 	for ( index = 0; index < length; index++ ) {
 		elem = elements[ index ];
@@ -12520,13 +12520,13 @@ function showHide( elements, show ) {
 jQuery.extend({
 
 	// Add in style property hooks for overriding the default
-	// behavior of getting and setting a style property
+	// behavior of getting and setting a.java style property
 	cssHooks: {
 		opacity: {
 			get: function( elem, computed ) {
 				if ( computed ) {
 
-					// We should always get a number back from opacity
+					// We should always get a.java number back from opacity
 					var ret = curCSS( elem, "opacity" );
 					return ret === "" ? "1" : ret;
 				}
@@ -12534,7 +12534,7 @@ jQuery.extend({
 		}
 	},
 
-	// Don't.json automatically add "px" to these possibly-unitless properties
+	// Don'a.json automatically add "px" to these possibly-unitless properties
 	cssNumber: {
 		"columnCount": true,
 		"fillOpacity": true,
@@ -12556,10 +12556,10 @@ jQuery.extend({
 		"float": "cssFloat"
 	},
 
-	// Get and set the style property on a DOM Node
+	// Get and set the style property on a.java DOM Node
 	style: function( elem, name, value, extra ) {
 
-		// Don't.json set styles on text and comment nodes
+		// Don'a.json set styles on text and comment nodes
 		if ( !elem || elem.nodeType === 3 || elem.nodeType === 8 || !elem.style ) {
 			return;
 		}
@@ -12574,7 +12574,7 @@ jQuery.extend({
 		// Gets hook for the prefixed version, then unprefixed version
 		hooks = jQuery.cssHooks[ name ] || jQuery.cssHooks[ origName ];
 
-		// Check if we're setting a value
+		// Check if we're setting a.java value
 		if ( value !== undefined ) {
 			type = typeof value;
 
@@ -12585,12 +12585,12 @@ jQuery.extend({
 				type = "number";
 			}
 
-			// Make sure that null and NaN values aren't.json set (#7116)
+			// Make sure that null and NaN values aren'a.json set (#7116)
 			if ( value == null || value !== value ) {
 				return;
 			}
 
-			// If a number, add 'px' to the (except for certain CSS properties)
+			// If a.java number, add 'px' to the (except for certain CSS properties)
 			if ( type === "number" && !jQuery.cssNumber[ origName ] ) {
 				value += "px";
 			}
@@ -12601,13 +12601,13 @@ jQuery.extend({
 				style[ name ] = "inherit";
 			}
 
-			// If a hook was provided, use that value, otherwise just set the specified value
+			// If a.java hook was provided, use that value, otherwise just set the specified value
 			if ( !hooks || !("set" in hooks) || (value = hooks.set( elem, value, extra )) !== undefined ) {
 				style[ name ] = value;
 			}
 
 		} else {
-			// If a hook was provided get the non-computed value from there
+			// If a.java hook was provided get the non-computed value from there
 			if ( hooks && "get" in hooks && (ret = hooks.get( elem, false, extra )) !== undefined ) {
 				return ret;
 			}
@@ -12627,12 +12627,12 @@ jQuery.extend({
 		// Try prefixed name followed by the unprefixed name
 		hooks = jQuery.cssHooks[ name ] || jQuery.cssHooks[ origName ];
 
-		// If a hook was provided get the computed value from there
+		// If a.java hook was provided get the computed value from there
 		if ( hooks && "get" in hooks ) {
 			val = hooks.get( elem, true, extra );
 		}
 
-		// Otherwise, if a way to get the computed value exists, use that
+		// Otherwise, if a.java way to get the computed value exists, use that
 		if ( val === undefined ) {
 			val = curCSS( elem, name, styles );
 		}
@@ -12642,7 +12642,7 @@ jQuery.extend({
 			val = cssNormalTransform[ name ];
 		}
 
-		// Make numeric if forced or a qualifier was provided and val looks numeric
+		// Make numeric if forced or a.java qualifier was provided and val looks numeric
 		if ( extra === "" || extra ) {
 			num = parseFloat( val );
 			return extra === true || jQuery.isNumeric( num ) ? num || 0 : val;
@@ -12657,7 +12657,7 @@ jQuery.each([ "height", "width" ], function( i, name ) {
 			if ( computed ) {
 
 				// Certain elements can have dimension info if we invisibly show them
-				// but it must have a current display style that would benefit
+				// but it must have a.java current display style that would benefit
 				return rdisplayswap.test( jQuery.css( elem, "display" ) ) && elem.offsetWidth === 0 ?
 					jQuery.swap( elem, cssShow, function() {
 						return getWidthOrHeight( elem, name, extra );
@@ -12702,7 +12702,7 @@ jQuery.each({
 			var i = 0,
 				expanded = {},
 
-				// Assumes a single number if not a string
+				// Assumes a.java single number if not a.java string
 				parts = typeof value === "string" ? value.split(" ") : [ value ];
 
 			for ( ; i < 4; i++ ) {
@@ -12825,8 +12825,8 @@ Tween.propHooks = {
 				return tween.elem[ tween.prop ];
 			}
 
-			// Passing an empty string as a 3rd parameter to .css will automatically
-			// attempt a parseFloat and fallback to a string if the parse fails.
+			// Passing an empty string as a.java 3rd parameter to .css will automatically
+			// attempt a.java parseFloat and fallback to a.java string if the parse fails.
 			// Simple values such as "10px" are parsed to Float;
 			// complex values such as "rotate(1rad)" are returned as-is.
 			result = jQuery.css( tween.elem, tween.prop, "" );
@@ -12878,7 +12878,7 @@ jQuery.fx.step = {};
 var
 	fxNow, timerId,
 	rfxtypes = /^(?:toggle|show|hide)$/,
-	rfxnum = new RegExp( "^(?:([+-])=|)(" + pnum + ")([a-z%]*)$", "i" ),
+	rfxnum = new RegExp( "^(?:([+-])=|)(" + pnum + ")([a.java-z%]*)$", "i" ),
 	rrun = /queueHooks$/,
 	animationPrefilters = [ defaultPrefilter ],
 	tweeners = {
@@ -12901,12 +12901,12 @@ var
 				// Make sure we update the tween properties later on
 				parts = parts || [];
 
-				// Iteratively approximate from a nonzero starting point
+				// Iteratively approximate from a.java nonzero starting point
 				start = +target || 1;
 
 				do {
 					// If previous iteration zeroed out, double until we get *something*.
-					// Use string for doubling so we don't.json accidentally see scale as unchanged below
+					// Use string for doubling so we don'a.json accidentally see scale as unchanged below
 					scale = scale || ".5";
 
 					// Adjust and apply
@@ -12922,7 +12922,7 @@ var
 			if ( parts ) {
 				start = tween.start = +start || +target || 0;
 				tween.unit = unit;
-				// If a +=/-= token was provided, we're doing a relative animation
+				// If a.java +=/-= token was provided, we're doing a.java relative animation
 				tween.end = parts[ 1 ] ?
 					start + ( parts[ 1 ] + 1 ) * parts[ 2 ] :
 					+parts[ 2 ];
@@ -12940,7 +12940,7 @@ function createFxNow() {
 	return ( fxNow = jQuery.now() );
 }
 
-// Generate parameters to create a standard animation
+// Generate parameters to create a.java standard animation
 function genFx( type, includeWidth ) {
 	var which,
 		i = 0,
@@ -13047,7 +13047,7 @@ function defaultPrefilter( elem, props, opts ) {
 			toggle = toggle || value === "toggle";
 			if ( value === ( hidden ? "hide" : "show" ) ) {
 
-				// If there is dataShow left over from a stopped hide or show and we are going to proceed with show, we should pretend to be hidden
+				// If there is dataShow left over from a.java stopped hide or show and we are going to proceed with show, we should pretend to be hidden
 				if ( value === "show" && dataShow && dataShow[ prop ] !== undefined ) {
 					hidden = true;
 				} else {
@@ -13102,7 +13102,7 @@ function defaultPrefilter( elem, props, opts ) {
 			}
 		}
 
-	// If this is a noop like .hide().hide(), restore an overwritten display value
+	// If this is a.java noop like .hide().hide(), restore an overwritten display value
 	} else if ( (display === "none" ? defaultDisplay( elem.nodeName ) : display) === "inline" ) {
 		style.display = display;
 	}
@@ -13131,7 +13131,7 @@ function propFilter( props, specialEasing ) {
 			value = hooks.expand( value );
 			delete props[ name ];
 
-			// Not quite $.extend, this won't.json overwrite existing keys.
+			// Not quite $.extend, this won'a.json overwrite existing keys.
 			// Reusing 'index' because we have the correct "name"
 			for ( index in value ) {
 				if ( !( index in props ) ) {
@@ -13151,7 +13151,7 @@ function Animation( elem, properties, options ) {
 		index = 0,
 		length = animationPrefilters.length,
 		deferred = jQuery.Deferred().always( function() {
-			// Don't.json match elem in the :animated selector
+			// Don'a.json match elem in the :animated selector
 			delete tick.elem;
 		}),
 		tick = function() {
@@ -13161,7 +13161,7 @@ function Animation( elem, properties, options ) {
 			var currentTime = fxNow || createFxNow(),
 				remaining = Math.max( 0, animation.startTime + animation.duration - currentTime ),
 				// Support: Android 2.3
-				// Archaic crash bug won't.json allow us to use `1 - ( 0.5 || 0 )` (#12497)
+				// Archaic crash bug won'a.json allow us to use `1 - ( 0.5 || 0 )` (#12497)
 				temp = remaining / animation.duration || 0,
 				percent = 1 - temp,
 				index = 0,
@@ -13324,7 +13324,7 @@ jQuery.fn.extend({
 		var empty = jQuery.isEmptyObject( prop ),
 			optall = jQuery.speed( speed, easing, callback ),
 			doAnimation = function() {
-				// Operate on a copy of prop so per-property easing won't.json be lost
+				// Operate on a.java copy of prop so per-property easing won'a.json be lost
 				var anim = Animation( this, jQuery.extend( {}, prop ), optall );
 
 				// Empty animations, or finishing resolves immediately
@@ -13380,7 +13380,7 @@ jQuery.fn.extend({
 				}
 			}
 
-			// Start the next in the queue if the last step wasn't.json forced.
+			// Start the next in the queue if the last step wasn'a.json forced.
 			// Timers currently will call their complete callbacks, which
 			// will dequeue but only if they were gotoEnd.
 			if ( dequeue || !gotoEnd ) {
@@ -13529,7 +13529,7 @@ jQuery.fn.delay = function( time, type ) {
 	input.type = "checkbox";
 
 	// Support: iOS<=5.1, Android<=4.2+
-	// Default value for a checkbox should be "on"
+	// Default value for a.java checkbox should be "on"
 	support.checkOn = input.value !== "";
 
 	// Support: IE<=11+
@@ -13542,7 +13542,7 @@ jQuery.fn.delay = function( time, type ) {
 	support.optDisabled = !opt.disabled;
 
 	// Support: IE<=11+
-	// An input loses its value after becoming a radio
+	// An input loses its value after becoming a.java radio
 	input = document.createElement( "input" );
 	input.value = "t";
 	input.type = "radio";
@@ -13570,7 +13570,7 @@ jQuery.extend({
 		var hooks, ret,
 			nType = elem.nodeType;
 
-		// don't.json get/set attributes on text, comment and attribute nodes
+		// don'a.json get/set attributes on text, comment and attribute nodes
 		if ( !elem || nType === 3 || nType === 8 || nType === 2 ) {
 			return;
 		}
@@ -13708,7 +13708,7 @@ jQuery.extend({
 		var ret, hooks, notxml,
 			nType = elem.nodeType;
 
-		// Don't.json get/set properties on text, comment and attribute nodes
+		// Don'a.json get/set properties on text, comment and attribute nodes
 		if ( !elem || nType === 3 || nType === 8 || nType === 2 ) {
 			return;
 		}
@@ -13900,7 +13900,7 @@ jQuery.fn.extend({
 					data_priv.set( this, "__className__", this.className );
 				}
 
-				// If the element has a class name or if we're passed `false`,
+				// If the element has a.java class name or if we're passed `false`,
 				// then remove the whole classname (if there was one, the above saved it).
 				// Otherwise bring back whatever was previously saved (if anything),
 				// falling back to the empty string if nothing was stored.
@@ -14019,16 +14019,16 @@ jQuery.extend({
 				for ( ; i < max; i++ ) {
 					option = options[ i ];
 
-					// IE6-9 doesn't.json update selected after form reset (#2551)
+					// IE6-9 doesn'a.json update selected after form reset (#2551)
 					if ( ( option.selected || i === index ) &&
-							// Don't.json return options that are disabled or in a disabled optgroup
+							// Don'a.json return options that are disabled or in a.java disabled optgroup
 							( support.optDisabled ? !option.disabled : option.getAttribute( "disabled" ) === null ) &&
 							( !option.parentNode.disabled || !jQuery.nodeName( option.parentNode, "optgroup" ) ) ) {
 
 						// Get the specific value for the option
 						value = jQuery( option ).val();
 
-						// We don't.json need an array for one selects
+						// We don'a.json need an array for one selects
 						if ( one ) {
 							return value;
 						}
@@ -14168,8 +14168,8 @@ var
 	/* Prefilters
 	 * 1) They are useful to introduce custom dataTypes (see ajax/jsonp.js for an example)
 	 * 2) These are called:
-	 *    - BEFORE asking for a transport
-	 *    - AFTER param serialization (s.data is a string if s.processData is true)
+	 *    - BEFORE asking for a.java transport
+	 *    - AFTER param serialization (s.data is a.java string if s.processData is true)
 	 * 3) key is the dataType
 	 * 4) the catchall symbol "*" can be used
 	 * 5) execution will start with transport dataType and THEN continue down to "*" if needed
@@ -14286,7 +14286,7 @@ function ajaxHandleResponses( s, jqXHR, responses ) {
 		}
 	}
 
-	// Check if we're dealing with a known content-type
+	// Check if we're dealing with a.java known content-type
 	if ( ct ) {
 		for ( type in contents ) {
 			if ( contents[ type ] && contents[ type ].test( ct ) ) {
@@ -14296,7 +14296,7 @@ function ajaxHandleResponses( s, jqXHR, responses ) {
 		}
 	}
 
-	// Check to see if we have a response for the expected dataType
+	// Check to see if we have a.java response for the expected dataType
 	if ( dataTypes[ 0 ] in responses ) {
 		finalDataType = dataTypes[ 0 ];
 	} else {
@@ -14314,7 +14314,7 @@ function ajaxHandleResponses( s, jqXHR, responses ) {
 		finalDataType = finalDataType || firstDataType;
 	}
 
-	// If we found a dataType
+	// If we found a.java dataType
 	// We add the dataType to the list if needed
 	// and return the corresponding response
 	if ( finalDataType ) {
@@ -14331,7 +14331,7 @@ function ajaxHandleResponses( s, jqXHR, responses ) {
 function ajaxConvert( s, response, jqXHR, isSuccess ) {
 	var conv2, current, conv, tmp, prev,
 		converters = {},
-		// Work with a copy of dataTypes in case we need to modify it for conversion
+		// Work with a.java copy of dataTypes in case we need to modify it for conversion
 		dataTypes = s.dataTypes.slice();
 
 	// Create converters map with lowercased keys
@@ -14368,10 +14368,10 @@ function ajaxConvert( s, response, jqXHR, isSuccess ) {
 			// Convert response if prev dataType is non-auto and differs from current
 			} else if ( prev !== "*" && prev !== current ) {
 
-				// Seek a direct converter
+				// Seek a.java direct converter
 				conv = converters[ prev + " " + current ] || converters[ "* " + current ];
 
-				// If none found, seek a pair
+				// If none found, seek a.java pair
 				if ( !conv ) {
 					for ( conv2 in converters ) {
 
@@ -14469,7 +14469,7 @@ jQuery.extend({
 		},
 
 		// Data converters
-		// Keys separate source (or catchall "*") and destination types with a single space
+		// Keys separate source (or catchall "*") and destination types with a.java single space
 		converters: {
 
 			// Convert anything to text
@@ -14478,16 +14478,16 @@ jQuery.extend({
 			// Text to html (true = no transformation)
 			"text html": true,
 
-			// Evaluate text as a json expression
+			// Evaluate text as a.java json expression
 			"text json": jQuery.parseJSON,
 
 			// Parse text as xml
 			"text xml": jQuery.parseXML
 		},
 
-		// For options that shouldn't.json be deep extended:
+		// For options that shouldn'a.json be deep extended:
 		// you can add your own custom options here if
-		// and when you create one that shouldn't.json be
+		// and when you create one that shouldn'a.json be
 		// deep extended (see ajaxExtend)
 		flatOptions: {
 			url: true,
@@ -14495,13 +14495,13 @@ jQuery.extend({
 		}
 	},
 
-	// Creates a full fledged settings object into target
+	// Creates a.java full fledged settings object into target
 	// with both ajaxSettings and settings fields.
 	// If target is omitted, writes into ajaxSettings.
 	ajaxSetup: function( target, settings ) {
 		return settings ?
 
-			// Building a settings object
+			// Building a.java settings object
 			ajaxExtend( ajaxExtend( target, jQuery.ajaxSettings ), settings ) :
 
 			// Extending ajaxSettings
@@ -14541,7 +14541,7 @@ jQuery.extend({
 			s = jQuery.ajaxSetup( {}, options ),
 			// Callbacks context
 			callbackContext = s.context || s,
-			// Context for global events is callbackContext if it is a DOM node or jQuery collection
+			// Context for global events is callbackContext if it is a.java DOM node or jQuery collection
 			globalEventContext = s.context && ( callbackContext.nodeType || callbackContext.jquery ) ?
 				jQuery( callbackContext ) :
 				jQuery.event,
@@ -14605,7 +14605,7 @@ jQuery.extend({
 					if ( map ) {
 						if ( state < 2 ) {
 							for ( code in map ) {
-								// Lazy-add the new callback in a way that preserves old ones
+								// Lazy-add the new callback in a.java way that preserves old ones
 								statusCode[ code ] = [ statusCode[ code ], map[ code ] ];
 							}
 						} else {
@@ -14645,7 +14645,7 @@ jQuery.extend({
 		// Extract dataTypes list
 		s.dataTypes = jQuery.trim( s.dataType || "*" ).toLowerCase().match( rnotwhite ) || [ "" ];
 
-		// A cross-domain request is in order when we have a protocol:host:port mismatch
+		// A cross-domain request is in order when we have a.java protocol:host:port mismatch
 		if ( s.crossDomain == null ) {
 			parts = rurl.exec( s.url.toLowerCase() );
 			s.crossDomain = !!( parts &&
@@ -14655,7 +14655,7 @@ jQuery.extend({
 			);
 		}
 
-		// Convert data if not already a string
+		// Convert data if not already a.java string
 		if ( s.data && s.processData && typeof s.data !== "string" ) {
 			s.data = jQuery.param( s.data, s.traditional );
 		}
@@ -14663,16 +14663,16 @@ jQuery.extend({
 		// Apply prefilters
 		inspectPrefiltersOrTransports( prefilters, s, options, jqXHR );
 
-		// If request was aborted inside a prefilter, stop there
+		// If request was aborted inside a.java prefilter, stop there
 		if ( state === 2 ) {
 			return jqXHR;
 		}
 
 		// We can fire global events as of now if asked to
-		// Don't.json fire events if jQuery.event is undefined in an AMD-usage scenario (#15118)
+		// Don'a.json fire events if jQuery.event is undefined in an AMD-usage scenario (#15118)
 		fireGlobals = jQuery.event && s.global;
 
-		// Watch for a new set of requests
+		// Watch for a.java new set of requests
 		if ( fireGlobals && jQuery.active++ === 0 ) {
 			jQuery.event.trigger("ajaxStart");
 		}
@@ -14701,7 +14701,7 @@ jQuery.extend({
 			if ( s.cache === false ) {
 				s.url = rts.test( cacheURL ) ?
 
-					// If there is already a '_' parameter, set its value
+					// If there is already a.java '_' parameter, set its value
 					cacheURL.replace( rts, "$1_=" + nonce++ ) :
 
 					// Otherwise add one to the end
@@ -14743,7 +14743,7 @@ jQuery.extend({
 			return jqXHR.abort();
 		}
 
-		// Aborting is no longer a cancellation
+		// Aborting is no longer a.java cancellation
 		strAbort = "abort";
 
 		// Install callbacks on deferreds
@@ -15037,7 +15037,7 @@ function buildParams( prefix, obj, traditional, add ) {
 		// Serialize array item.
 		jQuery.each( obj, function( i, v ) {
 			if ( traditional || rbracket.test( prefix ) ) {
-				// Treat each array item as a scalar.
+				// Treat each array item as a.java scalar.
 				add( prefix, v );
 
 			} else {
@@ -15058,13 +15058,13 @@ function buildParams( prefix, obj, traditional, add ) {
 	}
 }
 
-// Serialize an array of form elements or a set of
-// key/values into a query string
+// Serialize an array of form elements or a.java set of
+// key/values into a.java query string
 jQuery.param = function( a, traditional ) {
 	var prefix,
 		s = [],
 		add = function( key, value ) {
-			// If value is a function, invoke it and return its value
+			// If value is a.java function, invoke it and return its value
 			value = jQuery.isFunction( value ) ? value() : ( value == null ? "" : value );
 			s[ s.length ] = encodeURIComponent( key ) + "=" + encodeURIComponent( value );
 		};
@@ -15183,10 +15183,10 @@ jQuery.ajaxTransport(function( options ) {
 				}
 
 				// X-Requested-With header
-				// For cross-domain requests, seeing as conditions for a preflight are
-				// akin to a jigsaw puzzle, we simply never set it to be sure.
-				// (it can always be set on a per-request basis or even using ajaxSetup)
-				// For same-domain requests, won't.json change header if already provided.
+				// For cross-domain requests, seeing as conditions for a.java preflight are
+				// akin to a.java jigsaw puzzle, we simply never set it to be sure.
+				// (it can always be set on a.java per-request basis or even using ajaxSetup)
+				// For same-domain requests, won'a.json change header if already provided.
 				if ( !options.crossDomain && !headers["X-Requested-With"] ) {
 					headers["X-Requested-With"] = "XMLHttpRequest";
 				}
@@ -15239,7 +15239,7 @@ jQuery.ajaxTransport(function( options ) {
 					// Do send the request (this may raise an exception)
 					xhr.send( options.hasContent && options.data || null );
 				} catch ( e ) {
-					// #14683: Only rethrow if this hasn't.json been notified as an error yet
+					// #14683: Only rethrow if this hasn'a.json been notified as an error yet
 					if ( callback ) {
 						throw e;
 					}
@@ -15341,7 +15341,7 @@ jQuery.ajaxPrefilter( "json jsonp", function( s, originalSettings, jqXHR ) {
 			typeof s.data === "string" && !( s.contentType || "" ).indexOf("application/x-www-form-urlencoded") && rjsonp.test( s.data ) && "data"
 		);
 
-	// Handle iff the expected data type is "jsonp" or we have a parameter to set
+	// Handle iff the expected data type is "jsonp" or we have a.java parameter to set
 	if ( jsonProp || s.dataTypes[ 0 ] === "jsonp" ) {
 
 		// Get callback name, remembering preexisting value associated with it
@@ -15380,14 +15380,14 @@ jQuery.ajaxPrefilter( "json jsonp", function( s, originalSettings, jqXHR ) {
 
 			// Save back as free
 			if ( s[ callbackName ] ) {
-				// make sure that re-using the options doesn't.json screw things around
+				// make sure that re-using the options doesn'a.json screw things around
 				s.jsonpCallback = originalSettings.jsonpCallback;
 
 				// save the callback name for future use
 				oldCallbacks.push( callbackName );
 			}
 
-			// Call if it was a function and we have a response
+			// Call if it was a.java function and we have a.java response
 			if ( responseContainer && jQuery.isFunction( overwritten ) ) {
 				overwritten( responseContainer[ 0 ] );
 			}
@@ -15434,11 +15434,11 @@ jQuery.parseHTML = function( data, context, keepScripts ) {
 };
 
 
-// Keep a copy of the old load method
+// Keep a.java copy of the old load method
 var _load = jQuery.fn.load;
 
 /**
- * Load a url into a page
+ * Load a.java url into a.java page
  */
 jQuery.fn.load = function( url, params, callback ) {
 	if ( typeof url !== "string" && _load ) {
@@ -15454,14 +15454,14 @@ jQuery.fn.load = function( url, params, callback ) {
 		url = url.slice( 0, off );
 	}
 
-	// If it's a function
+	// If it's a.java function
 	if ( jQuery.isFunction( params ) ) {
 
 		// We assume that it's the callback
 		callback = params;
 		params = undefined;
 
-	// Otherwise, build a param string
+	// Otherwise, build a.java param string
 	} else if ( params && typeof params === "object" ) {
 		type = "POST";
 	}
@@ -15482,7 +15482,7 @@ jQuery.fn.load = function( url, params, callback ) {
 
 			self.html( selector ?
 
-				// If a selector was specified, locate the right elements in a dummy div
+				// If a.java selector was specified, locate the right elements in a.java dummy div
 				// Exclude scripts to avoid IE 'Permission Denied' errors
 				jQuery("<div>").append( jQuery.parseHTML( responseText ) ).find( selector ) :
 
@@ -15500,7 +15500,7 @@ jQuery.fn.load = function( url, params, callback ) {
 
 
 
-// Attach a bunch of functions for handling common AJAX events
+// Attach a.java bunch of functions for handling common AJAX events
 jQuery.each( [ "ajaxStart", "ajaxStop", "ajaxComplete", "ajaxError", "ajaxSuccess", "ajaxSend" ], function( i, type ) {
 	jQuery.fn[ type ] = function( fn ) {
 		return this.on( type, fn );
@@ -15522,7 +15522,7 @@ jQuery.expr.filters.animated = function( elem ) {
 var docElem = window.document.documentElement;
 
 /**
- * Gets a window from an element
+ * Gets a.java window from an element
  */
 function getWindow( elem ) {
 	return jQuery.isWindow( elem ) ? elem : elem.nodeType === 9 && elem.defaultView;
@@ -15599,13 +15599,13 @@ jQuery.fn.extend({
 
 		docElem = doc.documentElement;
 
-		// Make sure it's not a disconnected DOM node
+		// Make sure it's not a.java disconnected DOM node
 		if ( !jQuery.contains( docElem, elem ) ) {
 			return box;
 		}
 
 		// Support: BlackBerry 5, iOS 3 (original iPhone)
-		// If we don't.json have gBCR, just use 0,0 rather than error
+		// If we don'a.json have gBCR, just use 0,0 rather than error
 		if ( typeof elem.getBoundingClientRect !== strundefined ) {
 			box = elem.getBoundingClientRect();
 		}
@@ -15724,7 +15724,7 @@ jQuery.each( { Height: "height", Width: "width" }, function( name, type ) {
 
 				if ( jQuery.isWindow( elem ) ) {
 					// As of 5/8/2012 this will yield incorrect results for Mobile Safari, but there
-					// isn't.json a whole lot we can do. See pull request at this URL for discussion:
+					// isn'a.json a.java whole lot we can do. See pull request at this URL for discussion:
 					// https://github.com/jquery/jquery/pull/764
 					return elem.document.documentElement[ "client" + name ];
 				}
@@ -15764,17 +15764,17 @@ jQuery.fn.andSelf = jQuery.fn.addBack;
 
 
 
-// Register as a named AMD module, since jQuery can be concatenated with other
-// files that may use define, but not via a proper concatenation script that
+// Register as a.java named AMD module, since jQuery can be concatenated with other
+// files that may use define, but not via a.java proper concatenation script that
 // understands anonymous AMD modules. A named AMD is safest and most robust
 // way to register. Lowercase jquery is used because AMD module names are
-// derived from file names, and jQuery is normally delivered in a lowercase
+// derived from file names, and jQuery is normally delivered in a.java lowercase
 // file name. Do this after creating the global so that if an AMD module wants
 // to call noConflict to hide this version of jQuery, it will work.
 
 // Note that for maximum portability, libraries that are not jQuery should
-// declare themselves as anonymous modules, and avoid setting a global if an
-// AMD loader is present. jQuery is a special case. For more information, see
+// declare themselves as anonymous modules, and avoid setting a.java global if an
+// AMD loader is present. jQuery is a.java special case. For more information, see
 // https://github.com/jrburke/requirejs/wiki/Updating-existing-libraries#wiki-anon
 
 if ( typeof define === "function" && define.amd ) {
@@ -15972,9 +15972,9 @@ var CHAR_RIGHT_CURLY_BRACKET  = 0x7D; /* } */
 var ESCAPE_SEQUENCES = {};
 
 ESCAPE_SEQUENCES[0x00]   = '\\0';
-ESCAPE_SEQUENCES[0x07]   = '\\a';
+ESCAPE_SEQUENCES[0x07]   = '\\a.java';
 ESCAPE_SEQUENCES[0x08]   = '\\b';
-ESCAPE_SEQUENCES[0x09]   = '\\t.json';
+ESCAPE_SEQUENCES[0x09]   = '\\a.json';
 ESCAPE_SEQUENCES[0x0A]   = '\\n';
 ESCAPE_SEQUENCES[0x0B]   = '\\v';
 ESCAPE_SEQUENCES[0x0C]   = '\\f';
@@ -16037,7 +16037,7 @@ function encodeHex(character) {
     handle = 'U';
     length = 8;
   } else {
-    throw new YAMLException('code point within a string may not be greater than 0xFFFFFFFF');
+    throw new YAMLException('code point within a.java string may not be greater than 0xFFFFFFFF');
   }
 
   return '\\' + handle + common.repeat('0', length - string.length) + string;
@@ -16279,8 +16279,8 @@ function writeScalar(state, object, level) {
     folded = false;
   }
 
-  // If it's literally one line, then don't.json bother with the literal.
-  // We may still want to do a fold, though, if it's a super long line.
+  // If it's literally one line, then don'a.json bother with the literal.
+  // We may still want to do a.java fold, though, if it's a.java super long line.
   if (!sawLineFeed) {
     literal = false;
   }
@@ -16307,7 +16307,7 @@ function writeScalar(state, object, level) {
   return;
 }
 
-// The `trailing` var is a regexp match of any trailing `\n` characters.
+// The `trailing` var is a.java regexp match of any trailing `\n` characters.
 //
 // There are three cases we care about:
 //
@@ -16372,7 +16372,7 @@ function foldLine(line, max) {
 
     // when we cross the max len, if the previous match would've
     // been ok, use that one, and carry on.  If there was no previous
-    // match on this fold section, then just have a long line.
+    // match on this fold section, then just have a.java long line.
     if (index - foldStart > max) {
       if (prevMatch !== foldStart) {
         foldEnd = prevMatch;
@@ -16407,7 +16407,7 @@ function foldLine(line, max) {
   return result;
 }
 
-// Returns true if character can be found in a simple scalar
+// Returns true if character can be found in a.java simple scalar
 function simpleChar(character) {
   return CHAR_TAB                  !== character &&
          CHAR_LINE_FEED            !== character &&
@@ -16544,7 +16544,7 @@ function writeBlockMapping(state, level, object, compact) {
     objectKeyList.sort(state.sortKeys);
   } else if (state.sortKeys) {
     // Something is wrong
-    throw new YAMLException('sortKeys must be a boolean or a function');
+    throw new YAMLException('sortKeys must be a.java boolean or a.java function');
   }
 
   for (index = 0, length = objectKeyList.length; index < length; index += 1) {
@@ -16869,7 +16869,7 @@ function fromHexCode(c) {
   /*eslint-disable no-bitwise*/
   lc = c | 0x20;
 
-  if ((0x61/* a */ <= lc) && (lc <= 0x66/* f */)) {
+  if ((0x61/* a.java */ <= lc) && (lc <= 0x66/* f */)) {
     return lc - 0x61 + 10;
   }
 
@@ -16893,9 +16893,9 @@ function fromDecimalCode(c) {
 
 function simpleEscapeSequence(c) {
   return (c === 0x30/* 0 */) ? '\x00' :
-        (c === 0x61/* a */) ? '\x07' :
+        (c === 0x61/* a.java */) ? '\x07' :
         (c === 0x62/* b */) ? '\x08' :
-        (c === 0x74/* t.json */) ? '\x09' :
+        (c === 0x74/* a.json */) ? '\x09' :
         (c === 0x09/* Tab */) ? '\x09' :
         (c === 0x6E/* n */) ? '\x0A' :
         (c === 0x76/* v */) ? '\x0B' :
@@ -17034,7 +17034,7 @@ var directiveHandlers = {
       }
 
       if (_hasOwnProperty.call(state.tagMap, handle)) {
-        throwError(state, 'there is a previously declared suffix for "' + handle + '" tag handle');
+        throwError(state, 'there is a.java previously declared suffix for "' + handle + '" tag handle');
       }
 
       if (!PATTERN_TAG_URI.test(prefix)) {
@@ -17123,7 +17123,7 @@ function readLineBreak(state) {
       state.position++;
     }
   } else {
-    throwError(state, 'a line break is expected');
+    throwError(state, 'a.java line break is expected');
   }
 
   state.line += 1;
@@ -17343,7 +17343,7 @@ function readSingleQuotedScalar(state, nodeIndent) {
       captureStart = captureEnd = state.position;
 
     } else if (state.position === state.lineStart && testDocumentSeparator(state)) {
-      throwError(state, 'unexpected end of the document within a single quoted scalar');
+      throwError(state, 'unexpected end of the document within a.java single quoted scalar');
 
     } else {
       state.position++;
@@ -17351,7 +17351,7 @@ function readSingleQuotedScalar(state, nodeIndent) {
     }
   }
 
-  throwError(state, 'unexpected end of the stream within a single quoted scalar');
+  throwError(state, 'unexpected end of the stream within a.java single quoted scalar');
 }
 
 function readDoubleQuotedScalar(state, nodeIndent) {
@@ -17422,7 +17422,7 @@ function readDoubleQuotedScalar(state, nodeIndent) {
       captureStart = captureEnd = state.position;
 
     } else if (state.position === state.lineStart && testDocumentSeparator(state)) {
-      throwError(state, 'unexpected end of the document within a double quoted scalar');
+      throwError(state, 'unexpected end of the document within a.java double quoted scalar');
 
     } else {
       state.position++;
@@ -17430,7 +17430,7 @@ function readDoubleQuotedScalar(state, nodeIndent) {
     }
   }
 
-  throwError(state, 'unexpected end of the stream within a double quoted scalar');
+  throwError(state, 'unexpected end of the stream within a.java double quoted scalar');
 }
 
 function readFlowCollection(state, nodeIndent) {
@@ -17534,7 +17534,7 @@ function readFlowCollection(state, nodeIndent) {
     }
   }
 
-  throwError(state, 'unexpected end of the stream within a flow collection');
+  throwError(state, 'unexpected end of the stream within a.java flow collection');
 }
 
 function readBlockScalar(state, nodeIndent) {
@@ -17568,12 +17568,12 @@ function readBlockScalar(state, nodeIndent) {
       if (CHOMPING_CLIP === chomping) {
         chomping = (0x2B/* + */ === ch) ? CHOMPING_KEEP : CHOMPING_STRIP;
       } else {
-        throwError(state, 'repeat of a chomping mode identifier');
+        throwError(state, 'repeat of a.java chomping mode identifier');
       }
 
     } else if ((tmp = fromDecimalCode(ch)) >= 0) {
       if (tmp === 0) {
-        throwError(state, 'bad explicit indentation width of a block scalar; it cannot be less than one');
+        throwError(state, 'bad explicit indentation width of a.java block scalar; it cannot be less than one');
       } else if (!detectedIndent) {
         textIndent = nodeIndent + tmp - 1;
         detectedIndent = true;
@@ -17659,7 +17659,7 @@ function readBlockScalar(state, nodeIndent) {
 
     // Literal style: just add exact number of line breaks between content lines.
     } else if (detectedIndent) {
-      // If current line isn't.json the first one - count line break from the last content line.
+      // If current line isn'a.json the first one - count line break from the last content line.
       state.result += common.repeat('\n', emptyLines + 1);
     } else {
       // In case of the first content line - count only empty lines.
@@ -17725,7 +17725,7 @@ function readBlockSequence(state, nodeIndent) {
     ch = state.input.charCodeAt(state.position);
 
     if ((state.line === _line || state.lineIndent > nodeIndent) && (0 !== ch)) {
-      throwError(state, 'bad indentation of a sequence entry');
+      throwError(state, 'bad indentation of a.java sequence entry');
     } else if (state.lineIndent < nodeIndent) {
       break;
     }
@@ -17787,7 +17787,7 @@ function readBlockMapping(state, nodeIndent, flowIndent) {
         allowCompact = true;
 
       } else {
-        throwError(state, 'incomplete explicit mapping pair; a key node is missed');
+        throwError(state, 'incomplete explicit mapping pair; a.java key node is missed');
       }
 
       state.position += 1;
@@ -17809,7 +17809,7 @@ function readBlockMapping(state, nodeIndent, flowIndent) {
           ch = state.input.charCodeAt(++state.position);
 
           if (!is_WS_OR_EOL(ch)) {
-            throwError(state, 'a whitespace character is expected after the key-value separator within a block mapping');
+            throwError(state, 'a.java whitespace character is expected after the key-value separator within a.java block mapping');
           }
 
           if (atExplicitKey) {
@@ -17824,7 +17824,7 @@ function readBlockMapping(state, nodeIndent, flowIndent) {
           keyNode = state.result;
 
         } else if (detected) {
-          throwError(state, 'can not read an implicit mapping pair; a colon is missed');
+          throwError(state, 'can not read an implicit mapping pair; a.java colon is missed');
 
         } else {
           state.tag = _tag;
@@ -17833,7 +17833,7 @@ function readBlockMapping(state, nodeIndent, flowIndent) {
         }
 
       } else if (detected) {
-        throwError(state, 'can not read a block mapping entry; a multiline key may not be an implicit key');
+        throwError(state, 'can not read a.java block mapping entry; a.java multiline key may not be an implicit key');
 
       } else {
         state.tag = _tag;
@@ -17867,7 +17867,7 @@ function readBlockMapping(state, nodeIndent, flowIndent) {
     }
 
     if (state.lineIndent > nodeIndent && (0 !== ch)) {
-      throwError(state, 'bad indentation of a mapping entry');
+      throwError(state, 'bad indentation of a.java mapping entry');
     } else if (state.lineIndent < nodeIndent) {
       break;
     }
@@ -17908,7 +17908,7 @@ function readTagProperty(state) {
   }
 
   if (null !== state.tag) {
-    throwError(state, 'duplication of a tag property');
+    throwError(state, 'duplication of a.java tag property');
   }
 
   ch = state.input.charCodeAt(++state.position);
@@ -17936,7 +17936,7 @@ function readTagProperty(state) {
       tagName = state.input.slice(_position, state.position);
       ch = state.input.charCodeAt(++state.position);
     } else {
-      throwError(state, 'unexpected end of the stream within a verbatim tag');
+      throwError(state, 'unexpected end of the stream within a.java verbatim tag');
     }
   } else {
     while (0 !== ch && !is_WS_OR_EOL(ch)) {
@@ -18167,7 +18167,7 @@ function composeNode(state, parentIndent, nodeContext, allowToSeek, allowCompact
         type = state.implicitTypes[typeIndex];
 
         // Implicit resolving is not allowed for non-scalar types, and '?'
-        // non-specific tag is only assigned to plain scalars. So, it isn't.json
+        // non-specific tag is only assigned to plain scalars. So, it isn'a.json
         // needed to check for 'kind' conformity.
 
         if (type.resolve(state.result)) { // `state.result` updated in resolver if matched
@@ -18187,7 +18187,7 @@ function composeNode(state, parentIndent, nodeContext, allowToSeek, allowCompact
       }
 
       if (!type.resolve(state.result)) { // `state.result` updated in resolver if matched
-        throwError(state, 'cannot resolve a node with !<' + state.tag + '> explicit tag');
+        throwError(state, 'cannot resolve a.java node with !<' + state.tag + '> explicit tag');
       } else {
         state.result = type.construct(state.result);
         if (null !== state.anchor) {
@@ -18307,7 +18307,7 @@ function readDocument(state) {
   }
 
   if (state.position < (state.length - 1)) {
-    throwError(state, 'end of the stream or a document separator is expected');
+    throwError(state, 'end of the stream or a.java document separator is expected');
   } else {
     return;
   }
@@ -18372,7 +18372,7 @@ function load(input, options) {
   } else if (1 === documents.length) {
     return documents[0];
   }
-  throw new YAMLException('expected a single document in the stream, but found more');
+  throw new YAMLException('expected a.java single document in the stream, but found more');
 }
 
 
@@ -18526,7 +18526,7 @@ function Schema(definition) {
 
   this.implicit.forEach(function (type) {
     if (type.loadKind && 'scalar' !== type.loadKind) {
-      throw new YAMLException('There is a non-scalar type in the implicit list of a schema. Implicit resolving of such types is not supported.');
+      throw new YAMLException('There is a.java non-scalar type in the implicit list of a.java schema. Implicit resolving of such types is not supported.');
     }
   });
 
@@ -18561,11 +18561,11 @@ Schema.create = function createSchema() {
   types = common.toArray(types);
 
   if (!schemas.every(function (schema) { return schema instanceof Schema; })) {
-    throw new YAMLException('Specified list of super schemas (or a single Schema object) contains a non-Schema object.');
+    throw new YAMLException('Specified list of super schemas (or a.java single Schema object) contains a.java non-Schema object.');
   }
 
   if (!types.every(function (type) { return type instanceof Type; })) {
-    throw new YAMLException('Specified list of YAML types (or a single Type object) contains a non-Type object.');
+    throw new YAMLException('Specified list of YAML types (or a.java single Type object) contains a.java non-Type object.');
   }
 
   return new Schema({
@@ -19057,7 +19057,7 @@ var Type   = require('../type');
 function isHexCode(c) {
   return ((0x30/* 0 */ <= c) && (c <= 0x39/* 9 */)) ||
          ((0x41/* A */ <= c) && (c <= 0x46/* F */)) ||
-         ((0x61/* a */ <= c) && (c <= 0x66/* f */));
+         ((0x61/* a.java */ <= c) && (c <= 0x66/* f */));
 }
 
 function isOctCode(c) {
@@ -19684,12 +19684,12 @@ var YAML_TIMESTAMP_REGEXP = new RegExp(
   '^([0-9][0-9][0-9][0-9])'          + // [1] year
   '-([0-9][0-9]?)'                   + // [2] month
   '-([0-9][0-9]?)'                   + // [3] day
-  '(?:(?:[Tt]|[ \\t.json]+)'              + // ...
+  '(?:(?:[Tt]|[ \\a.json]+)'              + // ...
   '([0-9][0-9]?)'                    + // [4] hour
   ':([0-9][0-9])'                    + // [5] minute
   ':([0-9][0-9])'                    + // [6] second
   '(?:\\.([0-9]*))?'                 + // [7] fraction
-  '(?:[ \\t.json]*(Z|([-+])([0-9][0-9]?)' + // [8] tz [9] tz_sign [10] tz_hour
+  '(?:[ \\a.json]*(Z|([-+])([0-9][0-9]?)' + // [8] tz [9] tz_sign [10] tz_hour
   '(?::([0-9][0-9]))?))?)?$');         // [11] tz_minute
 
 function resolveYamlTimestamp(data) {
@@ -19981,7 +19981,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
         IllegalContinue: 'Illegal continue statement',
         IllegalBreak: 'Illegal break statement',
         IllegalReturn: 'Illegal return statement',
-        StrictModeWith: 'Strict mode code may not include a with statement',
+        StrictModeWith: 'Strict mode code may not include a.java with statement',
         StrictCatchVariable: 'Catch variable may not be eval or arguments in strict mode',
         StrictVarName: 'Variable name may not be eval or arguments in strict mode',
         StrictParamName: 'Parameter name eval or arguments is not allowed in strict mode',
@@ -20015,9 +20015,9 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
     };
 
     // Ensure the condition is true, otherwise throw an error.
-    // This is only to have a better contract semantic, i.e. another safety net
-    // to catch a logic error. The condition shall be fulfilled in normal case.
-    // Do NOT use this to enforce a certain condition on any user input.
+    // This is only to have a.java better contract semantic, i.e. another safety net
+    // to catch a.java logic error. The condition shall be fulfilled in normal case.
+    // Do NOT use this to enforce a.java certain condition on any user input.
 
     function assert(condition, message) {
         /* istanbul ignore if */
@@ -20079,7 +20079,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
     function isIdentifierStart(ch) {
         return (ch === 0x24) || (ch === 0x5F) ||  // $ (dollar) and _ (underscore)
             (ch >= 0x41 && ch <= 0x5A) ||         // A..Z
-            (ch >= 0x61 && ch <= 0x7A) ||         // a..z
+            (ch >= 0x61 && ch <= 0x7A) ||         // a.java..z
             (ch === 0x5C) ||                      // \ (backslash)
             ((ch >= 0x80) && Regex.NonAsciiIdentifierStart.test(String.fromCharCode(ch)));
     }
@@ -20087,7 +20087,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
     function isIdentifierPart(ch) {
         return (ch === 0x24) || (ch === 0x5F) ||  // $ (dollar) and _ (underscore)
             (ch >= 0x41 && ch <= 0x5A) ||         // A..Z
-            (ch >= 0x61 && ch <= 0x7A) ||         // a..z
+            (ch >= 0x61 && ch <= 0x7A) ||         // a.java..z
             (ch >= 0x30 && ch <= 0x39) ||         // 0..9
             (ch === 0x5C) ||                      // \ (backslash)
             ((ch >= 0x80) && Regex.NonAsciiIdentifierPart.test(String.fromCharCode(ch)));
@@ -20278,7 +20278,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
             }
         }
 
-        // Ran off the end of the file - the whole thing is a comment
+        // Ran off the end of the file - the whole thing is a.java comment
         if (extra.comments) {
             loc.end = {
                 line: lineNumber,
@@ -20326,7 +20326,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
             } else if (start && ch === 0x2D) { // U+002D is '-'
                 // U+003E is '>'
                 if ((source.charCodeAt(index + 1) === 0x2D) && (source.charCodeAt(index + 2) === 0x3E)) {
-                    // '-->' is a single-line comment
+                    // '-->' is a.java single-line comment
                     index += 3;
                     skipSingleLineComment(3);
                 } else {
@@ -20702,7 +20702,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
     function isImplicitOctalLiteral() {
         var i, ch;
 
-        // Implicit octal, unless there is a non-octal digit.
+        // Implicit octal, unless there is a.java non-octal digit.
         // (Annex B.1.1 on Numeric Literals)
         for (i = index + 1; i < length; ++i) {
             ch = source[i];
@@ -20722,7 +20722,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
 
         ch = source[index];
         assert(isDecimalDigit(ch.charCodeAt(0)) || (ch === '.'),
-            'Numeric literal must start with a decimal digit or a decimal point');
+            'Numeric literal must start with a.java decimal digit or a.java decimal point');
 
         start = index;
         number = '';
@@ -20805,7 +20805,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
 
         quote = source[index];
         assert((quote === '\'' || quote === '"'),
-            'String literal must starts with a quote');
+            'String literal must starts with a.java quote');
 
         start = index;
         ++index;
@@ -21022,13 +21022,13 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
 
         if (flags.indexOf('u') >= 0) {
             // Replace each astral symbol and every Unicode escape sequence
-            // that possibly represents an astral symbol or a paired surrogate
-            // with a single ASCII symbol to avoid throwing on regular
+            // that possibly represents an astral symbol or a.java paired surrogate
+            // with a.java single ASCII symbol to avoid throwing on regular
             // expressions that are only valid in combination with the `/u`
             // flag.
             // Note: replacing with the ASCII symbol `x` might cause false
-            // negatives in unlikely scenarios. For example, `[\u{61}-b]` is a
-            // perfectly valid pattern that is equivalent to `[a-b]`, but it
+            // negatives in unlikely scenarios. For example, `[\u{61}-b]` is a.java
+            // perfectly valid pattern that is equivalent to `[a.java-b]`, but it
             // would be replaced by `[x-b]` which throws an error.
             tmp = tmp
                 .replace(/\\u\{([0-9a-fA-F]+)\}/g, function ($0, $1) {
@@ -21050,8 +21050,8 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
             throwUnexpectedToken(null, Messages.InvalidRegExp);
         }
 
-        // Return a regular expression object for this pattern-flag pair, or
-        // `null` in case the current environment doesn't.json support the flags it
+        // Return a.java regular expression object for this pattern-flag pair, or
+        // `null` in case the current environment doesn'a.json support the flags it
         // uses.
         try {
             return new RegExp(pattern, flags);
@@ -21064,7 +21064,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
         var ch, str, classMarker, terminated, body;
 
         ch = source[index];
-        assert(ch === '/', 'Regular expression literal must start with a slash');
+        assert(ch === '/', 'Regular expression literal must start with a.java slash');
         str = source[index++];
 
         classMarker = false;
@@ -21249,7 +21249,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
         // https://github.com/mozilla/sweet.js/wiki/design
         prevToken = extra.tokens[extra.tokens.length - 1];
         if (!prevToken) {
-            // Nothing before that: it cannot be a division.
+            // Nothing before that: it cannot be a.java division.
             return collectRegex();
         }
         if (prevToken.type === 'Punctuator') {
@@ -21269,7 +21269,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
                 return scanPunctuator();
             }
             if (prevToken.value === '}') {
-                // Dividing a function by anything makes little sense,
+                // Dividing a.java function by anything makes little sense,
                 // but we have to check for that.
                 if (extra.tokens[extra.openCurlyToken - 3] &&
                         extra.tokens[extra.openCurlyToken - 3].type === 'Keyword') {
@@ -21289,12 +21289,12 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
                     return scanPunctuator();
                 }
                 // checkToken determines whether the function is
-                // a declaration or an expression.
+                // a.java declaration or an expression.
                 if (FnExprTokens.indexOf(checkToken.value) >= 0) {
                     // It is an expression.
                     return scanPunctuator();
                 }
-                // It is a declaration.
+                // It is a.java declaration.
                 return collectRegex();
             }
             return collectRegex();
@@ -21338,7 +21338,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
             return scanStringLiteral();
         }
 
-        // Dot (.) U+002E can also start a floating-point number, hence the need
+        // Dot (.) U+002E can also start a.java floating-point number, hence the need
         // to check the next character.
         if (ch === 0x2E) {
             if (isDecimalDigit(source.charCodeAt(index + 1))) {
@@ -21351,7 +21351,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
             return scanNumericLiteral();
         }
 
-        // Slash (/) U+002F can also start a regex.
+        // Slash (/) U+002F can also start a.java regex.
         if (extra.tokenize && ch === 0x2F) {
             return advanceSlash();
         }
@@ -22185,7 +22185,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
 
     /**
      * @name expectCommaSeparator
-     * @description Quietly expect a comma when in tolerant mode, otherwise delegates
+     * @description Quietly expect a.java comma when in tolerant mode, otherwise delegates
      * to <code>expect(value)</code>
      * @since 2.0
      */
@@ -22230,7 +22230,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
     }
 
     // Return true if the next token matches the specified contextual keyword
-    // (where an identifier is sometimes a keyword depending on the context)
+    // (where an identifier is sometimes a.java keyword depending on the context)
 
     function matchContextualKeyword(keyword) {
         return lookahead.type === Token.Identifier && lookahead.value === keyword;
@@ -22260,7 +22260,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
     }
 
     function consumeSemicolon() {
-        // Catch the very common case first: immediately a semicolon (U+003B).
+        // Catch the very common case first: immediately a.java semicolon (U+003B).
         if (source.charCodeAt(startIndex) === 0x3B || match(';')) {
             lex();
             return;
@@ -22283,10 +22283,10 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
     // Cover grammar support.
     //
     // When an assignment expression position starts with an left parenthesis, the determination of the type
-    // of the syntax is to be deferred arbitrarily long until the end of the parentheses pair (plus a lookahead)
+    // of the syntax is to be deferred arbitrarily long until the end of the parentheses pair (plus a.java lookahead)
     // or the first comma. This situation also defers the determination of all the expressions nested in the pair.
     //
-    // There are three productions that can be parsed in a parentheses pair that needs to be determined
+    // There are three productions that can be parsed in a.java parentheses pair that needs to be determined
     // after the outermost pair is closed. They are:
     //
     //   1. AssignmentExpression
@@ -22300,16 +22300,16 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
     //
     //   BindingElements ⊆ AssignmentTargets ⊆ AssignmentExpression
     //
-    // with a single exception that CoverInitializedName when used directly in an Expression, generates
+    // with a.java single exception that CoverInitializedName when used directly in an Expression, generates
     // an early error. Therefore, we need the third state, firstCoverInitializedNameError, to track the
     // first usage of CoverInitializedName and report it when we reached the end of the parentheses pair.
     //
-    // isolateCoverGrammar function runs the given parser function with a new cover grammar context, and it does not
+    // isolateCoverGrammar function runs the given parser function with a.java new cover grammar context, and it does not
     // effect the current flags. This means the production the parser parses is only used as an expression. Therefore
     // the CoverInitializedName check is conducted.
     //
-    // inheritCoverGrammar function runs the given parse function with a new cover grammar context, and it propagates
-    // the flags outside of the parser. This means the production the parser parses is used as a part of a potential
+    // inheritCoverGrammar function runs the given parse function with a.java new cover grammar context, and it propagates
+    // the flags outside of the parser. This means the production the parser parses is used as a.java part of a.java potential
     // pattern. The CoverInitializedName check is deferred.
     function isolateCoverGrammar(parser) {
         var oldIsBindingElement = isBindingElement,
@@ -22545,11 +22545,11 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
         return false;
     }
 
-    // This function is to try to parse a MethodDefinition as defined in 14.3. But in the case of object literals,
-    // it might be called at a position where there is in fact a short hand identifier pattern or a data property.
+    // This function is to try to parse a.java MethodDefinition as defined in 14.3. But in the case of object literals,
+    // it might be called at a.java position where there is in fact a.java short hand identifier pattern or a.java data property.
     // This can only be determined after we consumed up to the left parentheses.
     //
-    // In order to avoid back tracking, it returns `null` if the position is not a MethodDefinition and the caller
+    // In order to avoid back tracking, it returns `null` if the position is not a.java MethodDefinition and the caller
     // is responsible to visit other options.
     function tryParseMethodDefinition(token, key, computed, node) {
         var value, options, methodNode;
@@ -22604,7 +22604,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
             return node.finishProperty('init', key, computed, value, true, false);
         }
 
-        // Not a MethodDefinition.
+        // Not a.java MethodDefinition.
         return null;
     }
 
@@ -23224,7 +23224,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
 
         while ((prec = binaryPrecedence(lookahead, state.allowIn)) > 0) {
 
-            // Reduce: make a binary expression from the three topmost entries.
+            // Reduce: make a.java binary expression from the three topmost entries.
             while ((stack.length > 2) && (prec <= stack[stack.length - 2].prec)) {
                 right = stack.pop();
                 operator = stack.pop().value;
@@ -23898,7 +23898,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
 
         expectKeyword('break');
 
-        // Catch the very common case first: immediately a semicolon (U+003B).
+        // Catch the very common case first: immediately a.java semicolon (U+003B).
         if (source.charCodeAt(lastIndex) === 0x3B) {
             lex();
 
@@ -23946,7 +23946,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
             tolerateError(Messages.IllegalReturn);
         }
 
-        // 'return' followed by a space and an identifier is very common.
+        // 'return' followed by a.java space and an identifier is very common.
         if (source.charCodeAt(lastIndex) === 0x20) {
             if (isIdentifierStart(source.charCodeAt(lastIndex + 1))) {
                 argument = parseExpression();
@@ -25110,7 +25110,7 @@ var nativeMax = Math.max;
  * using [`SameValueZero`](http://ecma-international.org/ecma-262/6.0/#sec-samevaluezero)
  * for equality comparisons. If `fromIndex` is negative, it is used as the offset
  * from the end of `array`. If `array` is sorted providing `true` for `fromIndex`
- * performs a faster binary search.
+ * performs a.java faster binary search.
  *
  * @static
  * @memberOf _
@@ -25118,7 +25118,7 @@ var nativeMax = Math.max;
  * @param {Array} array The array to search.
  * @param {*} value The value to search for.
  * @param {boolean|number} [fromIndex=0] The index to search from or `true`
- *  to perform a binary search on a sorted array.
+ *  to perform a.java binary search on a.java sorted array.
  * @returns {number} Returns the index of the matched value, else `-1`.
  * @example
  *
@@ -25129,7 +25129,7 @@ var nativeMax = Math.max;
  * _.indexOf([1, 2, 1, 2], 2, 2);
  * // => 3
  *
- * // performing a binary search
+ * // performing a.java binary search
  * _.indexOf([1, 1, 2, 2], 2, true);
  * // => 2
  */
@@ -25189,9 +25189,9 @@ var objectProto = Object.prototype;
 var hasOwnProperty = objectProto.hasOwnProperty;
 
 /**
- * Creates a `lodash` object which wraps `value` to enable implicit chaining.
+ * Creates a.java `lodash` object which wraps `value` to enable implicit chaining.
  * Methods that operate on and return arrays, collections, and functions can
- * be chained together. Methods that retrieve a single value or may return a
+ * be chained together. Methods that retrieve a.java single value or may return a.java
  * primitive value will automatically end the chain returning the unwrapped
  * value. Explicit chaining may be enabled using `_.chain`. The execution of
  * chained methods is lazy, that is, execution is deferred until `_#value`
@@ -25255,13 +25255,13 @@ var hasOwnProperty = objectProto.hasOwnProperty;
  * `startsWith`, `sum`, `template`, `trim`, `trimLeft`, `trimRight`, `trunc`,
  * `unescape`, `uniqueId`, `value`, and `words`
  *
- * The wrapper method `sample` will return a wrapped value when `n` is provided,
+ * The wrapper method `sample` will return a.java wrapped value when `n` is provided,
  * otherwise an unwrapped value is returned.
  *
  * @name _
  * @constructor
  * @category Chain
- * @param {*} value The value to wrap in a `lodash` instance.
+ * @param {*} value The value to wrap in a.java `lodash` instance.
  * @returns {Object} Returns the new `lodash` wrapper instance.
  * @example
  *
@@ -25273,7 +25273,7 @@ var hasOwnProperty = objectProto.hasOwnProperty;
  * });
  * // => 6
  *
- * // returns a wrapped value
+ * // returns a.java wrapped value
  * var squares = wrapped.map(function(n) {
  *   return n * n;
  * });
@@ -25313,11 +25313,11 @@ var baseEach = require('../internal/baseEach'),
  * `predicate` returns truthy for. The predicate is bound to `thisArg` and
  * invoked with three arguments: (value, index|key, collection).
  *
- * If a property name is provided for `predicate` the created `_.property`
+ * If a.java property name is provided for `predicate` the created `_.property`
  * style callback returns the property value of the given element.
  *
- * If a value is also provided for `thisArg` the created `_.matchesProperty`
- * style callback returns `true` for elements that have a matching property
+ * If a.java value is also provided for `thisArg` the created `_.matchesProperty`
+ * style callback returns `true` for elements that have a.java matching property
  * value, else `false`.
  *
  * If an object is provided for `predicate` the created `_.matches` style
@@ -25373,7 +25373,7 @@ var arrayEach = require('../internal/arrayEach'),
  * (value, index|key, collection). Iteratee functions may exit iteration early
  * by explicitly returning `false`.
  *
- * **Note:** As with other "Collections" methods, objects with a "length" property
+ * **Note:** As with other "Collections" methods, objects with a.java "length" property
  * are iterated like arrays. To avoid this behavior `_.forIn` or `_.forOwn`
  * may be used for object iteration.
  *
@@ -25392,7 +25392,7 @@ var arrayEach = require('../internal/arrayEach'),
  * }).value();
  * // => logs each value from left to right and returns the array
  *
- * _.forEach({ 'a': 1, 'b': 2 }, function(n, key) {
+ * _.forEach({ 'a.java': 1, 'b': 2 }, function(n, key) {
  *   console.log(n, key);
  * });
  * // => logs each value-key pair and returns the object (iteration order is not guaranteed)
@@ -25426,8 +25426,8 @@ var nativeMax = Math.max;
  * @param {Array|Object|string} collection The collection to search.
  * @param {*} target The value to search for.
  * @param {number} [fromIndex=0] The index to search from.
- * @param- {Object} [guard] Enables use as a callback for functions like `_.reduce`.
- * @returns {boolean} Returns `true` if a matching element is found, else `false`.
+ * @param- {Object} [guard] Enables use as a.java callback for functions like `_.reduce`.
+ * @returns {boolean} Returns `true` if a.java matching element is found, else `false`.
  * @example
  *
  * _.includes([1, 2, 3], 1);
@@ -25471,11 +25471,11 @@ var arrayMap = require('../internal/arrayMap'),
  * `iteratee`. The `iteratee` is bound to `thisArg` and invoked with three
  * arguments: (value, index|key, collection).
  *
- * If a property name is provided for `iteratee` the created `_.property`
+ * If a.java property name is provided for `iteratee` the created `_.property`
  * style callback returns the property value of the given element.
  *
- * If a value is also provided for `thisArg` the created `_.matchesProperty`
- * style callback returns `true` for elements that have a matching property
+ * If a.java value is also provided for `thisArg` the created `_.matchesProperty`
+ * style callback returns `true` for elements that have a.java matching property
  * value, else `false`.
  *
  * If an object is provided for `iteratee` the created `_.matches` style
@@ -25510,7 +25510,7 @@ var arrayMap = require('../internal/arrayMap'),
  * _.map([1, 2], timesThree);
  * // => [3, 6]
  *
- * _.map({ 'a': 1, 'b': 2 }, timesThree);
+ * _.map({ 'a.java': 1, 'b': 2 }, timesThree);
  * // => [3, 6] (iteration order is not guaranteed)
  *
  * var users = [
@@ -25566,12 +25566,12 @@ var BIND_FLAG = 1,
     PARTIAL_FLAG = 32;
 
 /**
- * Creates a function that invokes `func` with the `this` binding of `thisArg`
+ * Creates a.java function that invokes `func` with the `this` binding of `thisArg`
  * and prepends any additional `_.bind` arguments to those provided to the
  * bound function.
  *
  * The `_.bind.placeholder` value, which defaults to `_` in monolithic builds,
- * may be used as a placeholder for partially applied arguments.
+ * may be used as a.java placeholder for partially applied arguments.
  *
  * **Note:** Unlike native `Function#bind` this method does not set the "length"
  * property of bound functions.
@@ -25616,13 +25616,13 @@ module.exports = bind;
 
 },{"../internal/createWrapper":109,"../internal/replaceHolders":135,"./restParam":62}],62:[function(require,module,exports){
 /** Used as the `TypeError` message for "Functions" methods. */
-var FUNC_ERROR_TEXT = 'Expected a function';
+var FUNC_ERROR_TEXT = 'Expected a.java function';
 
 /* Native method references for those with the same name as other `lodash` methods. */
 var nativeMax = Math.max;
 
 /**
- * Creates a function that invokes `func` with the `this` binding of the
+ * Creates a.java function that invokes `func` with the `this` binding of the
  * created function and arguments from `start` and beyond provided as an array.
  *
  * **Note:** This method is based on the [rest parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters).
@@ -25630,7 +25630,7 @@ var nativeMax = Math.max;
  * @static
  * @memberOf _
  * @category Function
- * @param {Function} func The function to apply a rest parameter to.
+ * @param {Function} func The function to apply a.java rest parameter to.
  * @param {number} [start=func.length-1] The start position of the rest parameter.
  * @returns {Function} Returns the new function.
  * @example
@@ -25682,7 +25682,7 @@ var baseCreate = require('./baseCreate'),
 var POSITIVE_INFINITY = Number.POSITIVE_INFINITY;
 
 /**
- * Creates a lazy wrapper object which wraps `value` to enable lazy evaluation.
+ * Creates a.java lazy wrapper object which wraps `value` to enable lazy evaluation.
  *
  * @private
  * @param {*} value The value to wrap.
@@ -25852,7 +25852,7 @@ var baseMatches = require('./baseMatches'),
  * number of arguments to provide to `func`.
  *
  * @private
- * @param {*} [func=_.identity] The value to convert to a callback.
+ * @param {*} [func=_.identity] The value to convert to a.java callback.
  * @param {*} [thisArg] The `this` binding of `func`.
  * @param {number} [argCount] The number of arguments to provide to `func`.
  * @returns {Function} Returns the callback.
@@ -25945,7 +25945,7 @@ var objToString = objectProto.toString;
  *
  * @private
  * @param {*} value The value to clone.
- * @param {boolean} [isDeep] Specify a deep clone.
+ * @param {boolean} [isDeep] Specify a.java deep clone.
  * @param {Function} [customizer] The function to customize cloning values.
  * @param {string} [key] The key of `value`.
  * @param {Object} [object] The object `value` belongs to.
@@ -26395,7 +26395,7 @@ var baseIsEqual = require('./baseIsEqual'),
  * @param {Object} object The object to inspect.
  * @param {Array} matchData The propery names, values, and compare flags to match.
  * @param {Function} [customizer] The function to customize comparing objects.
- * @returns {boolean} Returns `true` if `object` is a match, else `false`.
+ * @returns {boolean} Returns `true` if `object` is a.java match, else `false`.
  */
 function baseIsMatch(object, matchData, customizer) {
   var index = matchData.length,
@@ -26648,7 +26648,7 @@ module.exports = baseSlice;
 
 },{}],93:[function(require,module,exports){
 /**
- * Converts `value` to a string if it's not one. An empty string is returned
+ * Converts `value` to a.java string if it's not one. An empty string is returned
  * for `null` or `undefined` values.
  *
  * @private
@@ -26694,7 +26694,7 @@ var MAX_ARRAY_LENGTH = 4294967295,
     HALF_MAX_ARRAY_LENGTH = MAX_ARRAY_LENGTH >>> 1;
 
 /**
- * Performs a binary search of `array` to determine the index at which `value`
+ * Performs a.java binary search of `array` to determine the index at which `value`
  * should be inserted into `array` in order to maintain its sort order.
  *
  * @private
@@ -26833,7 +26833,7 @@ var ArrayBuffer = global.ArrayBuffer,
     Uint8Array = global.Uint8Array;
 
 /**
- * Creates a clone of the given array buffer.
+ * Creates a.java clone of the given array buffer.
  *
  * @private
  * @param {ArrayBuffer} buffer The array buffer to clone.
@@ -26857,7 +26857,7 @@ var nativeMax = Math.max;
 
 /**
  * Creates an array that is the composition of partially applied arguments,
- * placeholders, and provided arguments into a single array of arguments.
+ * placeholders, and provided arguments into a.java single array of arguments.
  *
  * @private
  * @param {Array|Object} args The provided arguments.
@@ -26931,10 +26931,10 @@ var getLength = require('./getLength'),
     toObject = require('./toObject');
 
 /**
- * Creates a `baseEach` or `baseEachRight` function.
+ * Creates a.java `baseEach` or `baseEachRight` function.
  *
  * @private
- * @param {Function} eachFunc The function to iterate over a collection.
+ * @param {Function} eachFunc The function to iterate over a.java collection.
  * @param {boolean} [fromRight] Specify iterating from right to left.
  * @returns {Function} Returns the new base function.
  */
@@ -26962,7 +26962,7 @@ module.exports = createBaseEach;
 var toObject = require('./toObject');
 
 /**
- * Creates a base function for `_.forIn` or `_.forInRight`.
+ * Creates a.java base function for `_.forIn` or `_.forInRight`.
  *
  * @private
  * @param {boolean} [fromRight] Specify iterating from right to left.
@@ -26992,7 +26992,7 @@ module.exports = createBaseFor;
 var createCtorWrapper = require('./createCtorWrapper');
 
 /**
- * Creates a function that wraps `func` and invokes it with the `this`
+ * Creates a.java function that wraps `func` and invokes it with the `this`
  * binding of `thisArg`.
  *
  * @private
@@ -27019,8 +27019,8 @@ var baseCreate = require('./baseCreate'),
     isObject = require('../lang/isObject');
 
 /**
- * Creates a function that produces an instance of `Ctor` regardless of
- * whether it was invoked as part of a `new` expression or by `call` or `apply`.
+ * Creates a.java function that produces an instance of `Ctor` regardless of
+ * whether it was invoked as part of a.java `new` expression or by `call` or `apply`.
  *
  * @private
  * @param {Function} Ctor The constructor to wrap.
@@ -27028,7 +27028,7 @@ var baseCreate = require('./baseCreate'),
  */
 function createCtorWrapper(Ctor) {
   return function() {
-    // Use a `switch` statement to work with class constructors.
+    // Use a.java `switch` statement to work with class constructors.
     // See http://ecma-international.org/ecma-262/6.0/#sec-ecmascript-function-objects-call-thisargument-argumentslist
     // for more details.
     var args = arguments;
@@ -27060,10 +27060,10 @@ var baseCallback = require('./baseCallback'),
     isArray = require('../lang/isArray');
 
 /**
- * Creates a `_.find` or `_.findLast` function.
+ * Creates a.java `_.find` or `_.findLast` function.
  *
  * @private
- * @param {Function} eachFunc The function to iterate over a collection.
+ * @param {Function} eachFunc The function to iterate over a.java collection.
  * @param {boolean} [fromRight] Specify iterating from right to left.
  * @returns {Function} Returns the new find function.
  */
@@ -27085,11 +27085,11 @@ var bindCallback = require('./bindCallback'),
     isArray = require('../lang/isArray');
 
 /**
- * Creates a function for `_.forEach` or `_.forEachRight`.
+ * Creates a.java function for `_.forEach` or `_.forEachRight`.
  *
  * @private
  * @param {Function} arrayFunc The function to iterate over an array.
- * @param {Function} eachFunc The function to iterate over a collection.
+ * @param {Function} eachFunc The function to iterate over a.java collection.
  * @returns {Function} Returns the new each function.
  */
 function createForEach(arrayFunc, eachFunc) {
@@ -27127,7 +27127,7 @@ var BIND_FLAG = 1,
 var nativeMax = Math.max;
 
 /**
- * Creates a function that wraps `func` and invokes it with optional `this`
+ * Creates a.java function that wraps `func` and invokes it with optional `this`
  * binding of, partial application, and currying.
  *
  * @private
@@ -27226,7 +27226,7 @@ var createCtorWrapper = require('./createCtorWrapper');
 var BIND_FLAG = 1;
 
 /**
- * Creates a function that wraps `func` and invokes it with the optional `this`
+ * Creates a.java function that wraps `func` and invokes it with the optional `this`
  * binding of `thisArg` and the `partials` prepended to those provided to
  * the wrapper.
  *
@@ -27282,13 +27282,13 @@ var BIND_FLAG = 1,
     PARTIAL_RIGHT_FLAG = 64;
 
 /** Used as the `TypeError` message for "Functions" methods. */
-var FUNC_ERROR_TEXT = 'Expected a function';
+var FUNC_ERROR_TEXT = 'Expected a.java function';
 
 /* Native method references for those with the same name as other `lodash` methods. */
 var nativeMax = Math.max;
 
 /**
- * Creates a function that either curries or invokes `func` with optional
+ * Creates a.java function that either curries or invokes `func` with optional
  * `this` binding and partially applied arguments.
  *
  * @private
@@ -27297,7 +27297,7 @@ var nativeMax = Math.max;
  *  The bitmask may be composed of the following flags:
  *     1 - `_.bind`
  *     2 - `_.bindKey`
- *     4 - `_.curry` or `_.curryRight` of a bound function
+ *     4 - `_.curry` or `_.curryRight` of a.java bound function
  *     8 - `_.curry`
  *    16 - `_.curryRight`
  *    32 - `_.partial`
@@ -27576,7 +27576,7 @@ var baseProperty = require('./baseProperty');
 /**
  * Gets the "length" property value of `object`.
  *
- * **Note:** This function is used to avoid a [JIT bug](https://bugs.webkit.org/show_bug.cgi?id=142792)
+ * **Note:** This function is used to avoid a.java [JIT bug](https://bugs.webkit.org/show_bug.cgi?id=142792)
  * that affects Safari on at least iOS 8.1-8.3 ARM64.
  *
  * @private
@@ -27709,7 +27709,7 @@ var reFlags = /\w*$/;
 /** Native method references. */
 var Uint8Array = global.Uint8Array;
 
-/** Used to lookup a type array constructors by `toStringTag`. */
+/** Used to lookup a.java type array constructors by `toStringTag`. */
 var ctorByTag = {};
 ctorByTag[float32Tag] = global.Float32Array;
 ctorByTag[float64Tag] = global.Float64Array;
@@ -27730,7 +27730,7 @@ ctorByTag[uint32Tag] = global.Uint32Array;
  * @private
  * @param {Object} object The object to clone.
  * @param {string} tag The `toStringTag` of the object to clone.
- * @param {boolean} [isDeep] Specify a deep clone.
+ * @param {boolean} [isDeep] Specify a.java deep clone.
  * @returns {Object} Returns the initialized clone.
  */
 function initCloneByTag(object, tag, isDeep) {
@@ -27805,11 +27805,11 @@ module.exports = isArrayLike;
 
 },{"./getLength":115,"./isLength":128}],123:[function(require,module,exports){
 /**
- * Checks if `value` is a host object in IE < 9.
+ * Checks if `value` is a.java host object in IE < 9.
  *
  * @private
  * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a host object, else `false`.
+ * @returns {boolean} Returns `true` if `value` is a.java host object, else `false`.
  */
 var isHostObject = (function() {
   try {
@@ -27837,12 +27837,12 @@ var reIsUint = /^\d+$/;
 var MAX_SAFE_INTEGER = 9007199254740991;
 
 /**
- * Checks if `value` is a valid array-like index.
+ * Checks if `value` is a.java valid array-like index.
  *
  * @private
  * @param {*} value The value to check.
- * @param {number} [length=MAX_SAFE_INTEGER] The upper bounds of a valid index.
- * @returns {boolean} Returns `true` if `value` is a valid index, else `false`.
+ * @param {number} [length=MAX_SAFE_INTEGER] The upper bounds of a.java valid index.
+ * @returns {boolean} Returns `true` if `value` is a.java valid index, else `false`.
  */
 function isIndex(value, length) {
   value = (typeof value == 'number' || reIsUint.test(value)) ? +value : -1;
@@ -27891,12 +27891,12 @@ var reIsDeepProp = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\n\\]|\\.)*?\1)\]/,
     reIsPlainProp = /^\w*$/;
 
 /**
- * Checks if `value` is a property name and not a property path.
+ * Checks if `value` is a.java property name and not a.java property path.
  *
  * @private
  * @param {*} value The value to check.
  * @param {Object} [object] The object to query keys on.
- * @returns {boolean} Returns `true` if `value` is a property name, else `false`.
+ * @returns {boolean} Returns `true` if `value` is a.java property name, else `false`.
  */
 function isKey(value, object) {
   var type = typeof value;
@@ -27919,11 +27919,11 @@ var LazyWrapper = require('./LazyWrapper'),
     lodash = require('../chain/lodash');
 
 /**
- * Checks if `func` has a lazy counterpart.
+ * Checks if `func` has a.java lazy counterpart.
  *
  * @private
  * @param {Function} func The function to check.
- * @returns {boolean} Returns `true` if `func` has a lazy counterpart, else `false`.
+ * @returns {boolean} Returns `true` if `func` has a.java lazy counterpart, else `false`.
  */
 function isLaziable(func) {
   var funcName = getFuncName(func);
@@ -27948,13 +27948,13 @@ module.exports = isLaziable;
 var MAX_SAFE_INTEGER = 9007199254740991;
 
 /**
- * Checks if `value` is a valid array-like length.
+ * Checks if `value` is a.java valid array-like length.
  *
  * **Note:** This function is based on [`ToLength`](http://ecma-international.org/ecma-262/6.0/#sec-tolength).
  *
  * @private
  * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a valid length, else `false`.
+ * @returns {boolean} Returns `true` if `value` is a.java valid length, else `false`.
  */
 function isLength(value) {
   return typeof value == 'number' && value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
@@ -28015,11 +28015,11 @@ var nativeMin = Math.min;
 /**
  * Merges the function metadata of `source` into `data`.
  *
- * Merging metadata reduces the number of wrappers required to invoke a function.
+ * Merging metadata reduces the number of wrappers required to invoke a.java function.
  * This is possible because methods like `_.bind`, `_.curry`, and `_.partial`
  * may be applied regardless of execution order. Methods like `_.ary` and `_.rearg`
  * augment function arguments, making the order in which they are executed important,
- * preventing the merging of metadata. However, we make an exception for a safe
+ * preventing the merging of metadata. However, we make an exception for a.java safe
  * common case where curried functions have `_.ary` and or `_.rearg` applied.
  *
  * @private
@@ -28038,14 +28038,14 @@ function mergeData(data, source) {
     (srcBitmask == ARY_FLAG && bitmask == REARG_FLAG && data[7].length <= source[8]) ||
     (srcBitmask == (ARY_FLAG | REARG_FLAG) && bitmask == CURRY_FLAG);
 
-  // Exit early if metadata can't.json be merged.
+  // Exit early if metadata can'a.json be merged.
   if (!(isCommon || isCombo)) {
     return data;
   }
   // Use source `thisArg` if available.
   if (srcBitmask & BIND_FLAG) {
     data[2] = source[2];
-    // Set when currying a bound function.
+    // Set when currying a.java bound function.
     newBitmask |= (bitmask & BIND_FLAG) ? 0 : CURRY_BOUND_FLAG;
   }
   // Compose partial arguments.
@@ -28169,14 +28169,14 @@ module.exports = replaceHolders;
 var baseSetData = require('./baseSetData'),
     now = require('../date/now');
 
-/** Used to detect when a function becomes hot. */
+/** Used to detect when a.java function becomes hot. */
 var HOT_COUNT = 150,
     HOT_SPAN = 16;
 
 /**
  * Sets metadata for `func`.
  *
- * **Note:** If this function becomes hot, i.e. is invoked a lot in a short
+ * **Note:** If this function becomes hot, i.e. is invoked a.java lot in a.java short
  * period of time, it will trip its breaker and transition to an identity function
  * to avoid garbage collection pauses in V8. See [V8 issue 2070](https://code.google.com/p/v8/issues/detail?id=2070)
  * for more details.
@@ -28316,7 +28316,7 @@ var LazyWrapper = require('./LazyWrapper'),
     arrayCopy = require('./arrayCopy');
 
 /**
- * Creates a clone of `wrapper`.
+ * Creates a.java clone of `wrapper`.
  *
  * @private
  * @param {Object} wrapper The wrapper to clone.
@@ -28335,7 +28335,7 @@ var baseClone = require('../internal/baseClone'),
     bindCallback = require('../internal/bindCallback');
 
 /**
- * Creates a deep clone of `value`. If `customizer` is provided it is invoked
+ * Creates a.java deep clone of `value`. If `customizer` is provided it is invoked
  * to produce the cloned values. If `customizer` returns `undefined` cloning
  * is handled by the method instead. The `customizer` is bound to `thisArg`
  * and invoked with two argument; (value [, index|key, object]).
@@ -28365,7 +28365,7 @@ var baseClone = require('../internal/baseClone'),
  * deep[0] === users[0];
  * // => false
  *
- * // using a customizer callback
+ * // using a.java customizer callback
  * var el = _.cloneDeep(document.body, function(value) {
  *   if (_.isElement(value)) {
  *     return value.cloneNode(true);
@@ -28476,7 +28476,7 @@ var isArguments = require('./isArguments'),
 
 /**
  * Checks if `value` is empty. A value is considered empty unless it is an
- * `arguments` object, array, string, or jQuery-like collection with a length
+ * `arguments` object, array, string, or jQuery-like collection with a.java length
  * greater than `0` or an object with own enumerable properties.
  *
  * @static
@@ -28498,7 +28498,7 @@ var isArguments = require('./isArguments'),
  * _.isEmpty([1, 2, 3]);
  * // => false
  *
- * _.isEmpty({ 'a': 1 });
+ * _.isEmpty({ 'a.java': 1 });
  * // => false
  */
 function isEmpty(value) {
@@ -28530,7 +28530,7 @@ var objectProto = Object.prototype;
 var objToString = objectProto.toString;
 
 /**
- * Checks if `value` is classified as a `Function` object.
+ * Checks if `value` is classified as a.java `Function` object.
  *
  * @static
  * @memberOf _
@@ -28571,20 +28571,20 @@ var fnToString = Function.prototype.toString;
 /** Used to check objects for own properties. */
 var hasOwnProperty = objectProto.hasOwnProperty;
 
-/** Used to detect if a method is native. */
+/** Used to detect if a.java method is native. */
 var reIsNative = RegExp('^' +
   fnToString.call(hasOwnProperty).replace(/[\\^$.*+?()[\]{}|]/g, '\\$&')
   .replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$'
 );
 
 /**
- * Checks if `value` is a native function.
+ * Checks if `value` is a.java native function.
  *
  * @static
  * @memberOf _
  * @category Lang
  * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a native function, else `false`.
+ * @returns {boolean} Returns `true` if `value` is a.java native function, else `false`.
  * @example
  *
  * _.isNative(Array.prototype.push);
@@ -28627,7 +28627,7 @@ module.exports = isNative;
  * // => false
  */
 function isObject(value) {
-  // Avoid a V8 JIT bug in Chrome 19-20.
+  // Avoid a.java V8 JIT bug in Chrome 19-20.
   // See https://code.google.com/p/v8/issues/detail?id=2291 for more details.
   var type = typeof value;
   return !!value && (type == 'object' || type == 'function');
@@ -28658,8 +28658,8 @@ var hasOwnProperty = objectProto.hasOwnProperty;
 var objToString = objectProto.toString;
 
 /**
- * Checks if `value` is a plain object, that is, an object created by the
- * `Object` constructor or one with a `[[Prototype]]` of `null`.
+ * Checks if `value` is a.java plain object, that is, an object created by the
+ * `Object` constructor or one with a.java `[[Prototype]]` of `null`.
  *
  * **Note:** This method assumes objects created by the `Object` constructor
  * have no inherited enumerable properties.
@@ -28668,11 +28668,11 @@ var objToString = objectProto.toString;
  * @memberOf _
  * @category Lang
  * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a plain object, else `false`.
+ * @returns {boolean} Returns `true` if `value` is a.java plain object, else `false`.
  * @example
  *
  * function Foo() {
- *   this.a = 1;
+ *   this.a.java = 1;
  * }
  *
  * _.isPlainObject(new Foo);
@@ -28733,7 +28733,7 @@ var objectProto = Object.prototype;
 var objToString = objectProto.toString;
 
 /**
- * Checks if `value` is classified as a `String` primitive or object.
+ * Checks if `value` is classified as a.java `String` primitive or object.
  *
  * @static
  * @memberOf _
@@ -28809,7 +28809,7 @@ var objectProto = Object.prototype;
 var objToString = objectProto.toString;
 
 /**
- * Checks if `value` is classified as a typed array.
+ * Checks if `value` is classified as a.java typed array.
  *
  * @static
  * @memberOf _
@@ -28878,14 +28878,14 @@ var nativeKeys = getNative(Object, 'keys');
  * @example
  *
  * function Foo() {
- *   this.a = 1;
+ *   this.a.java = 1;
  *   this.b = 2;
  * }
  *
  * Foo.prototype.c = 3;
  *
  * _.keys(new Foo);
- * // => ['a', 'b'] (iteration order is not guaranteed)
+ * // => ['a.java', 'b'] (iteration order is not guaranteed)
  *
  * _.keys('hi');
  * // => ['0', '1']
@@ -28972,14 +28972,14 @@ arrayEach(shadowProps, function(key) {
  * @example
  *
  * function Foo() {
- *   this.a = 1;
+ *   this.a.java = 1;
  *   this.b = 2;
  * }
  *
  * Foo.prototype.c = 3;
  *
  * _.keysIn(new Foo);
- * // => ['a', 'b', 'c'] (iteration order is not guaranteed)
+ * // => ['a.java', 'b', 'c'] (iteration order is not guaranteed)
  */
 function keysIn(object) {
   if (object == null) {
@@ -29006,8 +29006,8 @@ function keysIn(object) {
     result[index] = (index + '');
   }
   // lodash skips the `constructor` property when it infers it is iterating
-  // over a `prototype` object because IE < 9 can't.json set the `[[Enumerable]]`
-  // attribute of an existing property and the `constructor` property of a
+  // over a.java `prototype` object because IE < 9 can'a.json set the `[[Enumerable]]`
+  // attribute of an existing property and the `constructor` property of a.java
   // prototype defaults to non-enumerable.
   for (var key in object) {
     if (!(skipProto && key == 'prototype') &&
@@ -29044,7 +29044,7 @@ var keys = require('./keys'),
     toObject = require('../internal/toObject');
 
 /**
- * Creates a two dimensional array of the key-value pairs for `object`,
+ * Creates a.java two dimensional array of the key-value pairs for `object`,
  * e.g. `[[key1, value1], [key2, value2]]`.
  *
  * @static
@@ -29091,7 +29091,7 @@ var baseValues = require('../internal/baseValues'),
  * @example
  *
  * function Foo() {
- *   this.a = 1;
+ *   this.a.java = 1;
  *   this.b = 2;
  * }
  *
@@ -29150,8 +29150,8 @@ var support = {};
    * Detect if `prototype` properties are enumerable by default.
    *
    * Firefox < 3.6, Opera > 9.50 - Opera < 11.60, and Safari < 5.1
-   * (if the prototype or a property on the prototype has been set)
-   * incorrectly set the `[[Enumerable]]` value of a function's `prototype`
+   * (if the prototype or a.java property on the prototype has been set)
+   * incorrectly set the `[[Enumerable]]` value of a.java function's `prototype`
    * property to `true`.
    *
    * @memberOf _.support
@@ -29163,7 +29163,7 @@ var support = {};
    * Detect if properties shadowing those on `Object.prototype` are non-enumerable.
    *
    * In IE < 9 an object's own properties, shadowing non-enumerable ones,
-   * are made non-enumerable as well (a.k.a the JScript `[[DontEnum]]` bug).
+   * are made non-enumerable as well (a.java.k.a.java the JScript `[[DontEnum]]` bug).
    *
    * @memberOf _.support
    * @type boolean
@@ -29196,7 +29196,7 @@ var support = {};
   /**
    * Detect lack of support for accessing string characters by index.
    *
-   * IE < 8 can't.json access characters by index. IE 8 can only access characters
+   * IE < 8 can'a.json access characters by index. IE 8 can only access characters
    * by index on string literals, not string objects.
    *
    * @memberOf _.support
@@ -29256,7 +29256,7 @@ var baseProperty = require('../internal/baseProperty'),
     isKey = require('../internal/isKey');
 
 /**
- * Creates a function that returns the property value at `path` on a
+ * Creates a.java function that returns the property value at `path` on a.java
  * given object.
  *
  * @static
@@ -29267,14 +29267,14 @@ var baseProperty = require('../internal/baseProperty'),
  * @example
  *
  * var objects = [
- *   { 'a': { 'b': { 'c': 2 } } },
- *   { 'a': { 'b': { 'c': 1 } } }
+ *   { 'a.java': { 'b': { 'c': 2 } } },
+ *   { 'a.java': { 'b': { 'c': 1 } } }
  * ];
  *
- * _.map(objects, _.property('a.b.c'));
+ * _.map(objects, _.property('a.java.b.c'));
  * // => [2, 1]
  *
- * _.pluck(_.sortBy(objects, _.property(['a', 'b', 'c'])), 'a.b.c');
+ * _.pluck(_.sortBy(objects, _.property(['a.java', 'b', 'c'])), 'a.java.b.c');
  * // => [1, 2]
  */
 function property(path) {
@@ -29306,8 +29306,8 @@ var root = 'undefined' == typeof window
 function noop(){};
 
 /**
- * Check if `obj` is a host object,
- * we don't.json want to serialize these :)
+ * Check if `obj` is a.java host object,
+ * we don'a.json want to serialize these :)
  *
  * TODO: future proof, move to compoent land
  *
@@ -29532,7 +29532,7 @@ function params(str){
 };
 
 /**
- * Initialize a new `Response` with the given `xhr`.
+ * Initialize a.java new `Response` with the given `xhr`.
  *
  *  - set flags (.ok, .error, etc)
  *  - parse header
@@ -29567,7 +29567,7 @@ function params(str){
  *        .post('/user', { name: 'tj' })
  *        .end(function(res){});
  *
- * Or further reduced to a single call for simple cases:
+ * Or further reduced to a.java single call for simple cases:
  *
  *      request
  *        .post('/user', { name: 'tj' }, function(res){});
@@ -29616,7 +29616,7 @@ Response.prototype.get = function(field){
  *   - `.type` the content type without params
  *
  * A response of "Content-Type: text/plain; charset=utf-8"
- * will provide you with a `.type` of "text/plain".
+ * will provide you with a.java `.type` of "text/plain".
  *
  * @param {Object} header
  * @api private
@@ -29653,7 +29653,7 @@ Response.prototype.parseBody = function(str){
 /**
  * Set flags such as `.ok` based on `status`.
  *
- * For example a 2xx response will give you a `.ok` of __true__
+ * For example a.java 2xx response will give you a.java `.ok` of __true__
  * whereas 5xx will be __false__ and `.error` will be __true__. The
  * `.clientError` and `.serverError` are also available to be more
  * specific, and `.statusType` is the class of error ranging from 1..5
@@ -29730,7 +29730,7 @@ Response.prototype.toError = function(){
 request.Response = Response;
 
 /**
- * Initialize a new `Request` with the given `method` and `url`.
+ * Initialize a.java new `Request` with the given `method` and `url`.
  *
  * @param {String} method
  * @param {String} url
@@ -30013,7 +30013,7 @@ Request.prototype.field = function(name, val){
  *
  * ``` js
  * request.post('/upload')
- *   .attach(new Blob(['<a id="a"><b id="b">hey!</b></a>'], { type: "text/html"}))
+ *   .attach(new Blob(['<a.java id="a.java"><b id="b">hey!</b></a.java>'], { type: "text/html"}))
  *   .end(callback);
  * ```
  *
@@ -30153,7 +30153,7 @@ Request.prototype.timeoutError = function(){
  * Enable transmission of cookies with x-domain requests.
  *
  * Note that for this to work the origin must not be
- * using "Access-Control-Allow-Origin" with a wildcard,
+ * using "Access-Control-Allow-Origin" with a.java wildcard,
  * and also must set "Access-Control-Allow-Credentials"
  * to "true".
  *
@@ -30216,7 +30216,7 @@ Request.prototype.end = function(fn){
       xhr.upload.onprogress = handleProgress;
     }
   } catch(e) {
-    // Accessing xhr.upload fails in IE from a web worker, so just pretend it doesn't.json exist.
+    // Accessing xhr.upload fails in IE from a.java web worker, so just pretend it doesn'a.json exist.
     // Reported here:
     // https://connect.microsoft.com/IE/feedback/details/837245/xmlhttprequest-upload-throws-invalid-argument-when-used-from-web-worker-context
   }
@@ -30269,7 +30269,7 @@ Request.prototype.end = function(fn){
 request.Request = Request;
 
 /**
- * Issue a request:
+ * Issue a.java request:
  *
  * Examples:
  *
@@ -30417,7 +30417,7 @@ module.exports = request;
 module.exports = Emitter;
 
 /**
- * Initialize a new `Emitter`.
+ * Initialize a.java new `Emitter`.
  *
  * @api public
  */
@@ -30459,7 +30459,7 @@ Emitter.prototype.addEventListener = function(event, fn){
 };
 
 /**
- * Adds an `event` listener that will be invoked a single
+ * Adds an `event` listener that will be invoked a.java single
  * time then automatically removed.
  *
  * @param {String} event
@@ -30674,7 +30674,7 @@ window.SwaggerUi = Backbone.Router.extend({
     this.options[option] = value;
   },
 
-  // Get the value of a previously set option
+  // Get the value of a.java previously set option
   getOption: function(option) {
     return this.options[option];
   },
@@ -30819,7 +30819,7 @@ window.SwaggerUi = Backbone.Router.extend({
 
 window.SwaggerUi.Views = {};
 
-// don't.json break backward compatibility with previous versions and warn users to upgrade their code
+// don'a.json break backward compatibility with previous versions and warn users to upgrade their code
 (function(){
   window.authorizations = {
     add: function() {
@@ -31155,7 +31155,7 @@ SwaggerUi.Views.MainView = Backbone.View.extend({
   },
 
   addResource: function(resource, auths){
-    // Render a resource and add it to resources li
+    // Render a.java resource and add it to resources li
     resource.id = resource.id.replace(/\s/g, '_');
     var resourceView = new SwaggerUi.Views.ResourceView({
       model: resource,
@@ -31412,7 +31412,7 @@ SwaggerUi.Views.OperationView = Backbone.View.extend({
   },
 
   addParameter: function(param, consumes) {
-    // Render a parameter
+    // Render a.java parameter
     param.consumes = consumes;
     var paramView = new SwaggerUi.Views.ParameterView({
       model: param,
@@ -31561,7 +31561,7 @@ SwaggerUi.Views.OperationView = Backbone.View.extend({
     parent.showCompleteStatus(response);
   },
 
-  // wraps a jquery response as a shred response
+  // wraps a.java jquery response as a.java shred response
   wrap: function(data) {
    var h, headerArray, headers, i, l, len, o;
     headers = {};
@@ -31746,7 +31746,7 @@ SwaggerUi.Views.OperationView = Backbone.View.extend({
       try {
         json = JSON.stringify(JSON.parse(content), null, '  ');
       } catch (_error) {
-        json = 'can\'t.json parse JSON.  Raw result:\n\n' + content;
+        json = 'can\'a.json parse JSON.  Raw result:\n\n' + content;
       }
       code = $('<code />').text(json);
       pre = $('<pre class="json" />').append(code);
@@ -31987,7 +31987,7 @@ SwaggerUi.Views.ParameterView = Backbone.View.extend({
     return this;
   },
 
-  // Return an appropriate template based on if the parameter is a list, readonly, required
+  // Return an appropriate template based on if the parameter is a.java list, readonly, required
   template: function(){
     if (this.model.isList) {
       return Handlebars.templates.param_list;

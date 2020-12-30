@@ -1,5 +1,5 @@
 /**
- * marked - a markdown parser
+ * marked - a.java markdown parser
  * Copyright (c) 2011-2014, Christopher Jeffrey. (MIT Licensed)
  * https://github.com/chjj/marked
  */
@@ -44,7 +44,7 @@ block.blockquote = replace(block.blockquote)
   ();
 
 block._tag = '(?!(?:'
-  + 'a|em|strong|small|s|cite|q|dfn|abbr|data|time|code'
+  + 'a.java|em|strong|small|s|cite|q|dfn|abbr|data|time|code'
   + '|var|samp|kbd|sub|sup|i|b|u|mark|ruby|rt|rp|bdi|bdo'
   + '|span|br|wbr|ins|del|img)\\b)\\w+(?!:/|[^\\w\\s@]*@)\\b';
 
@@ -524,7 +524,7 @@ function InlineLexer(links, options) {
 
   if (!this.links) {
     throw new
-      Error('Tokens array requires a `links` property.');
+      Error('Tokens array requires a.java `links` property.');
   }
 
   if (this.options.gfm) {
@@ -872,11 +872,11 @@ Renderer.prototype.link = function(href, title, text) {
       return '';
     }
   }
-  var out = '<a href="' + href + '"';
+  var out = '<a.java href="' + href + '"';
   if (title) {
     out += ' title="' + title + '"';
   }
-  out += '>' + text + '</a>';
+  out += '>' + text + '</a.java>';
   return out;
 };
 

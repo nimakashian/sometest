@@ -1,17 +1,20 @@
-<string property="SrcAddr" name="src"/><string property="DestAddr" name="dest"/><string property="MessageBody"
-                                                                                        name="msg"/><boolean
-property="RegisteredDelivery" name="delivery"/><int property="SrcAddrTON" name="srcton"/><int property="SrcAddrNPI"
-                                                                                              name="srcnpi"/><int
-property="DestAddrTON" name="destton"/><int property="DestAddrNPI" name="destnpi"/><int property="ValidityPeriod"
-                                                                                        name="validity"/><string
-property="messageId" name="clientId"/><string property="UDH" name="udh"/><int property="DCS" name="dcs"/>
-
-
-<string property="SrcAddr" name="src"/><string property="DestAddr" name="dest"/><string property="MessageBody"
-                                                                                        name="msg"/><boolean
-property="RegisteredDelivery" name="delivery"/><int property="SrcAddrTON" name="srcton"/><int property="SrcAddrNPI"
-                                                                                              name="srcnpi"/><int
-property="DestAddrTON" name="destton"/><int property="DestAddrNPI" name="destnpi"/><int property="ValidityPeriod"
-                                                                                        name="validity"/><string
-property="messageId" name="clientId"/><string property="UDH" name="udh"/><int property="DCS" name="dcs"/>
-
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <SatnaFundTransferRequest xmlns="http://www.adpdigital.com/ime">
+            <sessionId>AF9E9F4BFF33F2EACD6D</sessionId>
+            <requestId>72728</requestId>
+            <requestTime>2020-12-24T12:10:44.78</requestTime>
+            <signature>Test IME</signature>
+            <accountNo>IR490180000000000104456278</accountNo>
+            <destAccountNo>IR030120020000004146538361</destAccountNo>
+            <amount>34252900</amount>
+            <paymentCode>200300207272820</paymentCode>
+            <destDescription>تعدیل جریمه(خ)139986015800123</destDescription>
+            <senderName/>
+            <senderFamily/>
+            <senderNationalCode/>
+            <senderPostalCode/>
+        </SatnaFundTransferRequest>
+    </soap:Body>
+</soap:Envelope>

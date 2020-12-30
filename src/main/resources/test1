@@ -1,18 +1,67 @@
-    mp.plugin.SSLPROXY.config.listenPort=49495
-	mp.plugin.SSLPROXY.config.maxSessions=150
-	mp.plugin.SSLPROXY.logging.useParentLogger=false
-	mp.plugin.SSLPROXY.logging.logLevel=WARN
-	mp.plugin.SSLPROXY.logging.logFileName=logs/sslproxy.log
-	mp.plugin.SSLPROXY.logging.logFileName=logs/sslproxy.log
-	mp.plugin.SSLPROXY.logging.enableArchiving=true
-	mp.plugin.SSLPROXY.logging.maxArchiveIndex=300
-	mp.plugin.SSLPROXY.logging.maxArchiveSize=1024
-	mp.plugin.SSLPROXY.common.onlineAtStartup=true
-	mp.plugin.SSLPROXY.common.className=com.textgateway.mp.plugin.client.proxy.ProxyClientPlugin
-	mp.plugin.SSLPROXY.common.defaultAlphabet=GSM0338
-	mp.plugin.SSLPROXY.common.alphabet3=ISO88591
-	mp.plugin.SSLPROXY.common.alphabet11=GSM0338
-	mp.plugin.SSLPROXY.common.alphabet12=GSM0338
-	mp.plugin.SSLPROXY.common.alphabet15=GSM0338
-	mp.plugin.SSLPROXY.common.dataCodingPlainTextMangling=false
-	mp.plugin.SSLPROXY.common.alias=
+String msgSeq,                 msgSeq,
+String channelType,                 channelType,
+String channelId,                 channelId,
+String channelPass,                 channelPass,
+String srcBank,                 srcBank,
+String srcAccNo,                 srcAccNo,
+String accPass,                 accPass,
+String senderName,                 senderName,
+String senderFamily,                 senderFamily,
+String senderNationalCode,                 senderNationalCode,
+String senderAdd,                 senderAdd,
+String senderPostalCode,                 senderPostalCode,
+String senderPhone,                 senderPhone,
+String srcBrnchCode,                 srcBrnchCode,
+String reason,                 *****************
+String dstBank,                dstBank,
+String dstAccNo,                dstAccNo,
+String recieverName,             recieverName,
+String recieverFamily,               recieverFamily,
+String recieverNationalCode,           recieverNationalCode,
+String recieverAdd,                          recieverAdd,
+String recieverPostalCode,          recieverPostalCode,
+String recieverPhone,                      recieverPhone,
+String recieverShahabCode,     ****************
+String dstBranchCode,                 dstBranchCode,
+String transAmount,                        transAmount,
+String currency,                      currency,
+String opCode,                      opCode,
+String payCode,                  payCode,
+String transDesc,              transDesc,
+String reqDateTime,             reqDateTime,
+String encAlgorithm,              encAlgorithm,
+String MAC                      MAC
+
+String msgSeq,
+String channelType,
+String channelId,
+String channelPass,
+String srcBank,
+String srcAccNo,
+String accPass,
+String senderName,
+String senderFamily,
+String senderNationalCode,
+String senderAdd,
+String senderPostalCode,
+String senderPhone,
+String srcBrnchCode,
+String dstBank,
+String dstAccNo,
+String recieverName,
+String recieverFamily,
+String recieverNationalCode,
+String recieverAdd,
+String recieverPostalCode,
+String recieverPhone,
+String dstBranchCode,
+String transAmount,
+String currency,
+String opCode,
+String payCode,
+String transDesc,
+String reqDateTime,
+String encAlgorithm,
+String MAC
+
+

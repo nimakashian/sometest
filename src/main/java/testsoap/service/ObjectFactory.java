@@ -36,7 +36,7 @@ public class ObjectFactory {
     private final static QName _GetMessageBulkStatusResponse_QNAME = new QName("http://service/", "getMessageBulkStatusResponse");
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: testsoap.service
+     * Create a.java new ObjectFactory that can be used to create new instances of schema derived classes for package: testsoap.service
      * 
      */
     public ObjectFactory() {

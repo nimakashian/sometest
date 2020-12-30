@@ -1,38 +1,40 @@
 package throttling;
 
 
+
+import org.slf4j.Logger;
+
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.Semaphore;
-import java.util.logging.Logger;
 
 public class ThrottlingController extends TimerTask {
 
-    public Semaphore s;
+    private Semaphore s;
     private int rate;
     private Timer timer;
     private Logger log;
     private long counter;
     private boolean logging;
     private String name;
-    long t, i;
 
-    private static int THROTTLE_THRESHOLD = System.getProperty("mp.throttle_threshold") != null ?
-            Integer.parseInt(System.getProperty("mp.throttle_threshold")) : 200;
+    private static int THROTTLE_THRESHOLD = System.getProperty("mp.throttle_threshold") != null ? Integer.parseInt(System.getProperty("mp.throttle_threshold")) : 200;
+    private static int THROTTLE_FACTOR = System.getProperty("mp.throttle_factor") != null ? Integer.parseInt(System.getProperty("mp.throttle_factor")) : 10;
 
+    public int getAvailablePermits(){
+        return s.availablePermits();
+    }
     public ThrottlingController(Logger log, String name, int rate) {
-        this.rate = 1000;
+        this.rate = rate / THROTTLE_FACTOR;
         this.name = name;
         this.log = log;
-        timer = new Timer(/*true*/);
+        timer = new Timer(true);
         s = new Semaphore(this.rate);
-        this.logging = false;
+        this.logging = true;
     }
 
     public void start() {
-
-//        timer.schedule(this, 0, 1000);
-        timer.scheduleAtFixedRate(this, 0, 1000);
+        timer.schedule(this, 0, 600 * 1000 / THROTTLE_FACTOR);
     }
 
     public void setLogging(boolean logging) {
@@ -41,31 +43,22 @@ public class ThrottlingController extends TimerTask {
 
 
 
-    public int getRate() {
-        return rate;
-    }
-
-    public boolean tryAcquire() {
-        return s.tryAcquire();
-    }
-
     public void acquire() {
         try {
-
+            log.info("before s acq");
             s.acquire();
+            log.info("after s acq");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
 
     public void run() {
+        log.info("run");
         clear();
         int count = rate - s.availablePermits();
-//        System.out.println("timer:" + s.availablePermits());
-
-
-//        if (count >= THROTTLE_THRESHOLD)
-//            System.out.println("Throttler[" + name + "]=" + count);
+        if (count >= THROTTLE_THRESHOLD)
+            log.info("Throttler[" + name + "]=" + count);
     }
 
     public void clear() {
@@ -81,10 +74,8 @@ public class ThrottlingController extends TimerTask {
         }
 
         if (logging) {
-            System.out.println("throttler[" + this.name + "]: msgs sent: " + count);
+            log.info("throttler[" + this.name + "]: msgs sent: " + count);
         }
     }
-
-
 
 }

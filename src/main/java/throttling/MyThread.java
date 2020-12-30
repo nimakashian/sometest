@@ -1,16 +1,21 @@
 package throttling;
 
-import com.google.common.util.concurrent.RateLimiter;
-
-import java.io.*;
-import java.util.concurrent.TimeUnit;
-import java.util.logging.Logger;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import org.slf4j.Logger;
 
 public class MyThread implements Runnable {
     ThrottlingController throttlingController;
     Thread thread;
     long t;
+    Logger log;
 
+    public MyThread(ThrottlingController throttlingController, Logger log) {
+        this.throttlingController = throttlingController;
+        this.log = log;
+        thread = new Thread(this, "mythread");
+    }
 
     @Override
     public void run() {
@@ -24,9 +29,7 @@ public class MyThread implements Runnable {
 
             throttlingController.acquire();
 
-            long t1 = System.currentTimeMillis();
 
-            i++;
             File file = new File("out.com");
 //            File file2=new File("out.com");
 //            File file3=new File("out.com");
@@ -40,31 +43,9 @@ public class MyThread implements Runnable {
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
-            try {
-                if (i % 10 == 0) {
-//                    int delay2 = 1000000000;
-//                    if (i % 500 == 0) {
-//
-//                    }
-                    Thread.sleep(6,860000);
-                }
-
-            } catch (Exception e) {
-
-            }
-            long t2 = System.currentTimeMillis();
-            t += t2 - t1;
 
 
-            delay = (float) ((1000 - t) / (float) 1000) ;
-            System.out.println(t + "--," + i + "---," + (1000 * i / (float) (t)) + "--," +
-                    delay + " ----,"
-                    + throttlingController.s.availablePermits() + "---," + System.currentTimeMillis()
-            );
-
-            if (i == 1010) break;
-
-
+            log.info(throttlingController.getAvailablePermits() + "---," + System.currentTimeMillis());
         }
 
     }
@@ -75,12 +56,10 @@ public class MyThread implements Runnable {
 
     }
 
-    public void setThrottlingController(ThrottlingController t) {
-        this.throttlingController = t;
-    }
 
     public void start() {
         thread.start();
     }
+
 
 }

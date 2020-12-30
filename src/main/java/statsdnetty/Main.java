@@ -20,7 +20,7 @@ public class Main {
 //                                .withSampleRate(0.5) // send 50% of metrics only
                 ).withPrefix("m_kashian_test").withClock(Clock.systemUTC()).build()) {
 
-//            // Send a counter metric immediately
+//            // Send a.java counter metric immediately
 //            while (true) {
 //                int loop = r.nextInt(5000);
 //                metrics.gauge("gvisitors").value((loop));

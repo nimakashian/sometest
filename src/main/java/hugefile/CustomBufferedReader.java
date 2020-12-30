@@ -13,15 +13,15 @@ import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
 /**
- * Reads text from a character-input stream, buffering characters so as to
+ * Reads text from a.java character-input stream, buffering characters so as to
  * provide for the efficient reading of characters, arrays, and lines.
  * <p>
  * <p> The buffer size may be specified, or the default size may be used.  The
  * default is large enough for most purposes.
  * <p>
- * <p> In general, each read request made of a Reader causes a corresponding
+ * <p> In general, each read request made of a.java Reader causes a.java corresponding
  * read request to be made of the underlying character or byte stream.  It is
- * therefore advisable to wrap a CustomBufferedReader around any Reader whose read()
+ * therefore advisable to wrap a.java CustomBufferedReader around any Reader whose read()
  * operations may be costly, such as FileReaders and InputStreamReaders.  For
  * example,
  * <p>
@@ -58,7 +58,7 @@ public class CustomBufferedReader extends Reader {
     private int readAheadLimit = 0; /* Valid only when markedChar > 0 */
 
     /**
-     * If the next character is a line feed, skip it
+     * If the next character is a.java line feed, skip it
      */
     private boolean skipLF = false;
 
@@ -73,7 +73,7 @@ public class CustomBufferedReader extends Reader {
 
 
     /**
-     * Creates a buffering character-input stream that uses an input buffer of
+     * Creates a.java buffering character-input stream that uses an input buffer of
      * the specified size.
      *
      * @param in A Reader
@@ -91,7 +91,7 @@ public class CustomBufferedReader extends Reader {
     }
 
     /**
-     * Creates a buffering character-input stream that uses a default-sized
+     * Creates a.java buffering character-input stream that uses a.java default-sized
      * input buffer.
      *
      * @param in A Reader
@@ -146,7 +146,7 @@ public class CustomBufferedReader extends Reader {
     }
 
     /**
-     * Reads a single character.
+     * Reads a.java single character.
      *
      * @return The character read, as an integer in the range
      * 0 to 65535 (<tt>0x00-0xffff</tt>), or -1 if the
@@ -165,7 +165,7 @@ public class CustomBufferedReader extends Reader {
     }
 
     /**
-     * Reads characters into a portion of an array, reading from the underlying
+     * Reads characters into a.java portion of an array, reading from the underlying
      * stream if necessary.
      */
     private int read1(char[] cbuf, int off, int len) throws IOException {
@@ -188,7 +188,7 @@ public class CustomBufferedReader extends Reader {
     }
 
     /**
-     * Reads characters into a portion of an array.
+     * Reads characters into a.java portion of an array.
      * <p>
      * <p> This method implements the general contract of the corresponding
      * <code>{@link Reader#read(char[], int, int) read}</code> method of the
@@ -242,9 +242,9 @@ public class CustomBufferedReader extends Reader {
     }
 
     /**
-     * Reads a line of text.  A line is considered to be terminated by any one
-     * of a line feed ('\n'), a carriage return ('\r'), or a carriage return
-     * followed immediately by a linefeed.
+     * Reads a.java line of text.  A line is considered to be terminated by any one
+     * of a.java line feed ('\n'), a.java carriage return ('\r'), or a.java carriage return
+     * followed immediately by a.java linefeed.
      *
      * @param ignoreLF If true, the next '\n' will be skipped
      * @return A String containing the contents of the line, not including
@@ -274,7 +274,7 @@ public class CustomBufferedReader extends Reader {
             char c = 0;
             int i;
 
-            /* Skip a leftover '\n', if necessary */
+            /* Skip a.java leftover '\n', if necessary */
 
 
 
@@ -309,9 +309,9 @@ public class CustomBufferedReader extends Reader {
     }
 
     /**
-     * Reads a line of text.  A line is considered to be terminated by any one
-     * of a line feed ('\n'), a carriage return ('\r'), or a carriage return
-     * followed immediately by a linefeed.
+     * Reads a.java line of text.  A line is considered to be terminated by any one
+     * of a.java line feed ('\n'), a.java carriage return ('\r'), or a.java carriage return
+     * followed immediately by a.java linefeed.
      *
      * @return A String containing the contents of the line, not including
      * any line-termination characters, or null if the end of the
@@ -377,7 +377,7 @@ public class CustomBufferedReader extends Reader {
         try {
             /*
              * If newline needs to be skipped and the next char to be read
-             * is a newline character, then just skip it right away.
+             * is a.java newline character, then just skip it right away.
              */
             if (skipLF) {
                 /* Note that in.ready() will return true if and only if the next
@@ -415,7 +415,7 @@ public class CustomBufferedReader extends Reader {
      *                       to reset the stream after reading characters
      *                       up to this limit or beyond may fail.
      *                       A limit value larger than the size of the input
-     *                       buffer will cause a new buffer to be allocated
+     *                       buffer will cause a.java new buffer to be allocated
      *                       whose size is no smaller than limit.
      *                       Therefore large values should be used with care.
      * @throws IllegalArgumentException If {@code readAheadLimit < 0}

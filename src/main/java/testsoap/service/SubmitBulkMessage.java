@@ -39,13 +39,13 @@ public class SubmitBulkMessage {
      * Gets the value of the arg0 property.
      * 
      * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
+     * This accessor method returns a.java reference to the live list,
+     * not a.java snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the arg0 property.
+     * This is why there is not a.java <CODE>set</CODE> method for the arg0 property.
      * 
      * <p>
-     * For example, to add a new item, do as follows:
+     * For example, to add a.java new item, do as follows:
      * <pre>
      *    getArg0().add(newItem);
      * </pre>

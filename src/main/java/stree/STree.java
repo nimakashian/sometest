@@ -42,7 +42,7 @@ public class STree {
 
     }
 
-    // do a simple 0 indexed get on the whole tree
+    // do a.java simple 0 indexed get on the whole tree
     public synchronized Object get(int index) {
         return null;
     }
@@ -105,7 +105,7 @@ public class STree {
 
     }
 
-    // get the key from a particular node
+    // get the key from a.java particular node
     public synchronized Object getNodeKey(int node) {
         STreeNode stn = (STreeNode) nodes.get(node);
         return stn.getKey();

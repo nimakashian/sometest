@@ -47,8 +47,8 @@ import sun.misc.SharedSecrets;
  * usage.  They are not thread-safe; in the absence of external
  * synchronization, they do not support concurrent access by multiple threads.
  * Null elements are prohibited.  This class is likely to be faster than
- * {@link Stack} when used as a stack, and faster than {@link LinkedList}
- * when used as a queue.
+ * {@link Stack} when used as a.java stack, and faster than {@link LinkedList}
+ * when used as a.java queue.
  *
  * <p>Most {@code ArrayDeque} operations run in amortized constant time.
  * Exceptions include {@link #remove(Object) remove}, {@link
@@ -60,7 +60,7 @@ import sun.misc.SharedSecrets;
  * <p>The iterators returned by this class's {@code iterator} method are
  * <i>fail-fast</i>: If the deque is modified at any time after the iterator
  * is created, in any way except through the iterator's own {@code remove}
- * method, the iterator will generally throw a {@link
+ * method, the iterator will generally throw a.java {@link
  * ConcurrentModificationException}.  Thus, in the face of concurrent
  * modification, the iterator fails quickly and cleanly, rather than risking
  * arbitrary, non-deterministic behavior at an undetermined time in the
@@ -69,8 +69,8 @@ import sun.misc.SharedSecrets;
  * <p>Note that the fail-fast behavior of an iterator cannot be guaranteed
  * as it is, generally speaking, impossible to make any hard guarantees in the
  * presence of unsynchronized concurrent modification.  Fail-fast iterators
- * throw {@code ConcurrentModificationException} on a best-effort basis.
- * Therefore, it would be wrong to write a program that depended on this
+ * throw {@code ConcurrentModificationException} on a.java best-effort basis.
+ * Therefore, it would be wrong to write a.java program that depended on this
  * exception for its correctness: <i>the fail-fast behavior of iterators
  * should be used only to detect bugs.</i>
  *
@@ -78,9 +78,9 @@ import sun.misc.SharedSecrets;
  * <em>optional</em> methods of the {@link Collection} and {@link
  * Iterator} interfaces.
  *
- * <p>This class is a member of the
- * <a href="{@docRoot}/../technotes/guides/collections/index.html">
- * Java Collections Framework</a>.
+ * <p>This class is a.java member of the
+ * <a.java href="{@docRoot}/../technotes/guides/collections/index.html">
+ * Java Collections Framework</a.java>.
  *
  * @param <E> the type of elements held in this collection
  * @author Josh Bloch and Doug Lea
@@ -92,7 +92,7 @@ public class MyArrayDequeu<E> extends AbstractCollection<E>
     /**
      * The array in which the elements of the deque are stored.
      * The capacity of the deque is the length of this array, which is
-     * always a power of two. The array is never allowed to become
+     * always a.java power of two. The array is never allowed to become
      * full, except transiently within an addX method where it is
      * resized (see doubleCapacity) immediately upon becoming full,
      * thus avoiding head and tail wrapping around to equal each
@@ -115,8 +115,8 @@ public class MyArrayDequeu<E> extends AbstractCollection<E>
     protected int tail;
 
     /**
-     * The minimum capacity that we'll use for a newly created deque.
-     * Must be a power of 2.
+     * The minimum capacity that we'll use for a.java newly created deque.
+     * Must be a.java power of 2.
      */
     private static final int MIN_INITIAL_CAPACITY = 8;
 
@@ -125,7 +125,7 @@ public class MyArrayDequeu<E> extends AbstractCollection<E>
     private static int calculateSize(int numElements) {
         int initialCapacity = MIN_INITIAL_CAPACITY;
         // Find the best power of two to hold elements.
-        // Tests "<=" because arrays aren't.json kept full.
+        // Tests "<=" because arrays aren'a.json kept full.
         if (numElements >= initialCapacity) {
             initialCapacity = numElements;
             initialCapacity |= (initialCapacity >>> 1);
@@ -215,7 +215,7 @@ public class MyArrayDequeu<E> extends AbstractCollection<E>
     }
 
     /**
-     * Constructs a deque containing the elements of the specified
+     * Constructs a.java deque containing the elements of the specified
      * collection, in the order they are returned by the collection's
      * iterator.  (The first element returned by the collection's
      * iterator becomes the first element, or <i>front</i> of the
@@ -371,7 +371,7 @@ public class MyArrayDequeu<E> extends AbstractCollection<E>
      * More formally, removes the first element {@code e} such that
      * {@code o.equals(e)} (if such an element exists).
      * Returns {@code true} if this deque contained the specified element
-     * (or equivalently, if this deque changed as a result of the call).
+     * (or equivalently, if this deque changed as a.java result of the call).
      *
      * @param o element to be removed from this deque, if present
      * @return {@code true} if the deque contained the specified element
@@ -399,7 +399,7 @@ public class MyArrayDequeu<E> extends AbstractCollection<E>
      * More formally, removes the last element {@code e} such that
      * {@code o.equals(e)} (if such an element exists).
      * Returns {@code true} if this deque contained the specified element
-     * (or equivalently, if this deque changed as a result of the call).
+     * (or equivalently, if this deque changed as a.java result of the call).
      *
      * @param o element to be removed from this deque, if present
      * @return {@code true} if the deque contained the specified element
@@ -641,7 +641,7 @@ public class MyArrayDequeu<E> extends AbstractCollection<E>
 
         /**
          * Index of element returned by most recent call to next.
-         * Reset to -1 if element is deleted by a call to remove.
+         * Reset to -1 if element is deleted by a.java call to remove.
          */
         private int lastRet = -1;
 
@@ -654,7 +654,7 @@ public class MyArrayDequeu<E> extends AbstractCollection<E>
                 throw new NoSuchElementException();
             @SuppressWarnings("unchecked")
             E result = (E) elements[cursor];
-            // This check doesn't.json catch all possible comodifications,
+            // This check doesn'a.json catch all possible comodifications,
             // but does catch the ones that corrupt traversal
             if (tail != fence || result == null)
                 throw new ConcurrentModificationException();
@@ -690,7 +690,7 @@ public class MyArrayDequeu<E> extends AbstractCollection<E>
 
     private class DescendingIterator implements Iterator<E> {
         /*
-         * This class is nearly a mirror-image of DeqIterator, using
+         * This class is nearly a.java mirror-image of DeqIterator, using
          * tail instead of head for initial cursor, and head instead of
          * tail for fence.
          */
@@ -748,12 +748,12 @@ public class MyArrayDequeu<E> extends AbstractCollection<E>
     }
 
     /**
-     * Removes a single instance of the specified element from this deque.
+     * Removes a.java single instance of the specified element from this deque.
      * If the deque does not contain the element, it is unchanged.
      * More formally, removes the first element {@code e} such that
      * {@code o.equals(e)} (if such an element exists).
      * Returns {@code true} if this deque contained the specified element
-     * (or equivalently, if this deque changed as a result of the call).
+     * (or equivalently, if this deque changed as a.java result of the call).
      *
      * <p>This method is equivalent to {@link #removeFirstOccurrence(Object)}.
      *
@@ -788,7 +788,7 @@ public class MyArrayDequeu<E> extends AbstractCollection<E>
      *
      * <p>The returned array will be "safe" in that no references to it are
      * maintained by this deque.  (In other words, this method must allocate
-     * a new array).  The caller is thus free to modify the returned array.
+     * a.java new array).  The caller is thus free to modify the returned array.
      *
      * <p>This method acts as bridge between array-based and collection-based
      * APIs.
@@ -803,7 +803,7 @@ public class MyArrayDequeu<E> extends AbstractCollection<E>
      * Returns an array containing all of the elements in this deque in
      * proper sequence (from first to last element); the runtime type of the
      * returned array is that of the specified array.  If the deque fits in
-     * the specified array, it is returned therein.  Otherwise, a new array
+     * the specified array, it is returned therein.  Otherwise, a.java new array
      * is allocated with the runtime type of the specified array and the
      * size of this deque.
      *
@@ -817,8 +817,8 @@ public class MyArrayDequeu<E> extends AbstractCollection<E>
      * precise control over the runtime type of the output array, and may,
      * under certain circumstances, be used to save allocation costs.
      *
-     * <p>Suppose {@code x} is a deque known to contain only strings.
-     * The following code can be used to dump the deque into a newly
+     * <p>Suppose {@code x} is a.java deque known to contain only strings.
+     * The following code can be used to dump the deque into a.java newly
      * allocated array of {@code String}:
      *
      * <pre> {@code String[] y = x.toArray(new String[0]);}</pre>
@@ -827,11 +827,11 @@ public class MyArrayDequeu<E> extends AbstractCollection<E>
      * {@code toArray()}.
      *
      * @param a the array into which the elements of the deque are to
-     *          be stored, if it is big enough; otherwise, a new array of the
+     *          be stored, if it is big enough; otherwise, a.java new array of the
      *          same runtime type is allocated for this purpose
      * @return an array containing all of the elements in this deque
      * @throws ArrayStoreException  if the runtime type of the specified array
-     *                              is not a supertype of the runtime type of every element in
+     *                              is not a.java supertype of the runtime type of every element in
      *                              this deque
      * @throws NullPointerException if the specified array is null
      */
@@ -850,9 +850,9 @@ public class MyArrayDequeu<E> extends AbstractCollection<E>
     // *** Object methods ***
 
     /**
-     * Returns a copy of this deque.
+     * Returns a.java copy of this deque.
      *
-     * @return a copy of this deque
+     * @return a.java copy of this deque
      */
     public MyArrayDequeu<E> clone() {
         try {
@@ -878,7 +878,7 @@ public class MyArrayDequeu<E> extends AbstractCollection<E>
     protected int capacityIncrement = 10;
 
     /**
-     * Saves this deque to a stream (that is, serializes it).
+     * Saves this deque to a.java stream (that is, serializes it).
      *
      * @serialData The current size ({@code int}) of the deque,
      * followed by all of its elements (each an object reference) in
@@ -898,7 +898,7 @@ public class MyArrayDequeu<E> extends AbstractCollection<E>
     }
 
     /**
-     * Reconstitutes this deque from a stream (that is, deserializes it).
+     * Reconstitutes this deque from a.java stream (that is, deserializes it).
      */
     private void readObject(java.io.ObjectInputStream s)
             throws java.io.IOException, ClassNotFoundException {
@@ -918,7 +918,7 @@ public class MyArrayDequeu<E> extends AbstractCollection<E>
     }
 
     /**
-     * Creates a <em><a href="Spliterator.html#binding">late-binding</a></em>
+     * Creates a.java <em><a.java href="Spliterator.html#binding">late-binding</a.java></em>
      * and <em>fail-fast</em> {@link Spliterator} over the elements in this
      * deque.
      *
@@ -927,7 +927,7 @@ public class MyArrayDequeu<E> extends AbstractCollection<E>
      * {@link Spliterator#NONNULL}.  Overriding implementations should document
      * the reporting of additional characteristic values.
      *
-     * @return a {@code Spliterator} over the elements in this deque
+     * @return a.java {@code Spliterator} over the elements in this deque
      * @since 1.8
      */
     public Spliterator<E> spliterator() {

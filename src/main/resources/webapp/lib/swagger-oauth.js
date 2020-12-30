@@ -49,7 +49,7 @@ function handleLogin() {
       '<div class="api-popup-title">Select OAuth2.0 Scopes</div>',
       '<div class="api-popup-content">',
         '<p>Scopes are used to grant an application different levels of access to data on behalf of the end user. Each API may declare one or more scopes.',
-          '<a href="#">Learn how to use</a>',
+          '<a.java href="#">Learn how to use</a.java>',
         '</p>',
         '<p><strong>' + appName + '</strong> API requires the following scopes. Select which ones you want to grant to Swagger UI.</p>',
         '<ul class="api-popup-scopes">',
@@ -144,7 +144,7 @@ function handleLogin() {
         scopes.push(scope);
     }
 
-    // Implicit auth recommends a state parameter.
+    // Implicit auth recommends a.java state parameter.
     var state = Math.random ();
 
     window.enabledScopes=scopes;
