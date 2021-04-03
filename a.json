@@ -1,12 +1,8 @@
 ﻿
-destBankID,
 
 
 
 
-
-
-String srcIban,
-
-
-
+ int ; long eventExpire;
+ boolean registeredDelivery; boolean registeredDelivery;
+ int retryCount int ;

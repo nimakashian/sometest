@@ -15,8 +15,14 @@ public class LettucePerformance {
         RedisCommands<String, String> syncCommands = connection.sync();
 
         long _t1 = System.currentTimeMillis();
-        for(int i = 0; i<4200; i++) {
-            syncCommands.lpush("testredisper", (new Date()).toString());
+        for(int i = 0; i<1000000; i++) {
+            Long n = syncCommands.lpush("testredisper", (new Date()).toString());
+            try{
+                Thread.sleep(1500);
+                System.out.println("hi " + n + " :" + i);
+            }catch (Exception e){
+
+            }
         }
 
         System.out.println(System.currentTimeMillis() - _t1);
